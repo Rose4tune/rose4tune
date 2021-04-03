@@ -15,5 +15,5 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<!--[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter&count_bg=%23FDF7C3&title_bg=%23F8E00E&icon=apachecloudstack.svg&icon_color=%23434547&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)-->
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter&count_bg=%23FDF7C3&title_bg=%23F8E00E&icon=apachecloudstack.svg&icon_color=%23434547&title=hits&edge_flat=false"/></a>
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Rose4tune&count_bg=%23FDF7C3&title_bg=%23F8E00E&icon=apachecloudstack.svg&icon_color=%23434547&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+<!--<a href="https://github.com/Rose4tune"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter&count_bg=%23FDF7C3&title_bg=%23F8E00E&icon=apachecloudstack.svg&icon_color=%23434547&title=hits&edge_flat=false"/></a>-->
