@@ -1,5 +1,4 @@
-## Hi There 👋
-### I'm Rose Lee
+### Hi I'm Rose Lee 👋
 
 <!--
 **Rose4tune/rose4tune** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -23,6 +22,6 @@ Here are some ideas to get you started:
 <!--[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Rose4tune&count_bg=%23FDF7C3&title_bg=%23F8E00E&icon=apachecloudstack.svg&icon_color=%23434547&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)-->
 <a href="https://github.com/Rose4tune"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Rose4tune&count_bg=%23F5DF4D&title_bg=%23F5DF4D&icon=apachecloudstack.svg&icon_color=%23434547&title=hits&edge_flat=false"/></a>
 
-[![Rose's github stats](https://github-readme-stats.vercel.app/api?username=Rose&count_private=true&custom_title=Rose's_Stats&bg_color=90,fdf7c3,F5DF4D,F5DF4D&title_color=434547&text_color=ffffff&show_icons=true&icon_color=ffffff&hide_border=true)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose&layout=compact&bg_color=90,fdf7c3,F5DF4D&title_color=434547&text_color=#939597&hide_border=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Rose's github stats](https://github-readme-stats.vercel.app/api?username=Rose&count_private=true&custom_title=Rose's_Stats&bg_color=90,fdf7c3,F5DF4D,F5DF4D&title_color=939597&text_color=ffffff&show_icons=true&icon_color=ffffff&hide_border=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose&layout=compact&bg_color=90,fdf7c3,F5DF4D&title_color=939597&text_color=#939597&hide_border=true)](https://github.com/anuraghazra/github-readme-stats)
 
