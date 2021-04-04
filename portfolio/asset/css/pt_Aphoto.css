@@ -1,0 +1,666 @@
+@import url("https://fonts.googleapis.com/css2?family=M PLUS Rounded 1c:wght@100;300;400;500;700;800;900&display=swap");
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 40px 0;
+  z-index: 100;
+}
+
+.header nav {
+  width: 70%;
+  margin: auto;
+}
+
+.header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.header nav ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav ul li a {
+  letter-spacing: 0.31rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+* {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section1 {
+  width: 100vw;
+  height: 100vh;
+}
+
+.section1 ul, .section1 li {
+  width: 100vw;
+  height: 100vh;
+}
+
+.section1 .mainVisual li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section1 .mainVisual li:nth-child(1) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 8, 116, 0.4)), to(rgba(223, 155, 55, 0.3))), url("../images/pt_Aphoto/main1.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(85, 8, 116, 0.4), rgba(223, 155, 55, 0.3)), url("../images/pt_Aphoto/main1.jpg") no-repeat;
+  background-size: cover;
+}
+
+.section1 .mainVisual li:nth-child(2) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 8, 116, 0.4)), to(rgba(223, 155, 55, 0.3))), url("../images/pt_Aphoto/main2.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(85, 8, 116, 0.4), rgba(223, 155, 55, 0.3)), url("../images/pt_Aphoto/main2.jpg") no-repeat;
+  background-size: cover;
+}
+
+.section1 .mainVisual li:nth-child(3) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 8, 116, 0.4)), to(rgba(223, 155, 55, 0.3))), url("../images/pt_Aphoto/main3.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(85, 8, 116, 0.4), rgba(223, 155, 55, 0.3)), url("../images/pt_Aphoto/main3.jpg") no-repeat;
+  background-size: cover;
+}
+
+.section1 .mainVisual li:nth-child(4) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 8, 116, 0.4)), to(rgba(223, 155, 55, 0.3))), url("../images/pt_Aphoto/main4.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(85, 8, 116, 0.4), rgba(223, 155, 55, 0.3)), url("../images/pt_Aphoto/main4.jpg") no-repeat;
+  background-size: cover;
+}
+
+.section1 .mainVisual li div {
+  padding-top: calc(50vh - 80px);
+  text-align: center;
+}
+
+.section1 .mainVisual li div h2 {
+  letter-spacing: 0.63rem;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.section1 .mainVisual li div h3 {
+  line-height: 130%;
+  letter-spacing: 0.25rem;
+  color: #16a085;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.section1 .mainVisual li div p {
+  margin: 40px 0;
+  line-height: 150%;
+  letter-spacing: 0.2rem;
+  color: #373737;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.section1 .mainVisual li div button {
+  padding: 1.2rem 2.8rem;
+  background: #16a085;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.section1 .mainVisual li div p {
+  margin: 20px 0 40px;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.section1 .snsLink {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.section1 .snsLink a:nth-child(1) {
+  background: url("../images/pt_Aphoto/fa-twitter.png") no-repeat center;
+  background-size: 100%;
+}
+
+.section1 .snsLink a:nth-child(2) {
+  background: url("../images/pt_Aphoto/fa-flickr.png") no-repeat center;
+  background-size: 100%;
+}
+
+.section1 .snsLink a:nth-child(3) {
+  background: url("../images/pt_Aphoto/fa-dribbble.png") no-repeat center;
+  background-size: 100%;
+}
+
+.section1 .snsLink div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 26px;
+}
+
+.section1 .snsLink div a {
+  width: 30px;
+  height: 35px;
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 0;
+}
+
+.section2 {
+  padding-top: 8rem;
+  background: #f5f6f7;
+}
+
+.section2 .bgImg {
+  background: url("../images/pt_Aphoto/iphone.png") no-repeat 100% 0;
+  background-size: contain;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 0 10rem;
+}
+
+.section2 .bgImg .textBox {
+  width: 50vw;
+}
+
+.section2 .bgImg .textBox h2 {
+  letter-spacing: 0.63rem;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.section2 .bgImg .textBox h3 {
+  line-height: 130%;
+  letter-spacing: 0.25rem;
+  color: #16a085;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.section2 .bgImg .textBox p {
+  margin: 40px 0;
+  line-height: 150%;
+  letter-spacing: 0.2rem;
+  color: #373737;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.section2 .bgImg .textBox button {
+  padding: 1.2rem 2.8rem;
+  background: #16a085;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.section3 {
+  padding-top: 8rem;
+  background: #fff;
+}
+
+.section3 .bgImg {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 0 8rem;
+}
+
+.section3 .bgImg .mySlides {
+  width: 35vw;
+  margin-left: auto;
+}
+
+.section3 .bgImg .mySlides div {
+  margin: 40px 0 10px;
+}
+
+.section3 .bgImg .mySlides h2 {
+  letter-spacing: 0.63rem;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.section3 .bgImg .mySlides h3 {
+  line-height: 130%;
+  letter-spacing: 0.25rem;
+  color: #16a085;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.section3 .bgImg .mySlides p {
+  margin: 40px 0;
+  line-height: 150%;
+  letter-spacing: 0.2rem;
+  color: #373737;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.section3 .bgImg .mySlides button {
+  padding: 1.2rem 2.8rem;
+  background: #16a085;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.section3 .arrowes {
+  width: 35vw;
+  margin-left: auto;
+}
+
+.section3 .arrowes a:first-child {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url("../images/pt_Aphoto/fa-angle-left.png") no-repeat center center;
+}
+
+.section3 .arrowes a:last-child {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url("../images/pt_Aphoto/fa-angle-right.png") no-repeat center center;
+}
+
+.section4 {
+  padding-top: 8rem;
+  background: #f5f6f7;
+}
+
+.section4 > div {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 0 8rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section4 > div .fl-left {
+  width: 30%;
+  float: left;
+}
+
+.section4 > div .fl-right {
+  width: 65%;
+  float: right;
+}
+
+.section4 > div .fl-left {
+  text-align: center;
+}
+
+.section4 > div .fl-left h2 {
+  letter-spacing: 0.63rem;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.section4 > div .fl-left h3 {
+  line-height: 130%;
+  letter-spacing: 0.25rem;
+  color: #16a085;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.section4 > div .fl-left p {
+  margin: 40px 0;
+  line-height: 150%;
+  letter-spacing: 0.2rem;
+  color: #373737;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.section4 > div .fl-left button {
+  padding: 1.2rem 2.8rem;
+  background: #16a085;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.section4 > div .fl-left h3 {
+  margin: 10px 40px;
+}
+
+.section4 > div .fl-left p {
+  margin: 0;
+}
+
+.section4 > div a {
+  text-decoration: none;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.section4 > div .arrowes {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.section4 > div .arrowes a:first-child {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url("../images/pt_Aphoto/fa-angle-left.png") no-repeat center center;
+}
+
+.section4 > div .arrowes a:last-child {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url("../images/pt_Aphoto/fa-angle-right.png") no-repeat center center;
+}
+
+.section4 > div .item img {
+  width: 100%;
+}
+
+.section5 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 5, 71, 0.4)), to(rgba(2, 23, 39, 0.3))), url("../images/pt_Aphoto/subsribe.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(7, 5, 71, 0.4), rgba(2, 23, 39, 0.3)), url("../images/pt_Aphoto/subsribe.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.section5 .textBox {
+  padding-top: calc(50vh - 80px);
+}
+
+.section5 .textBox h2 {
+  letter-spacing: 0.63rem;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.section5 .textBox h3 {
+  line-height: 130%;
+  letter-spacing: 0.25rem;
+  color: #16a085;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.section5 .textBox p {
+  margin: 40px 0;
+  line-height: 150%;
+  letter-spacing: 0.2rem;
+  color: #373737;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.section5 .textBox button {
+  padding: 1.2rem 2.8rem;
+  background: #16a085;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.section5 .textBox h3 {
+  color: #fff;
+}
+
+.section5 .textBox form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 30px auto;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.section5 .textBox form .fl-left {
+  float: left;
+}
+
+.section5 .textBox form .fl-right {
+  float: right;
+}
+
+.section5 .textBox form input {
+  min-width: 260px;
+  padding: 0.8rem 1.2rem;
+}
+
+.section5 .textBox form input::-webkit-input-placeholder {
+  color: #373737;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.section5 .textBox form input:-ms-input-placeholder {
+  color: #373737;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.section5 .textBox form input::-ms-input-placeholder {
+  color: #373737;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.section5 .textBox form input::placeholder {
+  color: #373737;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.section5 .textBox form button {
+  padding: 0.8rem 1rem;
+  background: #16a085;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 0;
+}
+
+.section6 {
+  padding-top: 8rem;
+  background: #f5f6f7;
+}
+
+.section6 .textBox {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 0 8rem;
+}
+
+.section6 .textBox h2 {
+  letter-spacing: 0.63rem;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.section6 .textBox h3 {
+  line-height: 130%;
+  letter-spacing: 0.25rem;
+  color: #16a085;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.section6 .textBox p {
+  margin: 40px 0;
+  line-height: 150%;
+  letter-spacing: 0.2rem;
+  color: #373737;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.section6 .textBox button {
+  padding: 1.2rem 2.8rem;
+  background: #16a085;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.section6 .textBox h3 {
+  color: #373737;
+}
+
+.section6 .textBox p {
+  margin: 10px 0 40px;
+}
+
+.section6 .textBox .btnsBox button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  overflow: hidden;
+}
+
+.section6 .textBox .btnsBox button .fl-left {
+  float: left;
+}
+
+.section6 .textBox .btnsBox button .fl-right {
+  float: right;
+}
+
+.section6 .textBox .btnsBox button:first-child {
+  margin-right: 1rem;
+}
+
+.section6 .textBox .btnsBox button .btnsText {
+  width: 260px;
+  height: 100%;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.section6 .textBox .btnsBox button .btnsIcon {
+  padding: 0.5rem 1rem;
+  background: #0d7c66;
+}
+
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0 3rem;
+  overflow: hidden;
+}
+
+.footer .fl-left {
+  float: left;
+}
+
+.footer .fl-right {
+  float: right;
+}
+
+.footer div {
+  letter-spacing: 0.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer div ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+
+.footer div ul li::after {
+  content: '';
+  margin: 0 10px;
+  width: 2px;
+  background: #16a085;
+}
+
+.footer div ul li:last-child::after {
+  width: 0;
+}

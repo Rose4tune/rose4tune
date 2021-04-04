@@ -52,7 +52,7 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "block";
-    var imgUrl = "url(../../common/images/pt_Aphoto/iPhone-MockUp" + slideIndex + ".png)";
+    var imgUrl = "url(../../asset/images/pt_Aphoto/iPhone-MockUp" + slideIndex + ".png)";
     bgImg.style.backgroundImage = imgUrl;
     bgImg.style.backgroundSize = "contain";
     bgImg.style.backgroundRepeat = "no-repeat";

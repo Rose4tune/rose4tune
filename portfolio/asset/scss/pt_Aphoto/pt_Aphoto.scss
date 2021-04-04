@@ -213,10 +213,15 @@ $color5: #0d7c66;
     > div{
         @include inner($pb:8rem);
         @include float(30%, 65%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
         .fl-left{
             text-align: center;
             @include textBox;
+            h3{margin:10px 40px;}
+            p{margin:0;}
         }
         a {
             text-decoration: none;
