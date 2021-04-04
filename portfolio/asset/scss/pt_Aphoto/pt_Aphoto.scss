@@ -90,7 +90,7 @@ $color5: #0d7c66;
 }
 @mixin textBox {
     h2{@include title($size:3.5rem, $spacing:0.63rem, $clr:$color1);}
-    h3{
+    .title{
         line-height: 130%;
         @include title($clr:$color4);
     }

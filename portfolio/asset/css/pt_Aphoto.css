@@ -38,6 +38,10 @@
           align-items: center;
 }
 
+.header nav ul li h1 {
+  font-size: 0;
+}
+
 .header nav ul li a {
   letter-spacing: 0.31rem;
   color: #fff;
@@ -126,7 +130,7 @@
   font-weight: 700;
 }
 
-.section1 .mainVisual li div h3 {
+.section1 .mainVisual li div .title {
   line-height: 130%;
   letter-spacing: 0.25rem;
   color: #16a085;
@@ -222,7 +226,7 @@
   font-weight: 700;
 }
 
-.section2 .bgImg .textBox h3 {
+.section2 .bgImg .textBox .title {
   line-height: 130%;
   letter-spacing: 0.25rem;
   color: #16a085;
@@ -276,7 +280,7 @@
   font-weight: 700;
 }
 
-.section3 .bgImg .mySlides h3 {
+.section3 .bgImg .mySlides .title {
   line-height: 130%;
   letter-spacing: 0.25rem;
   color: #16a085;
@@ -364,7 +368,7 @@
   font-weight: 700;
 }
 
-.section4 > div .fl-left h3 {
+.section4 > div .fl-left .title {
   line-height: 130%;
   letter-spacing: 0.25rem;
   color: #16a085;
@@ -452,7 +456,7 @@
   font-weight: 700;
 }
 
-.section5 .textBox h3 {
+.section5 .textBox .title {
   line-height: 130%;
   letter-spacing: 0.25rem;
   color: #16a085;
@@ -559,7 +563,7 @@
   font-weight: 700;
 }
 
-.section6 .textBox h3 {
+.section6 .textBox .title {
   line-height: 130%;
   letter-spacing: 0.25rem;
   color: #16a085;
