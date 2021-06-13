@@ -1,9 +1,5 @@
-
-
-console.log("hello!!");
-
 function pageLoding(){
-    var loding = document.getElementsByClassName('loding');
-    loding.style.display = 'none';
-    console.log('here');
+    var loding = document.getElementsByClassName('loding')[0];
+    loding.style.display="none"
+    console.log('here!');
 }
