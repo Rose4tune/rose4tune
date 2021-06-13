@@ -24,4 +24,4 @@ Here are some ideas to get you started:
 
 [![Rose's github stats](https://github-readme-stats.vercel.app/api?username=Rose&count_private=true&custom_title=Rose's_Stats&bg_color=90,fdf7c3,F5DF4D,F5DF4D&title_color=434547&text_color=ffffff&show_icons=true&icon_color=ffffff)](https://github.com/anuraghazra/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose&layout=compact&bg_color=90,fdf7c3,F5DF4D&title_color=434547&text_color=#939597)](https://github.com/anuraghazra/github-readme-stats)    
-*2021 PANTONE COLOR : Illuminating(13-0647) & Ultimate Gray(17-5104)
+*2021 PANTONE COLOR : Illuminating(13-0647/#F5DF4D) & Ultimate Gray(17-5104/#939597)
