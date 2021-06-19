@@ -1,0 +1,26 @@
+/* common */
+button {
+    font-size: 20px;
+    color: #939597;
+}
+
+
+
+
+
+
+/* header */
+.logo {
+    font-size: 36px;
+}
+.menuBar select option {
+    font-size: 16px;
+}
+
+/* section : welcome */
+.welcom-text h1 {
+    font-size: 70px;
+}
+.welcom-text button {
+    font-size: 15px;
+}

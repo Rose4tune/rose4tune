@@ -1,43 +1,80 @@
-// my portfolio main scss
+// color setting
+$theme-1: #F5DF4D; //245, 223, 77
+$theme-2: #939597; //147, 149, 151
+$subTheme-1: #fffed6; //255, 252, 211
+$subTheme-2: #f7f6f2; //247, 246, 242
+$subTheme-3: #60605e; //96, 96, 94
+$subTheme-4: #434547; //67, 69, 71
+$color-1: #fff;
+$color-2: #c5c6c7; //197, 198, 199
+$color-3: #1d2123; //29, 33, 35
 
 
-.loding {
-    position: fixed;
-    top: 0; 
-    left: 0;
+// flex setting
+@mixin flexBox {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .toRight {margin-left: auto;}
+}
+
+// position setting
+@mixin position(
+    $p: absolute,
+    $t: null,
+    $b: null,
+    $l: null,
+    $r: null
+){
+    @if 
+    $p == absolute
+    or $p == fixed
+    or not $p == relative
+    or not $p == static
+    {
+        position: $p;
+        top: $t;
+        bottom: $b;
+        left: $l;
+        right: $r;
+    }
+
+}
+
+
+
+@import "button", "animation", "header";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// all section //
+section{
     width: 100vw;
     height: 100vh;
-    background: #fff;
 }
 
-.anim_loding {
-    &::before {
-        display: block;
-        content: '';
-        width: 150px;
-        height: 150px;
-        // margin-top: -80px;
-        background: url(images/logo_icon.png);
-        background-size: 100%;
-        -webkit-animation: anim_loding .6s ease-in-out infinite alternate;
-        animation: anim_loding .6s ease-in-out infinite alternate;
-    }
 
-    &::after {
-        display: block;
+// section1 - welcome //
+section.welcom {
+    @include flexBox();
+    .welcom-text {
         width: 50%;
-        height: 5px;
-        margin: 0 auto;
-        background: #3d3d3d;
-        opacity: .3;
-        content: "";
-        border-radius: 100%;
+        height: 100%;
+        padding: 120px 150px 0;
+        background: $subTheme-2;
     }
-}
-
-@keyframes anim_loding {
-    to{transform: translate(0, 10px);}
 }

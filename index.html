@@ -4,15 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rose-Fortune's portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
 </head>
 <body>
-    <div class="loding">
-        <div class="anim_loding"></div>
+    <div class="lodingPage">
+        <div class="anim-loding"></div>
     </div>
+    
+    <header>
+        <div class="logo">
+            <a href="#">
+                <strong class="logo-text">RoseFortne</strong>
+                <div class="logo-icon">
+                    <img src="images/logo-icon.png" alt="I'm Rose Fortne">
+                </div>
+            </a>
+        </div>
+
+        <div class="menuBar toRight">
+            <a class="sns myblog" href="#"></a>
+            <a class="sns mygit" href="#"></a>
+            <select name="mode" id="mode" class="mode">
+                <option value="white">white</option>
+                <option value="black">black</option>
+            </select>
+            <div class="gnb">
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <ul class="gnb-menu">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <button class="pageUp">
+        <p>UP</p>
+    </button>
+
+    <section class="welcom">
+        <div class="welcom-text toRight">
+            <button>web publisher</button>
+            <h1>I'm Ye Seo Lee,<br>Rose</h1>
+        </div>
+    </section>
+
+    <section></section>
     
     
 
@@ -20,5 +69,24 @@
     <script type="text/javascript" src="plugin/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="plugin/slick-1.8.1/slick/slick.min.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(this).toggleClass("active");
+            });
+        });
+
+
+        
+  $('.hamburger, .menu-inner').on('mouseenter', function(){
+    $(this).parent().addClass('expanded');
+    menuExpanded = true;
+  });
+
+  $('.menu-inner').on('mouseleave', function(){
+    menuExpanded = false;
+    $(this).parent().removeClass('expanded');
+  });
+    </script>
 </body>
 </html>
