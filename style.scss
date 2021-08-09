@@ -3,14 +3,14 @@ $theme-1: #F5DF4D; //245, 223, 77
 $theme-2: #939597; //147, 149, 151
 $subTheme-1: #fffed6; //255, 252, 211
 $subTheme-2: #f7f6f2; //247, 246, 242
-$subTheme-3: #60605e; //96, 96, 94
+$subTheme-3: #60605e; //96, 96, 94 
 $subTheme-4: #434547; //67, 69, 71
 $color-1: #fff;
 $color-2: #c5c6c7; //197, 198, 199
 $color-3: #1d2123; //29, 33, 35
 
 
-// flex setting
+// flex setting 
 @mixin flexBox {
     display: flex;
     align-items: center;
@@ -42,9 +42,7 @@ $color-3: #1d2123; //29, 33, 35
 
 }
 
-
-
-@import "button", "animation", "header";
+@import "button", "animation", "header", "modal";
 
 
 
@@ -71,10 +69,32 @@ section{
 // section1 - welcome //
 section.welcom {
     @include flexBox();
-    .welcom-text {
+    .toRight {
         width: 50%;
         height: 100%;
         padding: 120px 150px 0;
         background: $subTheme-2;
+
+        .welcom-text {
+            @include position($t:50%, $l:50%);
+            transform: translate(120px, -100%);
+        }
+    }
+} 
+
+
+.scroll-icon {
+    $wh: 50px;
+    @include position($b:50px, $l:50%);
+    width: $wh;
+    height: $wh;
+    background: url('images/scroll.png');
+    background-size: 100%;
+    transition: all .3s ease-in-out;
+    transform: translate(-50%, 0);
+
+    &:hover {
+        background: url('images/scroll-down.png');
+        background-size: 100%;
     }
 }
