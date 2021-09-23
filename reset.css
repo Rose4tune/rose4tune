@@ -3,23 +3,23 @@
    License: none (public domain)
 */
 @font-face {
-    font-family: 'seoulNamsanB';
-    src: url('font/SeoulNamsanB.ttf') format('truetype');
+  font-family: 'seoulNamsanB';
+  src: url('font/SeoulNamsanB.ttf') format('truetype');
 };
 @font-face {
-    font-family: 'seoulNamsanEB';
-    src: url('font/SeoulNamsanEB.ttf') format('truetype');
+  font-family: 'seoulNamsanEB';
+  src: url('font/SeoulNamsanEB.ttf') format('truetype');
 };
 @font-face {
-    font-family: 'seoulNamsanV';
-    src: url('font/SeoulNamsanvert.ttf') format('truetype');
+  font-family: 'seoulNamsanV';
+  src: url('font/SeoulNamsanvert.ttf') format('truetype');
 };
 
 
 *{
 	word-wrap: break-word;
 	-webkit-box-sizing: border-box;
-			box-sizing: border-box;
+	box-sizing: border-box;
 }
 *::-webkit-scrollbar{
 	display: none;
@@ -63,7 +63,7 @@ time, mark, audio, video {
 	/* letter-spacing: 1px; */
 	text-decoration: none;
 	-webkit-box-sizing: border-box;
-			box-sizing: border-box;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

@@ -3,32 +3,32 @@
 
 /* common */
 button {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #939597;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #939597;
 }
 
 /* header */
 .logo {
-    font-size: 36px;
+  font-size: 36px;
 }
 .menuBar select option {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 /* section : welcome */
 .welcom-text h1 {
-    font-size: 70px;
-    font-weight: 500;
-    font-family: 'Raleway', sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
 }
 .welcom-text button, .btn-text {
-    font-size: 15px;
-    color: #939597;
+  font-size: 15px;
+  color: #939597;
 }
 .gnb .gnb-menu li a{
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .gnb .gnb-menu li:hover a{
-    color: #F5DF4D;
+  color: #F5DF4D;
 }
