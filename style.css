@@ -67,11 +67,11 @@
   text-transform: uppercase;
 }
 
-.btn-modal:hover .btn-line {
+.btn_modal:hover .btn_line {
   background-position: 100% 0%;
 }
 
-.btn-line {
+.btn_line {
   display: inline-block;
   width: 80px;
   height: 2px;
@@ -84,12 +84,12 @@
   background-size: 400% 100%;
 }
 
-.open .btn-text {
+.open .btn_text {
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
 
-.open:hover .btn-text {
+.open:hover .btn_text {
   opacity: 0;
 }
 
@@ -323,6 +323,13 @@ header .toRight {
   transform: translateY(-10px) rotate(90deg);
 }
 
+.not_scroll {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
 .modal.modal_overlay {
   width: 100vw;
   height: 100vh;
@@ -330,6 +337,7 @@ header .toRight {
   top: 0;
   left: 0;
   display: none;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
