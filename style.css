@@ -59,62 +59,6 @@
   display: block;
 }
 
-.open {
-  position: relative;
-  overflow: hidden;
-  padding: 3px 0;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.btn_modal:hover .btn_line {
-  background-position: 100% 0%;
-}
-
-.btn_line {
-  display: inline-block;
-  width: 80px;
-  height: 2px;
-  margin-right: 10px;
-  vertical-align: 30%;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  background: linear-gradient(110deg, rgba(147, 149, 151, 0.8), rgba(147, 149, 151, 0.8), rgba(255, 255, 255, 0.8), rgba(245, 223, 77, 0.8), rgba(245, 223, 77, 0.8));
-  background-position: 1% 0%;
-  background-size: 400% 100%;
-}
-
-.open .btn_text {
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-.open:hover .btn_text {
-  opacity: 0;
-}
-
-.open::before {
-  content: attr(data-hover);
-  position: absolute;
-  top: 3px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  -webkit-transition: .4s, opacity .6s;
-  transition: .4s, opacity .6s;
-  -webkit-transform: translate(-100%, 0);
-  transform: translate(-100%, 0);
-}
-
-.open:hover::before {
-  opacity: 1;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  -webkit-transition-delay: .3s;
-  transition-delay: .3s;
-}
-
 .lodingPage {
   display: none;
   -webkit-box-align: center;
@@ -321,6 +265,62 @@ header .toRight {
 .hamburger.active .line:nth-child(3) {
   -webkit-transform: translateY(-10px) rotate(90deg);
   transform: translateY(-10px) rotate(90deg);
+}
+
+.open {
+  position: relative;
+  overflow: hidden;
+  padding: 3px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn_modal:hover .btn_line {
+  background-position: 100% 0%;
+}
+
+.btn_line {
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  margin-right: 10px;
+  vertical-align: 30%;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  background: linear-gradient(110deg, rgba(147, 149, 151, 0.8), rgba(147, 149, 151, 0.8), rgba(255, 255, 255, 0.8), rgba(245, 223, 77, 0.8), rgba(245, 223, 77, 0.8));
+  background-position: 1% 0%;
+  background-size: 400% 100%;
+}
+
+.open .btn_text {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.open:hover .btn_text {
+  opacity: 0;
+}
+
+.open::before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: .4s, opacity .6s;
+  transition: .4s, opacity .6s;
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+
+.open:hover::before {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition-delay: .3s;
+  transition-delay: .3s;
 }
 
 .not_scroll {

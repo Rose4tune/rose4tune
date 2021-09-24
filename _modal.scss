@@ -1,3 +1,71 @@
+// 모달 버튼 셋팅
+.open {
+  position: relative;
+  overflow: hidden;
+  padding: 3px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn_modal:hover .btn_line {
+  background-position: 100% 0%;
+}
+.btn_line {
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  margin-right: 10px;
+  vertical-align: 30%;
+  transition: all 0.5s ease-out;
+  background: linear-gradient(110deg,  rgba(147, 149, 151, 0.8), rgba(147, 149, 151, 0.8), rgba(255, 255, 255, 0.8), rgba(245, 223, 77, 0.8), rgba(245, 223, 77, 0.8));
+  background-position: 1% 0%;
+  background-size: 400% 100%;
+}
+
+.open {
+  .btn_text {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+  }
+
+  &:hover .btn_text {opacity: 0;}
+
+  &::before{
+    content: attr(data-hover);
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    // color: rgba(245, 223, 77, 1);
+    opacity: 0;
+    -webkit-transition: .4s, opacity .6s;
+    -moz-transition: .4s, opacity .6s;
+    -o-transition: .4s, opacity .6s;
+    transition: .4s, opacity .6s;
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+
+  &:hover::before{
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition-delay: .3s;
+    -moz-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+  }
+}
+
+// 화면 스크롤 제한 //
 .not_scroll {
   position: fixed;
   overflow: hidden;
@@ -5,6 +73,7 @@
   height: 100%;
 }
 
+// 모달 셋팅 //
 .modal.modal_overlay {
   width: 100vw;
   height: 100vh;
