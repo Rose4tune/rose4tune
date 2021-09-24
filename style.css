@@ -323,7 +323,7 @@ header .toRight {
   transform: translateY(-10px) rotate(90deg);
 }
 
-#modal.modal-overlay {
+.modal.modal_overlay {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -340,20 +340,19 @@ header .toRight {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: white;
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
-  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-#modal .modal-window {
+.modal .modal_window {
   position: relative;
   width: 98vw;
   height: 96vh;
   overflow: hidden;
+  background: white;
   border-radius: 10px;
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -362,7 +361,7 @@ header .toRight {
   border-radius: 10px;
 }
 
-#modal .btn_close {
+.modal .btn_close {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -375,7 +374,7 @@ header .toRight {
   border-radius: 15px;
 }
 
-#modal .btn_close:hover {
+.modal .btn_close:hover {
   background: #bbb;
   color: #fff;
 }
