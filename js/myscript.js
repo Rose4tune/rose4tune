@@ -1,11 +1,17 @@
-// HEADER //
 var $sections = document.getElementsByTagName('section');
 var totalPage = $sections.length;
+
+// HEADER //
 var $menuBar = document.getElementById("menuBar");
 var $hamburger = document.getElementById('hamburger');
 var $gnbMenu = document.getElementById('gnb_menu');
 
-window.onscroll = function () {
+window.onload = function () {
+  headerScroll();
+  pageScroll();
+};
+
+function headerScroll(){
   const $logo = document.getElementById("logo");
 
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -22,7 +28,7 @@ window.onscroll = function () {
       $menuBar.classList.remove('disable');
     };
   };
-};
+}
 
 // HAMBURGER MENU
 for (let i = 0; i < 3; i++) {
@@ -82,8 +88,41 @@ $('#gnb_menu > li').click(function () {
 
 
 // SNS //
-// sns button 생성하기
-var sns = '';
+var sns = ''; // sns button 생성하기
 sns += `<a class="myblog" href="https://velog.io/@rose4tune" target="_black"></a>`;
 sns += `<a class="mygit" href="https://github.com/Rose4tune" target="_black"></a>`;
 $('.sns').append(sns);
+
+
+
+// PAGE SCROLL
+function pageScroll(){
+  $("main").on('mousewheel touchmove',function(e){ 
+    var wheel = e.originalEvent.wheelDelta; 
+
+    if (wheel > 0) {
+      //스크롤 올릴때 
+      console.log("올림");
+    } else {
+      //스크롤  내릴때 
+      console.log("내림");
+    }
+
+  });
+
+
+  // var wTop = window.pageYOffset;
+
+  // var arr = []; //section 절대좌표 배열
+  // for (let i = 0; i < totalPage; i++) {
+  //   var relativeTop = $sections[i].getBoundingClientRect().top;
+  //   var absoluteTop = wTop + relativeTop;
+  //   arr.push(absoluteTop);
+  // }
+
+  // for (let i = 0; i < totalPage; i++) {
+  //   if (document.body.scrollTop > arr[i] || document.documentElement.scrollTop > arr[i]) {
+  //     console.log("now in " + (i + 1) + " page");
+  //   }
+  // }
+};
