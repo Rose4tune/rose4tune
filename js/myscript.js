@@ -98,6 +98,15 @@ $('.sns').append(sns);
 
 
 
+
+// 페이지 상단이동 버튼
+$('#pageUp').on('click', function() {
+  var $html = $("html");
+  $html.animate({scrollTop:0}, 1000);
+});
+
+
+
 // PAGE SCROLL
 function pageScroll(){
   $("main").on('mousewheel touchmove',function(e){ 
