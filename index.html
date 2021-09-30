@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="font.css">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .gnb-menu > li{cursor: pointer;}
+    .gnb-menu > li:hover{color:lawngreen}
+    .gnb-menu > li.on{color: brown}
+  </style>
 </head>
 
 <body>
@@ -30,67 +36,46 @@
     </div>
 
     <div class="menuBar toRight">
-      <div>
-        <a class="sns myblog" href="#"></a>
-        <a class="sns mygit" href="#"></a>
-        <select name="mode" id="mode" class="mode">
+      <div class="sns"></div>
+      <div class="mode">
+        <select name="mode" id="mode">
           <option value="white">white</option>
           <option value="black">black</option>
         </select>
       </div>
       <div class="gnb">
-        <div class="hamburger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </div>
-        <ul class="gnb-menu disable">
-          <li><a href="#">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">skill</a></li>
-          <li><a href="#">portfolio</a></li>
-          <li><a href="#">webapp</a></li>
-          <li><a href="#">practical</a></li>
-          <li><a href="#">connect</a></li>
-        </ul>
+        <div class="hamburger"></div>
+        <ul class="gnb-menu disable"></ul>
       </div>
     </div>
   </header>
 
-  <button class="pageUp">
+  <button id="pageUp">
     <p>UP</p>
   </button>
 
+  <main>
+    <section class="s1 welcom" data-title="home">
+      <div class="toRight">
+        <div class="welcom-text">
 
-  <section class="welcom">
-    <div class="toRight">
-      <div class="welcom-text">
+          <div id="btn_modal" class="btn_modal">
+            <span class="btn_line"></span>
+            <button class="open" data-hover="view resome">
+              <span class="btn_text">web publisher</span>
+            </button>
+          </div>
 
-        <div id="btn_modal" class="btn_modal">
-          <span class="btn_line"></span>
-          <button class="open" data-hover="view resome">
-            <span class="btn_text">web publisher</span>
-          </button>
+          <h1>I'm Ye Seo Lee,<br>Rose</h1>
         </div>
-
-        <h1>I'm Ye Seo Lee,<br>Rose</h1>
       </div>
-    </div>
-    <button class="scroll-icon"></button>
-  </section>
+      <button class="scroll-icon"></button>
+    </section>
 
-  <section style="background: pink;">
-
-  </section>
-
-  <section style="background: lightcoral;">
-
-  </section>
-
-  <section style="background: lightblue;">
-
-  </section>
-
+    <section class="s2" style="background: pink;" data-title="about"></section>
+    <section class="s3" style="background: lightcoral;" data-title="skill"></section>
+    <section class="s4" style="background: lightblue;" data-title="portfolio"></section>
+  </main>
 
 
 
@@ -123,6 +108,7 @@
 
   <script type="text/javascript" src="plugin/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="plugin/slick-1.8.1/slick/slick.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
 
   <script type="text/javascript" src="js/modal.js"></script>
   <script type="text/javascript" src="js/pageScroll.js"></script>

@@ -1,5 +1,5 @@
 // sns buttons setting //
-.sns{
+@mixin sns{
   $wh: 35px;
   display: block;
   margin: 0 10px;
@@ -7,6 +7,7 @@
   height: $wh;
 }
 .myblog {
+  @include sns();
   background: url('images/navi/sns-blogY.png')no-repeat;
   background-size: 100%;
   filter: grayscale(100%) contrast(0);
@@ -16,6 +17,7 @@
   }
 }
 .mygit {
+  @include sns();
   background: url('images/navi/sns-gitY.png')no-repeat;
   background-size: 100%;
   filter: grayscale(100%) contrast(0);
@@ -26,7 +28,7 @@
 }
 
 // page up button setting //
-.pageUp {
+#pageUp {
   $wh: 45px;
   @include position($p:fixed, $b:50px, $r:120px);
   width: $wh;
