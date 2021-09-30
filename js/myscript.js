@@ -6,10 +6,13 @@ var $menuBar = document.getElementById("menuBar");
 var $hamburger = document.getElementById('hamburger');
 var $gnbMenu = document.getElementById('gnb_menu');
 
-window.onload = function () {
+window.onscroll = function () {
   headerScroll();
-  pageScroll();
 };
+
+window.onload = function() {
+  pageScroll();
+}
 
 function headerScroll(){
   const $logo = document.getElementById("logo");

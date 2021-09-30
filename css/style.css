@@ -19,7 +19,7 @@
   margin: 0 10px;
   width: 35px;
   height: 35px;
-  background: url("images/navi/sns-blogY.png") no-repeat;
+  background: url("../images/navi/sns-blogY.png") no-repeat;
   background-size: 100%;
   -webkit-filter: grayscale(100%) contrast(0);
           filter: grayscale(100%) contrast(0);
@@ -37,7 +37,7 @@
   margin: 0 10px;
   width: 35px;
   height: 35px;
-  background: url("images/navi/sns-gitY.png") no-repeat;
+  background: url("../images/navi/sns-gitY.png") no-repeat;
   background-size: 100%;
   -webkit-filter: grayscale(100%) contrast(0);
           filter: grayscale(100%) contrast(0);
@@ -56,7 +56,7 @@
   right: 120px;
   width: 45px;
   height: 45px;
-  background: url("images/btn-pageUp.png") no-repeat 50% 50%;
+  background: url("../images/btn-pageUp.png") no-repeat 50% 50%;
   background-size: 100%;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -151,7 +151,7 @@ header .toRight {
   width: 50px;
   height: 50px;
   display: block;
-  background: url("/images/logo_icon.png") no-repeat;
+  background: url("../images/logo_icon.png") no-repeat;
   background-size: 100%;
 }
 
@@ -180,7 +180,7 @@ header .toRight {
 select#mode {
   margin: 0 20px 0 10px;
   padding: 0 16px 0 5px;
-  background: url("images/navi/arrow-down.png") no-repeat 100% 50%;
+  background: url("../images/navi/arrow-down.png") no-repeat 100% 50%;
   background-size: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -445,7 +445,7 @@ section.welcom .toRight .welcom-text {
   left: 50%;
   width: 50px;
   height: 50px;
-  background: url("images/scroll.png");
+  background: url("../images/scroll.png");
   background-size: 100%;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -454,6 +454,6 @@ section.welcom .toRight .welcom-text {
 }
 
 .scroll-icon:hover {
-  background: url("images/scroll-down.png");
+  background: url("../images/scroll-down.png");
   background-size: 100%;
 }

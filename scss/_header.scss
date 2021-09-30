@@ -11,7 +11,7 @@ header {
   width: 50px;
   height: 50px;
   display: block;
-  background: url('/images/logo_icon.png') no-repeat;
+  background: url('../images/logo_icon.png') no-repeat;
   background-size: 100%;
 }
 
@@ -26,7 +26,7 @@ header {
 select#mode {
   margin: 0 20px 0 10px;
   padding: 0 16px 0 5px;
-  background: url('images/navi/arrow-down.png') no-repeat 100% 50%;
+  background: url('../images/navi/arrow-down.png') no-repeat 100% 50%;
   background-size: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;

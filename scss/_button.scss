@@ -11,7 +11,7 @@
 }
 .myblog {
   @include sns();
-  background: url('images/navi/sns-blogY.png')no-repeat;
+  background: url('../images/navi/sns-blogY.png')no-repeat;
   background-size: 100%;
   filter: grayscale(100%) contrast(0);
   transition: all .4s ease;
@@ -21,7 +21,7 @@
 }
 .mygit {
   @include sns();
-  background: url('images/navi/sns-gitY.png')no-repeat;
+  background: url('../images/navi/sns-gitY.png')no-repeat;
   background-size: 100%;
   filter: grayscale(100%) contrast(0);
   transition: all .4s ease;
@@ -36,7 +36,7 @@
   @include position($p:fixed, $b:50px, $r:120px);
   width: $wh;
   height: $wh;
-  background: url('images/btn-pageUp.png')no-repeat 50% 50%;
+  background: url('../images/btn-pageUp.png')no-repeat 50% 50%;
   background-size: 100%;
   transition: all .3s ease;
   p{display: none;}

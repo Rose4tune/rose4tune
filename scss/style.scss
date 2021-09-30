@@ -45,7 +45,7 @@ $color-3: #1d2123; //29, 33, 35
  
  
 
-
+ 
 
 // all section //
 section{
@@ -76,13 +76,13 @@ section.welcom {
   @include position($b:50px, $l:50%);
   width: $wh;
   height: $wh;
-  background: url('images/scroll.png');
+  background: url('../images/scroll.png');
   background-size: 100%;
   transition: all .3s ease-in-out;
   transform: translate(-50%, 0);
 
   &:hover {
-    background: url('images/scroll-down.png');
+    background: url('../images/scroll-down.png');
     background-size: 100%;
   }
 }

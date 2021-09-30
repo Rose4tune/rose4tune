@@ -4,15 +4,15 @@
 */
 @font-face {
   font-family: 'seoulNamsanB';
-  src: url('font/SeoulNamsanB.ttf') format('truetype');
+  src: url('../font/SeoulNamsanB.ttf') format('truetype');
 };
 @font-face {
   font-family: 'seoulNamsanEB';
-  src: url('font/SeoulNamsanEB.ttf') format('truetype');
+  src: url('../font/SeoulNamsanEB.ttf') format('truetype');
 };
 @font-face {
   font-family: 'seoulNamsanV';
-  src: url('font/SeoulNamsanvert.ttf') format('truetype');
+  src: url('../font/SeoulNamsanvert.ttf') format('truetype');
 };
 
 
