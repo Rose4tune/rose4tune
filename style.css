@@ -1,3 +1,19 @@
+.sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sns .toRight {
+  margin-left: auto;
+}
+
 .myblog {
   display: block;
   margin: 0 10px;
@@ -131,42 +147,15 @@ header .toRight {
   margin-left: auto;
 }
 
-.logo {
-  position: relative;
+.logo_icon {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: url("/images/logo_icon.png") no-repeat;
+  background-size: 100%;
 }
 
-.logo .logo-icon {
-  position: absolute;
-  top: -6px;
-  left: 0;
-  max-width: 55px;
-  min-width: 30px;
-}
-
-.logo .logo-icon img {
-  width: 100%;
-}
-
-.menuBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.menuBar .toRight {
-  margin-left: auto;
-}
-
-.disable {
-  display: none !important;
-}
-
+.menuBar,
 .menuBar > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,15 +168,17 @@ header .toRight {
           justify-content: center;
 }
 
+.menuBar .toRight,
 .menuBar > div .toRight {
   margin-left: auto;
 }
 
-.menuBar > div > * {
-  margin: 0 10px;
+.disable {
+  display: none !important;
 }
 
-.menuBar > div select {
+select#mode {
+  margin: 0 20px 0 10px;
   padding: 0 16px 0 5px;
   background: url("images/navi/arrow-down.png") no-repeat 100% 50%;
   background-size: 10px;
@@ -197,11 +188,11 @@ header .toRight {
   text-transform: uppercase;
 }
 
-.gnb {
+#gnb {
   position: relative;
 }
 
-.gnb .gnb-menu {
+#gnb #gnb_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,16 +207,16 @@ header .toRight {
   right: 35px;
 }
 
-.gnb .gnb-menu .toRight {
+#gnb #gnb_menu .toRight {
   margin-left: auto;
 }
 
-.gnb .gnb-menu li {
+#gnb #gnb_menu li {
   padding: 3px 8px;
   margin: 0 10px;
 }
 
-.hamburger .line {
+#hamburger .line {
   width: 35px;
   height: 2px;
   background-color: #434547;
@@ -235,11 +226,11 @@ header .toRight {
   transition: all 0.3s ease-in-out;
 }
 
-.hamburger:hover {
+#hamburger:hover {
   cursor: pointer;
 }
 
-.hamburger.active {
+#hamburger.active {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-transition-delay: 0.6s;
@@ -248,22 +239,22 @@ header .toRight {
   transform: rotate(45deg);
 }
 
-.hamburger.active .line:nth-child(2) {
+#hamburger.active .line:nth-child(2) {
   width: 0px;
 }
 
-.hamburger.active .line:nth-child(1),
-.hamburger.active .line:nth-child(3) {
+#hamburger.active .line:nth-child(1),
+#hamburger.active .line:nth-child(3) {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
 
-.hamburger.active .line:nth-child(1) {
+#hamburger.active .line:nth-child(1) {
   -webkit-transform: translateY(10px);
   transform: translateY(10px);
 }
 
-.hamburger.active .line:nth-child(3) {
+#hamburger.active .line:nth-child(3) {
   -webkit-transform: translateY(-10px) rotate(90deg);
   transform: translateY(-10px) rotate(90deg);
 }

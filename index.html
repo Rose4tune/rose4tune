@@ -14,9 +14,9 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    .gnb-menu > li{cursor: pointer;}
-    .gnb-menu > li:hover{color:lawngreen}
-    .gnb-menu > li.on{color: brown}
+    #gnb_menu > li{cursor: pointer;}
+    #gnb_menu > li:hover{color:lawngreen}
+    #gnb_menu > li.on{color: brown;}
   </style>
 </head>
 
@@ -26,26 +26,25 @@
   </div>
 
   <header>
-    <div class="logo">
-      <a href="#">
-        <strong class="logo-text">RoseFortne</strong>
-        <div class="logo-icon">
-          <img src="images/logo-icon.png" alt="I'm Rose Fortne">
-        </div>
+    <div>
+      <a id="logo" href="#">
+        <strong>RoseFortne</strong>
       </a>
     </div>
 
     <div class="menuBar toRight">
-      <div class="sns"></div>
-      <div class="mode">
-        <select name="mode" id="mode">
-          <option value="white">white</option>
-          <option value="black">black</option>
-        </select>
+      <div id="menuBar">
+        <div class="sns"></div>
+        <div class="mode">
+          <select name="mode" id="mode">
+            <option value="white">white</option>
+            <option value="black">black</option>
+          </select>
+        </div>
       </div>
-      <div class="gnb">
-        <div class="hamburger"></div>
-        <ul class="gnb-menu disable"></ul>
+      <div id="gnb">
+        <div id="hamburger"></div>
+        <ul id="gnb_menu" class="disable"></ul>
       </div>
     </div>
   </header>

@@ -6,6 +6,9 @@
   width: $wh;
   height: $wh;
 }
+.sns{
+  @include flexBox();
+}
 .myblog {
   @include sns();
   background: url('images/navi/sns-blogY.png')no-repeat;

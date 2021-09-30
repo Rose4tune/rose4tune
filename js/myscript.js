@@ -1,10 +1,11 @@
-$(document).ready(function () {
-  $(".hamburger").click(function () {
-    $(this).toggleClass("active");
-    $(".menuBar .sns, .menuBar .mode").toggleClass("disable");
-    $(".gnb-menu").toggleClass("disable");
-  });
-});
+// $(document).ready(function () {
+//   $(".hamburger").click(function () {
+//     $(this).toggleClass("active");
+//     $("#menuBar").toggleClass("disable");
+//     $(".gnb_menu").toggleClass("disable");
+//     $("#gnb").toggleClass("toRight");
+//   });
+// });
 
 // SNS //
 var sns = '';
@@ -13,11 +14,10 @@ sns += `<a class="mygit" href="https://github.com/Rose4tune" target="_black"></a
 $('.sns').append(sns);
 
 // GNB MENU //
-var $sections = $('section');
+var $sections = document.getElementsByTagName('section');
 var totalPage = $sections.length;
-var $gnbBox = $('ul.gnb-menu');
-var $gnbMenu = $('ul.gnb-menu > li');
-var $hamburger = $('.hamburger');
+var $hamburger = document.getElementById('hamburger');
+var $gnbMenu = document.getElementById('gnb_menu');
 
 for(let i = 0; i < 3; i++){
   let $span = document.createElement('span');
@@ -26,21 +26,68 @@ for(let i = 0; i < 3; i++){
 }
 
 for(let i = 0; i < totalPage; i++){
-  $gnbBox.append("<li>" + $sections[i].dataset.title + "</li>");
+  $('#gnb_menu').append("<li>" + $sections[i].dataset.title + "</li>");
 };
-$("ul.gnb-menu > li:first-child").addClass("on");
+$("#gnb_menu > li:first-child").addClass("on");
 
-$('ul.gnb-menu > li').click(function(){
+$('#gnb_menu > li').click(function(){
   var gnbIndex = $(this).index()+1;
-  console.log(gnbIndex);
   var length = 0;
+
   for (let i = 1; i < (gnbIndex); i++){
-    length+= $('.s' + i).height();
+    length += $('.s' + i).height();
   }
+
   if($("body").find("main:animated").length >= 1) return false;
   $(this).addClass("on").siblings("li").removeClass("on");
 
-  $('html').animate({scrollTop:length}, 800);
-  console.log(-length);
+  $('html').animate({scrollTop:length}, 800, "swing");
+  console.log(gnbIndex);
+  console.log(length);
   return false;
 });
+
+
+// HEADER //
+window.onscroll = function() {
+  headerDisable()
+};
+
+var $menuBar = document.getElementById("menuBar");
+function headerDisable() {
+  const $logo = document.getElementById("logo");
+
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    $menuBar.classList.add('disable');
+    $logo.classList.add('logo_icon');
+  } else {
+    $logo.classList.remove('logo_icon');
+
+      if($hamburger.classList.contains('active') == true){
+        $menuBar.classList.add('disable');
+      } else {
+        $menuBar.classList.remove('disable');
+      }
+  };
+};
+
+// HAMBURGER MENU //
+$hamburger.onclick = function() {
+  if($hamburger.classList.contains('active') == true){
+    $hamburger.classList.remove('active');
+    $gnbMenu.classList.add('disable');
+    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      $menuBar.classList.add('disable');
+    } else {
+      $menuBar.classList.remove('disable');
+    }
+  } else {
+    $hamburger.classList.add('active');
+    $gnbMenu.classList.remove('disable');
+    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      $menuBar.classList.add('disable');
+    } else {
+      $menuBar.classList.add('disable');
+    }
+  }
+}

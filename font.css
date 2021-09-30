@@ -9,8 +9,11 @@ button {
 }
 
 /* header */
-.logo {
+#logo {
   font-size: 36px;
+}
+#logo.logo_icon{
+  font-size: 0;
 }
 .menuBar select option {
   font-size: 16px;

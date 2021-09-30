@@ -7,45 +7,36 @@ header {
   @include position($p:fixed, $t:0, $l:0)
 }
 
-.logo {
-  position: relative;
-
-  .logo-icon{
-    position: absolute;
-    top: -6px;
-    left: 0;
-    max-width: 55px;
-    min-width: 30px;
-        
-    img{width: 100%;}
-  }
+.logo_icon{
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: url('/images/logo_icon.png') no-repeat;
+  background-size: 100%;
 }
 
-.menuBar {
+.menuBar,
+.menuBar > div {
   @include flexBox();
 }
 .disable {
   display: none !important;
 }
 
-.menuBar > div {
-  @include flexBox();
-  > * {margin: 0 10px;}
-    
-  select {
-    padding: 0 16px 0 5px;
-    background: url('images/navi/arrow-down.png') no-repeat 100% 50%;
-    background-size: 10px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance : none;
-    text-transform: uppercase;
-  }
+select#mode {
+  margin: 0 20px 0 10px;
+  padding: 0 16px 0 5px;
+  background: url('images/navi/arrow-down.png') no-repeat 100% 50%;
+  background-size: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance : none;
+  text-transform: uppercase;
 }
 
-.gnb {
+#gnb {
   position: relative;
-  .gnb-menu {
+  #gnb_menu {
     @include flexBox();
     @include position($t:8px, $r:35px);
 
@@ -56,7 +47,7 @@ header {
   }
 }
 
-.hamburger {
+#hamburger {
   .line {
     width: 35px;
     height: 2px;
@@ -74,7 +65,7 @@ header {
 }
 
 // hambuger icon animation
-.hamburger.active {
+#hamburger.active {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
