@@ -61,6 +61,7 @@ time, mark, audio, video {
 	color: #1d2123;
 	vertical-align: baseline;
 	/* letter-spacing: 1px; */
+  line-height: 1.1;
 	text-decoration: none;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;

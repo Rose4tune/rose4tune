@@ -55,10 +55,9 @@ section{
   .inner{
     @include flexBox();
     height: 100%;
-    padding: 8% 7.8%;
+    padding: 8% 12%;
 
     > div {width: 50%}
-
     > .toRight{
       width: 50%;
     }
@@ -105,15 +104,15 @@ section.welcom {
 .profile {
   position: relative;
   height: 100%;
-  border: 1px solid blue;
+  // border: 1px solid blue;
   
   .photo {
     width: 350px;
     img {width: 100%;}
   }
   .textBox{
-    @include position($b:0, $r:0);
-    width: 580px;
+    @include position($b:0, $r:10px);
+    width: 540px;
     padding: 30px;
     background: rgba(255, 252, 211, 0.9);
     p {
@@ -128,5 +127,6 @@ section.welcom {
   }
 }
 .inform{
-  border:1px solid red;
+  padding: 0 130px;
+  // border:1px solid red;
 }

@@ -127,7 +127,7 @@
 
 header {
   margin-top: 30px;
-  padding: 0 6.2%;
+  padding: 0 6%;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,7 +299,7 @@ select#mode {
   top: 3px;
   left: 0;
   width: 100%;
-  text-align: center;
+  text-align: left;
   opacity: 0;
   -webkit-transition: .4s, opacity .6s;
   transition: .4s, opacity .6s;
@@ -419,7 +419,7 @@ section .inner {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  padding: 8% 7.8%;
+  padding: 8% 12%;
 }
 
 section .inner .toRight {
@@ -487,7 +487,6 @@ section.welcom .toRight .welcom_text {
 .profile {
   position: relative;
   height: 100%;
-  border: 1px solid blue;
 }
 
 .profile .photo {
@@ -501,8 +500,8 @@ section.welcom .toRight .welcom_text {
 .profile .textBox {
   position: absolute;
   bottom: 0;
-  right: 0;
-  width: 580px;
+  right: 10px;
+  width: 540px;
   padding: 30px;
   background: rgba(255, 252, 211, 0.9);
 }
@@ -527,5 +526,5 @@ section.welcom .toRight .welcom_text {
 }
 
 .inform {
-  border: 1px solid red;
+  padding: 0 130px;
 }

@@ -7,6 +7,9 @@ button {
   font-size: 16px !important;
   color: #939597;
 }
+.open:before {
+  font-size: 15px;
+}
 
 /* header */
 #logo {
