@@ -127,7 +127,7 @@
 
 header {
   margin-top: 30px;
-  padding: 0 120px;
+  padding: 0 6.2%;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,6 +408,32 @@ section {
   height: 100vh;
 }
 
+section .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding: 8% 7.8%;
+}
+
+section .inner .toRight {
+  margin-left: auto;
+}
+
+section .inner > div {
+  width: 50%;
+}
+
+section .inner > .toRight {
+  width: 50%;
+}
+
 section.welcom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,7 +457,7 @@ section.welcom .toRight {
   background: #f7f6f2;
 }
 
-section.welcom .toRight .welcom-text {
+section.welcom .toRight .welcom_text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -439,7 +465,7 @@ section.welcom .toRight .welcom-text {
           transform: translate(120px, -100%);
 }
 
-.scroll-icon {
+.scroll_icon {
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -453,7 +479,53 @@ section.welcom .toRight .welcom-text {
           transform: translate(-50%, 0);
 }
 
-.scroll-icon:hover {
+.scroll_icon:hover {
   background: url("../images/scroll-down.png");
   background-size: 100%;
+}
+
+.profile {
+  position: relative;
+  height: 100%;
+  border: 1px solid blue;
+}
+
+.profile .photo {
+  width: 350px;
+}
+
+.profile .photo img {
+  width: 100%;
+}
+
+.profile .textBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 580px;
+  padding: 30px;
+  background: rgba(255, 252, 211, 0.9);
+}
+
+.profile .textBox p {
+  margin: 12px 0;
+}
+
+.profile .textBox p:first-child {
+  margin-top: 0;
+}
+
+.profile .textBox p:last-child {
+  margin-bottom: 30px;
+}
+
+.profile #btn_modal {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+}
+
+.inform {
+  border: 1px solid red;
 }

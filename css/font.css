@@ -4,7 +4,7 @@
 /* common */
 button {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 16px !important;
   color: #939597;
 }
 
@@ -19,19 +19,34 @@ button {
   font-size: 16px;
 }
 
+#gnb #gnb_menu li{
+  cursor: pointer;
+  text-transform: uppercase;
+}
+#gnb #gnb_menu li:hover{
+  color: #F5DF4D;
+}
+
+#gnb_menu li.on {
+  color: brown;
+}
+
+
 /* section : welcome */
-.welcom-text h1 {
+.welcom_text h1 {
   font-size: 70px;
   font-weight: 500;
   font-family: 'Raleway', sans-serif;
 }
-.welcom-text button, .btn-text {
+.welcom_text button, .btn-text {
   font-size: 15px;
   color: #939597;
 }
-.gnb .gnb-menu li a{
-  text-transform: uppercase;
+
+/* section : about */
+.introduce {
+  font-size: 20px;
 }
-.gnb .gnb-menu li:hover a{
-  color: #F5DF4D;
+.myName {
+  font-size: 30px;
 }

@@ -51,6 +51,18 @@ $color-3: #1d2123; //29, 33, 35
 section{
   width: 100vw;
   height: 100vh;
+
+  .inner{
+    @include flexBox();
+    height: 100%;
+    padding: 8% 7.8%;
+
+    > div {width: 50%}
+
+    > .toRight{
+      width: 50%;
+    }
+  }
 }
 
 
@@ -63,7 +75,7 @@ section.welcom {
     padding: 120px 150px 0;
     background: $subTheme-2;
 
-    .welcom-text {
+    .welcom_text {
       @include position($t:50%, $l:50%);
       transform: translate(120px, -100%);
     }
@@ -71,7 +83,7 @@ section.welcom {
 } 
 
 
-.scroll-icon {
+.scroll_icon {
   $wh: 50px;
   @include position($b:50px, $l:50%);
   width: $wh;
@@ -85,4 +97,36 @@ section.welcom {
     background: url('../images/scroll-down.png');
     background-size: 100%;
   }
+}
+
+
+// section2 - about //
+
+.profile {
+  position: relative;
+  height: 100%;
+  border: 1px solid blue;
+  
+  .photo {
+    width: 350px;
+    img {width: 100%;}
+  }
+  .textBox{
+    @include position($b:0, $r:0);
+    width: 580px;
+    padding: 30px;
+    background: rgba(255, 252, 211, 0.9);
+    p {
+      margin: 12px 0;
+      &:first-child{margin-top:0}
+      &:last-child{margin-bottom: 30px;}
+    }
+  }
+  #btn_modal {
+    @include position($b:0, $r:0);
+    margin: 30px;
+  }
+}
+.inform{
+  border:1px solid red;
 }
