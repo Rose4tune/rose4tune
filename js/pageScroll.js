@@ -85,6 +85,14 @@ window.onscroll = function() {
   // console.log('scrollLine :' + scrollLine);
   
 
+
+
+
+
+
+
+
+
 }
 // for(var i = 0; i < absoluteTopArr.length; i++) {
 //   if(scrollLine > absoluteTopArr[i] && scrollLine <= absoluteTopArr[i + 1] && wh - yTop < 0) {
@@ -136,3 +144,158 @@ window.onscroll = function() {
 //     }
 //   }
 // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // 화면 스크롤 시 gnb 메뉴 옮기기
+// function gnbMove(){
+//   $(window).on('mousewheel', function(e) {
+//     var $pages = $("#gnb_menu li");
+//     var $pageOn = $("#gnb_menu li.on");
+//     var pageOnIdx = $pageOn.index();
+
+//     console.log('pageIndex : ' + pageOnIdx);
+
+//     if ($("body").find("main:animated").length >= 1) return false;
+
+//     //마우스 휠 위로
+//     if(e.originalEvent.wheelDelta >= 0) {
+//       if(pageOnIdx >= 0){
+//         $pageOn.prev().addClass('on').siblings('.on').removeClass('on');
+//       }
+      
+//       var pageHeight = 0;
+//       for(var i = 1; i < (pageOnIdx); i++) {
+//         pageHeight += $('.s' + i).height();
+//       }
+
+//       if(pageOnIdx > 0){
+//         console.log('here pageHeight : ' + pageHeight);
+//         $('main').animate({scrollTop: pageHeight}, 800);
+//       } else {
+//         alert('첫번째 페이지 입니다.');
+//       }
+
+//     } else {
+//       var nextPage = parseInt(pageOnIdx + 1); // 다음 페이지 번호
+//       var lastPageNum = $pages.length; // 마지막 페이지 번호
+//       // console.log(nextPage + ' , ' + lastPageNum);
+//       if(pageOnIdx <= lastPageNum - 1){
+//         $pageOn.next().addClass('on').siblings('.on').removeClass('on');
+//       }
+
+//       if(nextPage < lastPageNum) {
+//         var pageHeight = 0;
+//         for(var i = 1; i < (nextPage + 1); i++) {
+//           pageHeight += $('.s' + i).height();
+//         }
+//         $('main').animate({ scrollTop: pageHeight }, 800);
+//       } else {
+//         alert('마지막 페이지 입니다');
+//       }
+//     }
+//   });
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // var wTop = window.pageYOffset;
+
+  // var arr = []; //section 절대좌표 배열
+  // for (let i = 0; i < totalPage; i++) {
+  //   var relativeTop = $sections[i].getBoundingClientRect().top;
+  //   var absoluteTop = wTop + relativeTop;
+  //   arr.push(absoluteTop);
+  // }
+
+  // for (let i = 0; i < totalPage; i++) {
+  //   if (document.body.scrollTop > arr[i] || document.documentElement.scrollTop > arr[i]) {
+  //     console.log("now in " + (i + 1) + " page");
+  //   }
+  // }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+// PAGE SCROLL
+// function pageScroll(){
+//   $('main').on('mousewheel', function(e) {
+//     // console.log(e.originalEvent);
+//     var wheelY = e.originalEvent.wheelDeltaY;
+//     var scrollTop = $(window).scrollTop();
+//     var offsetTop = $('main').offset().top;
+
+//     console.log('wheelY :' + wheelY);
+//     console.log('scrollTop :' + scrollTop);
+//     console.log('offsetTop :' + offsetTop);
+
+//     if(wheelY > 0){
+//       console.log('up');
+//     } else {
+//       console.log('down');
+//     }
+//   });
+// };
+
+
+

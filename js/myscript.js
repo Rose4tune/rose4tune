@@ -1,5 +1,6 @@
 var $sections = document.getElementsByTagName('section');
 var totalPage = $sections.length;
+var $html = $("html");
 
 // HEADER //
 var $menuBar = document.getElementById("menuBar");
@@ -8,11 +9,11 @@ var $gnbMenu = document.getElementById('gnb_menu');
 
 window.onscroll = function () {
   headerScroll();
+  photoScroll();
 };
 
 window.onload = function() {
-  pageScroll();
-  // gnbMove();
+  gnbMove();
 }
 
 function headerScroll(){
@@ -84,11 +85,56 @@ $("#gnb_menu > li").click(function () {
   if ($("body").find("main:animated").length >= 1) return false;
   $(this).addClass("on").siblings("li").removeClass("on");
 
-  $('html').animate({scrollTop: length}, 800, "swing");
-  console.log(gnbIndex);
-  console.log(length);
+  $html.animate({scrollTop: length}, 800, "swing");
   return false;
 });
+
+  // 화면 스크롤 시 gnb 메뉴 옮기기
+function gnbMove(){
+  $(window).on('mousewheel', function(e) {
+    var $pages = $("#gnb_menu li");
+    var $pageOn = $("#gnb_menu li.on");
+    var pageOnIdx = $pageOn.index();
+
+    console.log('pageIndex : ' + pageOnIdx);
+
+    if ($("body").find("main:animated").length >= 1) return false;
+
+    //마우스 휠 위로
+    if(e.originalEvent.wheelDelta >= 0) {
+      if(pageOnIdx >= 0){
+        $pageOn.prev().addClass('on').siblings('.on').removeClass('on');
+      }
+      
+      var pageHeight = 0;
+      for(var i = 1; i < (pageOnIdx); i++) {
+        pageHeight += $('.s' + i).height();
+      }
+
+      if(pageOnIdx > 0){
+        console.log('here pageHeight : ' + pageHeight);
+        $html.animate({scrollTop: pageHeight}, 800, "swing");
+      }
+
+    } else {
+      var nextPage = parseInt(pageOnIdx + 1); // 다음 페이지 번호
+      var lastPageNum = $pages.length; // 마지막 페이지 번호
+      
+      if(pageOnIdx <= lastPageNum - 1){
+        $pageOn.next().addClass('on').siblings('.on').removeClass('on');
+      }
+
+      if(nextPage < lastPageNum) {
+        var pageHeight = 0;
+        for(var i = 1; i < (nextPage + 1); i++) {
+          pageHeight += $('.s' + i).height();
+        }
+        $html.animate({scrollTop: pageHeight}, 800, "swing");
+      }
+    }
+  });
+}
+  
 
 var wTop = window.pageYOffset;
 var arr = []; //section 절대좌표 배열
@@ -99,18 +145,16 @@ for (let i = 0; i < totalPage; i++) {
 }
 
 $('.scroll_icon').click(function() {
-  $('html').animate({scrollTop: arr[1]}, 800, "swing");
+  $html.animate({scrollTop: arr[1]}, 800, "swing");
 })
-
-
 
 
 
 
 // SNS //
 var sns = ''; // sns button 생성하기
-sns += `<a class="myblog" href="https://velog.io/@rose4tune" target="_black"></a>`;
-sns += `<a class="mygit" href="https://github.com/Rose4tune" target="_black"></a>`;
+sns += `<a class="myblog" href="https://velog.io/@rose4tune" target="_blank"></a>`;
+sns += `<a class="mygit" href="https://github.com/Rose4tune" target="_blank"></a>`;
 $('.sns').append(sns);
 
 
@@ -118,12 +162,22 @@ $('.sns').append(sns);
 
 // 페이지 상단이동 버튼
 $('#pageUp').on('click', function() {
-  var $html = $("html");
   $html.animate({scrollTop:0}, 1000);
 });
 
 
 
-// PAGE SCROLL
-function pageScroll(){
+// 프로필 사진 이동
+function photoScroll(){
+  var $photo = document.getElementById('photo');
+  if(window.pageYOffset < arr[1]/4){
+    $photo.style.top = -100 + 'vh';
+    $photo.style.width = 70 + '%';
+  } else if(window.pageYOffset > arr[0]) {
+    $photo.style.top = 0 + 'px';
+    $photo.style.width = 48 + '%';
+  }
 };
+
+
+
