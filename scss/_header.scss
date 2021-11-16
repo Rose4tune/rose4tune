@@ -8,8 +8,8 @@ header {
 }
 
 .logo_icon{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: block;
   background: url('../images/logo_icon.png') no-repeat;
   background-size: 100%;
@@ -24,7 +24,7 @@ header {
 }
 
 select#mode {
-  margin: 0 20px 0 10px;
+  margin: 0 10px;
   padding: 0 16px 0 5px;
   background: url('../images/navi/arrow-down.png') no-repeat 100% 50%;
   background-size: 10px;
@@ -36,6 +36,7 @@ select#mode {
 
 #gnb {
   position: relative;
+  margin-left: 10px;
   #gnb_menu {
     @include flexBox();
     @include position($t:8px, $r:35px);

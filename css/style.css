@@ -148,8 +148,8 @@ header .toRight {
 }
 
 .logo_icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: block;
   background: url("../images/logo_icon.png") no-repeat;
   background-size: 100%;
@@ -178,7 +178,7 @@ header .toRight {
 }
 
 select#mode {
-  margin: 0 20px 0 10px;
+  margin: 0 10px;
   padding: 0 16px 0 5px;
   background: url("../images/navi/arrow-down.png") no-repeat 100% 50%;
   background-size: 10px;
@@ -190,6 +190,7 @@ select#mode {
 
 #gnb {
   position: relative;
+  margin-left: 10px;
 }
 
 #gnb #gnb_menu {
@@ -419,7 +420,7 @@ section .inner {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  padding: 8% 12%;
+  padding: 8% 11.5%;
 }
 
 section .inner .toRight {
@@ -490,7 +491,12 @@ section.welcom .toRight .welcom_text {
 }
 
 .profile .photo {
-  width: 350px;
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  width: 70%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .profile .photo img {
@@ -501,7 +507,7 @@ section.welcom .toRight .welcom_text {
   position: absolute;
   bottom: 0;
   right: 10px;
-  width: 540px;
+  width: 74%;
   padding: 30px;
   background: rgba(255, 252, 211, 0.9);
 }

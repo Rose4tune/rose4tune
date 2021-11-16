@@ -1,7 +1,8 @@
 // color setting
 $theme-1: #F5DF4D; //245, 223, 77
 $theme-2: #939597; //147, 149, 151
-$subTheme-1: #fffed6; //255, 252, 211
+// $subTheme-1: #fffed6; //255, 252, 211
+$subTheme-1: rgba(255, 252, 211, 0.9);
 $subTheme-2: #f7f6f2; //247, 246, 242
 $subTheme-3: #60605e; //96, 96, 94 
 $subTheme-4: #434547; //67, 69, 71
@@ -44,7 +45,7 @@ $color-3: #1d2123; //29, 33, 35
 @import "button", "animation", "header", "modal";
  
  
-
+ 
  
 
 // all section //
@@ -55,7 +56,7 @@ section{
   .inner{
     @include flexBox();
     height: 100%;
-    padding: 8% 12%;
+    padding: 8% 11.5%;
 
     > div {width: 50%}
     > .toRight{
@@ -104,17 +105,23 @@ section.welcom {
 .profile {
   position: relative;
   height: 100%;
-  // border: 1px solid blue;
   
   .photo {
-    width: 350px;
-    img {width: 100%;}
+    @include position($t:-100vh,$l:0);
+    width: 70%;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+
+    img {width: 100%;} 
   }
   .textBox{
     @include position($b:0, $r:10px);
-    width: 540px;
+    width: 74%;
     padding: 30px;
-    background: rgba(255, 252, 211, 0.9);
+    background: $subTheme-1;
     p {
       margin: 12px 0;
       &:first-child{margin-top:0}
