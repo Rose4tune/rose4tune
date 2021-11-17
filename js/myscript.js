@@ -185,10 +185,17 @@ function photoScroll(){
 $(document).ready(function(){
   $('.about').slick({
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     fade: true,
     cssEase: 'linear'
   });
 });
-			
+
+var slideDots = document.querySelector('.about .slick-dotted');
+// var slideDotActive = document.querySelector('.about .slick-dots li.slick-active button:before');
+// var slideDotIndex = slideDots.index();
+
+console.log(slideDots);
+// for (let i = 0; i <= slideDotIndex; i++){
+// }
