@@ -199,7 +199,7 @@ header .toRight {
 select#mode {
   margin: 0 10px;
   padding: 0 16px 0 5px;
-  background: url("../images/navi/arrow_down.png") no-repeat 100% 50%;
+  background: url("../images/buttons/arrow_down.png") no-repeat 100% 50%;
   background-size: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -539,19 +539,14 @@ section.welcom .toRight .welcom_text {
 .inform {
   height: 100%;
   padding-left: 5.4%;
-  border: 1px solid red;
 }
 
-.about {
-  border: 1px solid yellowgreen;
-}
-
-.about li div:last-child {
+.about li > div:nth-child(2) {
   margin-top: 40px;
 }
 
 .about h3 {
-  margin-top: 12px;
+  margin-top: 30px;
 }
 
 .about dl {

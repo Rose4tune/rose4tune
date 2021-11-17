@@ -1,7 +1,7 @@
 /* ABOUT section slick custom*/
 /* arrow */
 .about .slick-prev,
-.about .slick-next {top:inherit; bottom: 10px;}
+.about .slick-next {top:inherit; bottom: -10px;}
 .about .slick-prev {left: 30%;}
 [dir='rtl'] .about .slick-prev {right: 30%;}
 .about .slick-prev:before {content: url('../images/buttons/arrow_left.png');}
@@ -12,19 +12,23 @@
 /* dots */
 .about .slick-dots {
   position: initial;
-  padding: 20px 0;
+  padding-top: 30px;
 }
-.about .slick-dots li {margin: 0 10px;}
+.about .slick-dots li {margin: 0 15px;}
+.about .slick-dots li.slick-active button:before,
 .about .slick-dots li button:hover:before,
 .about .slick-dots li button:focus:before{
   font-size: 16px;
   opacity: 1;
   margin-left: -50%;
 }
+.about .slick-dots li:nth-child(1).slick-active button:before,
 .about .slick-dots li:nth-child(1) button:hover:before,
 .about .slick-dots li:nth-child(1) button:focus:before {content:'CARR'}
+.about .slick-dots li:nth-child(2).slick-active button:before,
 .about .slick-dots li:nth-child(2) button:hover:before,
 .about .slick-dots li:nth-child(2) button:focus:before {content:'EDU'; margin-left: -20%;}
+.about .slick-dots li:nth-child(3).slick-active button:before,
 .about .slick-dots li:nth-child(3) button:hover:before,
 .about .slick-dots li:nth-child(3) button:focus:before {content:'WORK'}
 .about .slick-dots li button:before {content: url('../images/buttons/slide_dot.png');}
