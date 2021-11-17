@@ -4,31 +4,28 @@
 section{
   width: 100vw;
   height: 100vh;
-
-  .inner{
-    @include flexBox();
-    height: 100%;
-    padding: 6% 11.5%;
-
-    > div {width: 50%}
-    > .toRight{
-      width: 50%;
-    }
-  }
+}
+.inner{
+  @include flexBox();
+  height: 100%;
+  padding: 6% 11.5%;
+  > div:first-child {width: 50%}
+}
+.toRight{
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
 }
 
 // section1 - welcome //
-section.welcom {
+.welcom {
   @include flexBox();
   .toRight {
-    width: 50%;
-    height: 100%;
-    padding: 120px 150px 0;
+    padding: 6.3%;
     background: $subTheme-2;
 
     .welcom_text {
-      @include position($t:50%, $l:50%);
-      transform: translate(120px, -100%);
+      margin-top: 25vh;
     }
   }
 } 

@@ -1,17 +1,30 @@
-@media (min-width: 335px) and (max-width: 757px) {
-  .img-card {
-    width: 100px;
+@media (min-width: 280px) and (max-width: 757px) {
+  .welcom .toRight {
+    padding: 10%;
   }
-}
-
-@media (min-width: 758px) and (max-width: 1023px) {
-  .img-card {
-    width: 200px;
+  .toRight {
+    width: 100%;
   }
-}
-
-@media (min-width: 1024px) {
-  .img-card {
-    width: 300px;
+  .btn_line {
+    width: 60px;
+  }
+  header {
+    margin-top: 20px;
+  }
+  .logo_icon {
+    width: 30px;
+    height: 30px;
+  }
+  #hamburger .line {
+    width: 30px;
+  }
+  #gnb {
+    margin-left: 0;
+  }
+  #pageUp {
+    bottom: 20px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
   }
 }

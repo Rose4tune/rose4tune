@@ -2,10 +2,14 @@ var $sections = document.getElementsByTagName('section');
 var totalPage = $sections.length;
 var $html = $("html");
 
+// Responsible //
+var tablet_size = window.matchMedia('(max-width: 757px)');
+
 // HEADER //
 var $menuBar = document.getElementById("menuBar");
 var $hamburger = document.getElementById('hamburger');
 var $gnbMenu = document.getElementById('gnb_menu');
+var $logo = document.getElementById("logo");
 
 window.onscroll = function () {
   headerScroll();
@@ -17,23 +21,30 @@ window.onload = function() {
 }
 
 function headerScroll(){
-  const $logo = document.getElementById("logo");
-
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     //스크롤 시 헤더 숨기기
     $menuBar.classList.add('disable');
     $logo.classList.add('logo_icon');
 
+  } else if(tablet_size.matches){
+    $logo.classList.add('logo_icon');
   } else {
     //스크롤 시 헤더 보이기
     $logo.classList.remove('logo_icon');
 
     if ($hamburger.classList.contains('active') == true) {
       $menuBar.classList.add('disable');
-    } else {
+    } else if(tablet_size.matches){
+        $menuBar.classList.add('disable');
+    } else{
       $menuBar.classList.remove('disable');
     };
   };
+}
+
+if(tablet_size.matches){
+  $menuBar.classList.add('disable');
+  $logo.classList.add('logo_icon');
 }
 
 // HAMBURGER MENU
@@ -50,6 +61,8 @@ $hamburger.onclick = function () {
     $hamburger.classList.remove('active');
     $gnbMenu.classList.add('disable');
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      $menuBar.classList.add('disable');
+    } else if(tablet_size.matches){
       $menuBar.classList.add('disable');
     } else {
       $menuBar.classList.remove('disable');
@@ -191,11 +204,3 @@ $(document).ready(function(){
     cssEase: 'linear'
   });
 });
-
-var slideDots = document.querySelector('.about .slick-dotted');
-// var slideDotActive = document.querySelector('.about .slick-dots li.slick-active button:before');
-// var slideDotIndex = slideDots.index();
-
-console.log(slideDots);
-// for (let i = 0; i <= slideDotIndex; i++){
-// }

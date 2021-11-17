@@ -1,19 +1,28 @@
 @import "variables";
 
 @include mobile {
-  .img-card {
-    width: 100px;
+  .welcom .toRight{padding: 10%}
+  .toRight {width: 100%}
+  .btn_line {width: 60px;}
+  header {margin-top:20px;}
+  .logo_icon {
+    width: 30px;
+    height: 30px;
   }
-}
+  #hamburger .line {
+    width: 30px;
+  }
+  #gnb {margin-left:0}
+  #pageUp{
+    bottom: 20px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+  }
+} 
 
 @include tablet {
-  .img-card {
-    width: 200px;
-  }
 }
 
 @include desktop {
-  .img-card {
-    width: 300px;
-  }
 }

@@ -1,10 +1,11 @@
 // header //
 header {
   margin-top: 30px;
-  padding: 0 6%;
+  padding: 0 5%;
   width: 100vw;
   @include flexBox();
-  @include position($p:fixed, $t:0, $l:0)
+  @include position($p:fixed, $t:0, $l:0);
+  .toRight{width: fit-content;}
 }
 
 .logo_icon{

@@ -17,7 +17,9 @@ header {
 }
 
 header .toRight {
-  margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .logo_icon {
@@ -39,11 +41,6 @@ header .toRight {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.menuBar .toRight,
-.menuBar > div .toRight {
-  margin-left: auto;
 }
 
 .disable {
@@ -79,10 +76,6 @@ select#mode {
   position: absolute;
   top: 8px;
   right: 35px;
-}
-
-#gnb #gnb_menu .toRight {
-  margin-left: auto;
 }
 
 #gnb #gnb_menu li {
@@ -138,7 +131,7 @@ section {
   height: 100vh;
 }
 
-section .inner {
+.inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,19 +145,17 @@ section .inner {
   padding: 6% 11.5%;
 }
 
-section .inner .toRight {
+.inner > div:first-child {
+  width: 50%;
+}
+
+.toRight {
+  width: 50%;
+  height: 100%;
   margin-left: auto;
 }
 
-section .inner > div {
-  width: 50%;
-}
-
-section .inner > .toRight {
-  width: 50%;
-}
-
-section.welcom {
+.welcom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,23 +167,13 @@ section.welcom {
           justify-content: center;
 }
 
-section.welcom .toRight {
-  margin-left: auto;
-}
-
-section.welcom .toRight {
-  width: 50%;
-  height: 100%;
-  padding: 120px 150px 0;
+.welcom .toRight {
+  padding: 6.3%;
   background: #f7f6f2;
 }
 
-section.welcom .toRight .welcom_text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(120px, -100%);
-          transform: translate(120px, -100%);
+.welcom .toRight .welcom_text {
+  margin-top: 25vh;
 }
 
 .profile {
