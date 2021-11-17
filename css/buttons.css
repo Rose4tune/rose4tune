@@ -1,0 +1,96 @@
+.sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sns .toRight {
+  margin-left: auto;
+}
+
+.myblog {
+  display: block;
+  margin: 0 10px;
+  width: 35px;
+  height: 35px;
+  background: url("../images/buttons/sns_blogY.png") no-repeat;
+  background-size: 100%;
+  -webkit-filter: grayscale(100%) contrast(0);
+          filter: grayscale(100%) contrast(0);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.myblog:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.mygit {
+  display: block;
+  margin: 0 10px;
+  width: 35px;
+  height: 35px;
+  background: url("../images/buttons/sns_gitY.png") no-repeat;
+  background-size: 100%;
+  -webkit-filter: grayscale(100%) contrast(0);
+          filter: grayscale(100%) contrast(0);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.mygit:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+#pageUp {
+  position: fixed;
+  bottom: 50px;
+  right: 120px;
+  width: 45px;
+  height: 45px;
+  background: url("../images/buttons/pageUp.png") no-repeat 50% 50%;
+  background-size: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#pageUp p {
+  display: none;
+}
+
+#pageUp:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 223, 77, 0.1)), to(rgba(245, 223, 77, 0.8)));
+  background: linear-gradient(rgba(245, 223, 77, 0.1), rgba(245, 223, 77, 0.8));
+  border-radius: 100%;
+}
+
+#pageUp:hover p {
+  display: block;
+}
+
+.scroll_icon {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background: url("../images/buttons/scroll.png");
+  background-size: 100%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.scroll_icon:hover {
+  background: url("../images/buttons/scroll_down.png");
+  background-size: 100%;
+}
