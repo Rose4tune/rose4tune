@@ -171,13 +171,24 @@ $('#pageUp').on('click', function() {
 function photoScroll(){
   var $photo = document.getElementById('photo');
   if(window.pageYOffset < arr[1]/4){
-    $photo.style.top = -100 + 'vh';
-    $photo.style.width = 70 + '%';
+    $photo.style.top = -96 + 'vh';
+    $photo.style.width = 80 + '%';
   } else if(window.pageYOffset > arr[0]) {
     $photo.style.top = 0 + 'px';
-    $photo.style.width = 48 + '%';
+    $photo.style.width = 60 + '%';
   }
 };
 
 
 
+// about section
+$(document).ready(function(){
+  $('.about').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
+});
+			

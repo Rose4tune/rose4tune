@@ -46,7 +46,7 @@ $color-3: #1d2123; //29, 33, 35
  
  
  
- 
+
 
 // all section //
 section{
@@ -56,7 +56,7 @@ section{
   .inner{
     @include flexBox();
     height: 100%;
-    padding: 8% 11.5%;
+    padding: 6% 11.5%;
 
     > div {width: 50%}
     > .toRight{
@@ -83,32 +83,19 @@ section.welcom {
 } 
 
 
-.scroll_icon {
-  $wh: 50px;
-  @include position($b:50px, $l:50%);
-  width: $wh;
-  height: $wh;
-  background: url('../images/scroll.png');
-  background-size: 100%;
-  transition: all .3s ease-in-out;
-  transform: translate(-50%, 0);
-
-  &:hover {
-    background: url('../images/scroll-down.png');
-    background-size: 100%;
-  }
-}
-
-
 // section2 - about //
-
 .profile {
-  position: relative;
   height: 100%;
+  padding-right: 5.4%;
+
+  > div{
+    position: relative;
+    height: 100%;
+  }
   
   .photo {
-    @include position($t:-100vh,$l:0);
-    width: 70%;
+    @include position($t:-96vh,$l:0);
+    width: 80%;
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     -ms-transition: all 1s;
@@ -118,8 +105,8 @@ section.welcom {
     img {width: 100%;} 
   }
   .textBox{
-    @include position($b:0, $r:10px);
-    width: 74%;
+    @include position($b:0, $r:0);
+    width: 75%;
     padding: 30px;
     background: $subTheme-1;
     p {
@@ -133,7 +120,28 @@ section.welcom {
     margin: 30px;
   }
 }
+
 .inform{
-  padding: 0 130px;
-  // border:1px solid red;
+  height: 100%;
+  padding-left: 5.4%;
+  border:1px solid red;
+}
+.about {
+  border: 1px solid yellowgreen;
+  li div:last-child {margin-top: 40px;}
+  h3 {margin-top: 12px;}
+  dl {margin-left: 35px;}
+  dt {
+    position: relative;
+    margin-top: 10px;
+    &::before {
+      @include position($t:30%,$l:-17px);
+      content: '';
+      width: 5px;
+      height: 5px;
+      background: $color-3;
+      border-radius: 100%; 
+    }
+  }
+  dd {margin-top: 5px;}
 }

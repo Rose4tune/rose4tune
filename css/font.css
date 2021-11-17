@@ -7,9 +7,26 @@ button {
   font-size: 16px !important;
   color: #939597;
 }
-.open:before {
+.open::before {
   font-size: 15px;
 }
+h2 {
+  font-size: 45px;
+  font-weight: 500;
+  color: #1d2123;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #60605e;
+}
+span.date {
+ font-size: 16px;
+ color: #c5c6c7;
+ letter-spacing: 1.3px;
+ margin-left: 20px;
+}
+
 
 /* header */
 #logo {
@@ -52,4 +69,12 @@ button {
 }
 .myName {
   font-size: 25px;
+}
+.about dl dt {
+  font-size: 28px;
+  color: #60605e;
+}
+.about dl dd {
+  font-size: 20px;
+  color: #939597;
 }

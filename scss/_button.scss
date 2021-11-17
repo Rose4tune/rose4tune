@@ -11,7 +11,7 @@
 }
 .myblog {
   @include sns();
-  background: url('../images/navi/sns-blogY.png')no-repeat;
+  background: url('../images/buttons/sns_blogY.png')no-repeat;
   background-size: 100%;
   filter: grayscale(100%) contrast(0);
   transition: all .4s ease;
@@ -21,7 +21,7 @@
 }
 .mygit {
   @include sns();
-  background: url('../images/navi/sns-gitY.png')no-repeat;
+  background: url('../images/buttons/sns_gitY.png')no-repeat;
   background-size: 100%;
   filter: grayscale(100%) contrast(0);
   transition: all .4s ease;
@@ -36,7 +36,7 @@
   @include position($p:fixed, $b:50px, $r:120px);
   width: $wh;
   height: $wh;
-  background: url('../images/btn-pageUp.png')no-repeat 50% 50%;
+  background: url('../images/buttons/pageUp.png')no-repeat 50% 50%;
   background-size: 100%;
   transition: all .3s ease;
   p{display: none;}
@@ -45,5 +45,23 @@
     background: linear-gradient(rgba(245, 223, 77, 0.1), rgba(245, 223, 77, 0.8));
     border-radius: 100%;
     p {display: block;}
+  }
+}
+
+
+// move to 2page //
+.scroll_icon {
+  $wh: 50px;
+  @include position($b:50px, $l:50%);
+  width: $wh;
+  height: $wh;
+  background: url('../images/buttons/scroll.png');
+  background-size: 100%;
+  transition: all .3s ease-in-out;
+  transform: translate(-50%, 0);
+
+  &:hover {
+    background: url('../images/buttons/scroll_down.png');
+    background-size: 100%;
   }
 }

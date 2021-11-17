@@ -19,7 +19,7 @@
   margin: 0 10px;
   width: 35px;
   height: 35px;
-  background: url("../images/navi/sns-blogY.png") no-repeat;
+  background: url("../images/buttons/sns_blogY.png") no-repeat;
   background-size: 100%;
   -webkit-filter: grayscale(100%) contrast(0);
           filter: grayscale(100%) contrast(0);
@@ -37,7 +37,7 @@
   margin: 0 10px;
   width: 35px;
   height: 35px;
-  background: url("../images/navi/sns-gitY.png") no-repeat;
+  background: url("../images/buttons/sns_gitY.png") no-repeat;
   background-size: 100%;
   -webkit-filter: grayscale(100%) contrast(0);
           filter: grayscale(100%) contrast(0);
@@ -56,7 +56,7 @@
   right: 120px;
   width: 45px;
   height: 45px;
-  background: url("../images/btn-pageUp.png") no-repeat 50% 50%;
+  background: url("../images/buttons/pageUp.png") no-repeat 50% 50%;
   background-size: 100%;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -74,6 +74,25 @@
 
 #pageUp:hover p {
   display: block;
+}
+
+.scroll_icon {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background: url("../images/buttons/scroll.png");
+  background-size: 100%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.scroll_icon:hover {
+  background: url("../images/buttons/scroll_down.png");
+  background-size: 100%;
 }
 
 .lodingPage {
@@ -180,7 +199,7 @@ header .toRight {
 select#mode {
   margin: 0 10px;
   padding: 0 16px 0 5px;
-  background: url("../images/navi/arrow-down.png") no-repeat 100% 50%;
+  background: url("../images/navi/arrow_down.png") no-repeat 100% 50%;
   background-size: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -420,7 +439,7 @@ section .inner {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  padding: 8% 11.5%;
+  padding: 6% 11.5%;
 }
 
 section .inner .toRight {
@@ -466,35 +485,21 @@ section.welcom .toRight .welcom_text {
           transform: translate(120px, -100%);
 }
 
-.scroll_icon {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  background: url("../images/scroll.png");
-  background-size: 100%;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-}
-
-.scroll_icon:hover {
-  background: url("../images/scroll-down.png");
-  background-size: 100%;
-}
-
 .profile {
+  height: 100%;
+  padding-right: 5.4%;
+}
+
+.profile > div {
   position: relative;
   height: 100%;
 }
 
 .profile .photo {
   position: absolute;
-  top: -100vh;
+  top: -96vh;
   left: 0;
-  width: 70%;
+  width: 80%;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -506,8 +511,8 @@ section.welcom .toRight .welcom_text {
 .profile .textBox {
   position: absolute;
   bottom: 0;
-  right: 10px;
-  width: 74%;
+  right: 0;
+  width: 75%;
   padding: 30px;
   background: rgba(255, 252, 211, 0.9);
 }
@@ -532,5 +537,43 @@ section.welcom .toRight .welcom_text {
 }
 
 .inform {
-  padding: 0 130px;
+  height: 100%;
+  padding-left: 5.4%;
+  border: 1px solid red;
+}
+
+.about {
+  border: 1px solid yellowgreen;
+}
+
+.about li div:last-child {
+  margin-top: 40px;
+}
+
+.about h3 {
+  margin-top: 12px;
+}
+
+.about dl {
+  margin-left: 35px;
+}
+
+.about dt {
+  position: relative;
+  margin-top: 10px;
+}
+
+.about dt::before {
+  position: absolute;
+  top: 30%;
+  left: -17px;
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: #1d2123;
+  border-radius: 100%;
+}
+
+.about dd {
+  margin-top: 5px;
 }
