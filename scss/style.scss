@@ -41,8 +41,11 @@ section{
   }
   
   .photo {
-    @include position($t:-96vh,$l:0);
+    @include position($t:-96vh, $l:0);
     width: 80%;
+    height: 70vh;
+    overflow: hidden;
+    border: 1px solid red;
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     -ms-transition: all 1s;

@@ -1,10 +1,28 @@
 @import "variables", "animation";
 
-// FOLD(min 280) - WIDE(max 1400) //
-@include fold {
+// DESKTOP(max 1400) //
+@include desktop {
+
+}
+
+
+
+
+
+// LABTOP(max 1024) //
+@include labtop {
+  // section1 - welcome
+  .toRight {width: 100%}
+  .welcom .toRight {padding: 0 15%}
+}
+
+
+
+
+
+// TABLET(max 768) //
+@include tablet {
   // header
-  .btn_line {width: 60px;}
-  .logo_icon {@include square(30px)}
   #hamburger .line {
     width: 25px;
     margin: 6px auto;
@@ -15,6 +33,7 @@
     -o-transform: translateY(6px);
     transform: translateY(6px);
   }
+  .logo_icon {@include square(30px);}
 
   // buttons
   #pageUp {@include square(30px)}
@@ -25,76 +44,20 @@
     animation: fadeOut 1s ease-in Infinite Alternate;
     animation-delay: 1s;
   }
+}
+
+
+// MOBILE(max 320) //
+@include mobile {
+  // header
+  .btn_line {width: 60px;}
 
   // section1 - welcome
   .welcom .toRight{padding: 0 12%}
-  .toRight {width: 100%}
-}
- 
-
-
-
-
-
-
-
-
-// MOBILE(min 320) //
-@include mobile {
-  // section1 - welcome
-  .welcom .toRight{padding: 0 15%}
 } 
 
 
-
-
-
-
-
-
-
-// TABLET(min 768) //
-@include tablet {
-  // header
-  #hamburger .line {
-    width: 35px;
-    margin: 8px auto;
-  }
-  #hamburger.active .line:nth-child(1) {
-    -webkit-transform: translateY(10px);
-    -ms-transform: translateY(10px);
-    -o-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-  #gnb {margin-left: 10px}
-  .logo_icon {@include square(40px);}
+// FOLD(max 280) //
+@include fold {
 }
-
-
-
-
-
-
-
-
-
-// DESKTOP(min 1024) //
-@include desktop {
-  // section1 - welcome
-  .toRight {width: 50%}
-  .welcom .toRight {padding: 0 6.3%}
-}
-
-
-
-
-
-
-
-
-
-
-
-// FULL(min 1400) //
-@include full {
-}
+ 

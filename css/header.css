@@ -53,6 +53,8 @@ header .toRight {
 }
 
 .logo_icon {
+  width: 40px;
+  height: 40px;
   display: block;
   background: url("../images/logo_icon.png") no-repeat;
   background-size: 100%;
@@ -89,6 +91,7 @@ header .toRight {
 
 #gnb {
   position: relative;
+  margin-left: 10px;
 }
 
 #gnb #gnb_menu {
@@ -112,7 +115,9 @@ header .toRight {
 }
 
 #hamburger .line {
+  width: 35px;
   height: 2px;
+  margin: 8px auto;
   background-color: #434547;
   display: block;
   -webkit-transition: all 0.3s ease-in-out;
@@ -140,6 +145,11 @@ header .toRight {
 #hamburger.active .line:nth-child(3) {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
+}
+
+#hamburger.active .line:nth-child(1) {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
 }
 
 #hamburger.active .line:nth-child(3) {

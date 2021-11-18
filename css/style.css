@@ -93,6 +93,9 @@ section {
   top: -96vh;
   left: 0;
   width: 80%;
+  height: 70vh;
+  overflow: hidden;
+  border: 1px solid red;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
