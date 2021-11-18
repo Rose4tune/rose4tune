@@ -40,46 +40,36 @@
           justify-content: center;
 }
 
-.myblog {
-  display: block;
-  margin: 0 10px;
+.sns a {
   width: 35px;
   height: 35px;
-  background: url("../images/buttons/sns_blogY.png") no-repeat;
-  background-size: 100%;
+  display: block;
+  margin: 0 10px;
   -webkit-filter: grayscale(100%) contrast(0);
           filter: grayscale(100%) contrast(0);
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
 
-.myblog:hover {
+.sns a:hover {
   -webkit-filter: none;
           filter: none;
+}
+
+.myblog {
+  background: url("../images/buttons/sns_blogY.png") no-repeat;
+  background-size: 100%;
 }
 
 .mygit {
-  display: block;
-  margin: 0 10px;
-  width: 35px;
-  height: 35px;
   background: url("../images/buttons/sns_gitY.png") no-repeat;
   background-size: 100%;
-  -webkit-filter: grayscale(100%) contrast(0);
-          filter: grayscale(100%) contrast(0);
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-}
-
-.mygit:hover {
-  -webkit-filter: none;
-          filter: none;
 }
 
 #pageUp {
   position: fixed;
-  bottom: 50px;
-  right: 120px;
+  bottom: 4vh;
+  right: 5vw;
   width: 45px;
   height: 45px;
   background: url("../images/buttons/pageUp.png") no-repeat 50% 50%;
@@ -110,10 +100,10 @@
 
 .scroll_icon {
   position: absolute;
-  bottom: 50px;
+  bottom: 4vh;
   left: 50%;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   background: url("../images/buttons/scroll.png");
   background-size: 100%;
   -webkit-transition: all .3s ease-in-out;

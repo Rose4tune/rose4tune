@@ -4,13 +4,11 @@
 
 /* common */
 html {font-size: 62.5%;}
-button {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem;
-  color: #939597;
-}
-.open::before {
-  font-size: 1.5rem;
+
+h1 {
+  font-size: 4.2vmax;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
 }
 h2 {
   font-size: 4.5rem;
@@ -22,6 +20,14 @@ h3 {
   font-weight: 500;
   color: #60605e;
 }
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: #939597;
+}
+button.open::before {font-size: 1.5rem;}
+
 span.date {
  font-size: 1.6rem;
  color: #c5c6c7;
@@ -31,48 +37,25 @@ span.date {
 
 
 /* header */
-#logo {
-  font-size: 3.6rem;
-}
-#logo.logo_icon{
-  font-size: 0;
-}
-.menuBar select option {
-  font-size: 1.6rem;
-}
+#logo {font-size: 3.6rem;}
+#logo.logo_icon{font-size: 0;}
 
-#gnb #gnb_menu li{
+#mode {font-size: 1.6rem;}
+
+#gnb_menu li{
   font-size: 1.6rem;
   cursor: pointer;
   text-transform: uppercase;
 }
-#gnb #gnb_menu li:hover{
-  color: #F5DF4D;
-}
-
-#gnb_menu li.on {
-  color: brown;
-}
+#gnb_menu li:hover{color: #907f0e;}
+#gnb_menu li.on {color: brown;}
 
 
 /* section : welcome */
-h1 {
-  font-size: 4.2vmax;
-  font-weight: 500;
-  font-family: 'Raleway', sans-serif;
-}
-/* .welcom_text button, .btn-text {
-  font-size: 1.5rem;
-  color: #939597;
-} */
 
 /* section : about */
-.introduce {
-  font-size: 1.8rem;
-}
-.myName {
-  font-size: 2.5rem;
-}
+.introduce {font-size: 1.8rem;}
+.myName {font-size: 2.5rem;}
 .about dl dt {
   font-size: 2.8rem;
   color: #60605e;

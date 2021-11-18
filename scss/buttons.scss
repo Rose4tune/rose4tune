@@ -1,43 +1,30 @@
 @import "variables", "animation"; 
 
-// sns buttons setting //
-@mixin sns{
-  $wh: 35px;
-  display: block;
-  margin: 0 10px;
-  width: $wh;
-  height: $wh;
-}
+// sns buttons //
 .sns{
   @include flexBox();
+  a{
+    @include square(35px);
+    display: block;
+    margin: 0 10px;
+    filter: grayscale(100%) contrast(0);
+    transition: all .4s ease;
+    &:hover {filter: none;}
+  }
 }
 .myblog {
-  @include sns();
-  background: url('../images/buttons/sns_blogY.png')no-repeat;
+  background: url('../images/buttons/sns_blogY.png') no-repeat;
   background-size: 100%;
-  filter: grayscale(100%) contrast(0);
-  transition: all .4s ease;
-  &:hover {
-    filter: none;
-  }
 }
 .mygit {
-  @include sns();
-  background: url('../images/buttons/sns_gitY.png')no-repeat;
+  background: url('../images/buttons/sns_gitY.png') no-repeat;
   background-size: 100%;
-  filter: grayscale(100%) contrast(0);
-  transition: all .4s ease;
-  &:hover {
-    filter: none;
-  }
 }
 
-// page up button setting //
+// page up button //
 #pageUp {
-  $wh: 45px;
-  @include position($p:fixed, $b:50px, $r:120px);
-  width: $wh;
-  height: $wh;
+  @include position($p:fixed, $b:4vh, $r:5vw);
+  @include square(45px);
   background: url('../images/buttons/pageUp.png')no-repeat 50% 50%;
   background-size: 100%;
   transition: all .3s ease-in;
@@ -58,12 +45,10 @@
 }
 
 
-// move page //
+// move page button //
 .scroll_icon {
-  $wh: 50px;
-  @include position($b:50px, $l:50%);
-  width: $wh;
-  height: $wh;
+  @include position($b:4vh, $l:50%);
+  @include square(45px);
   background: url('../images/buttons/scroll.png');
   background-size: 100%;
   transition: all .3s ease-in-out;

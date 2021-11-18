@@ -75,15 +75,16 @@ header .toRight {
   display: none !important;
 }
 
-select#mode {
+#mode {
   margin: 0 10px;
-  padding: 0 16px 0 5px;
+  padding: 5px 16px 5px 5px;
   background: url("../images/buttons/arrow_down.png") no-repeat 100% 50%;
   background-size: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 #gnb {
@@ -102,7 +103,7 @@ select#mode {
           justify-content: center;
   position: absolute;
   top: 8px;
-  right: 35px;
+  right: 50px;
 }
 
 #gnb #gnb_menu li {

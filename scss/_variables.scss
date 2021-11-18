@@ -9,6 +9,11 @@ $color-1: #fff;
 $color-2: #c5c6c7; //197, 198, 199
 $color-3: #1d2123; //29, 33, 35
 
+// boxes
+@mixin square ($wh:0) {
+  width: $wh;
+  height: $wh;
+}
 
 // flex
 @mixin flexBox {
@@ -18,7 +23,7 @@ $color-3: #1d2123; //29, 33, 35
 }
 
 // position
-@mixin position(
+@mixin position (
   $p: absolute,
   $t: null,
   $b: null,
