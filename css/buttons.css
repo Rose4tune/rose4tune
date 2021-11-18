@@ -1,3 +1,33 @@
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes up {
+  0% {
+    margin-top: 13px;
+  }
+  60% {
+    margin-top: -10px;
+  }
+  100% {
+    margin-top: -10px;
+  }
+}
+
 .sns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,10 +38,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.sns .toRight {
-  margin-left: auto;
 }
 
 .myblog {
@@ -58,8 +84,10 @@
   height: 45px;
   background: url("../images/buttons/pageUp.png") no-repeat 50% 50%;
   background-size: 100%;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  -webkit-animation: fadeIn 0.8s ease-in Alternate;
+          animation: fadeIn 0.8s ease-in Alternate;
 }
 
 #pageUp p {
@@ -70,10 +98,14 @@
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 223, 77, 0.1)), to(rgba(245, 223, 77, 0.8)));
   background: linear-gradient(rgba(245, 223, 77, 0.1), rgba(245, 223, 77, 0.8));
   border-radius: 100%;
+  -webkit-transition: all ease-in;
+  transition: all ease-in;
 }
 
 #pageUp:hover p {
   display: block;
+  -webkit-animation: up 0.8s ease-in Infinite Alternate;
+          animation: up 0.8s ease-in Infinite Alternate;
 }
 
 .scroll_icon {

@@ -1,4 +1,4 @@
-// color setting
+// color
 $theme-1: #F5DF4D; //245, 223, 77
 $theme-2: #939597; //147, 149, 151
 $subTheme-1: rgba(255, 252, 211, 0.9); // #fffed6 // 255, 252, 211
@@ -10,14 +10,14 @@ $color-2: #c5c6c7; //197, 198, 199
 $color-3: #1d2123; //29, 33, 35
 
 
-// flex setting 
+// flex
 @mixin flexBox {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-// position setting
+// position
 @mixin position(
   $p: absolute,
   $t: null,
@@ -39,25 +39,35 @@ $color-3: #1d2123; //29, 33, 35
   }
 }
 
-// Breakpoints setting
-$breakpoint-mobile: 280px;
-$breakpoint-tablet: 758px;
+// Breakpoints
+$breakpoint-fold: 280px;
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
+$breakpoint-wide: 1400px;
 
+@mixin fold {
+  @media (min-width: #{$breakpoint-fold}) and (max-width: #{$breakpoint-wide - 1px}) {
+    @content;
+  }
+}
 @mixin mobile {
-  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+  @media (min-width: #{$breakpoint-mobile}) {
     @content;
   }
 }
-
 @mixin tablet {
-  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+  @media (min-width: #{$breakpoint-tablet}) {
     @content;
   }
 }
-
 @mixin desktop {
   @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+@mixin full {
+  @media (min-width: #{$breakpoint-wide}) {
     @content;
   }
 }

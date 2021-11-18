@@ -1,0 +1,147 @@
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes up {
+  0% {
+    margin-top: 13px;
+  }
+  60% {
+    margin-top: -10px;
+  }
+  100% {
+    margin-top: -10px;
+  }
+}
+
+header {
+  margin-top: 4vh;
+  padding: 0 5vw;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header .toRight {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.logo_icon {
+  display: block;
+  background: url("../images/logo_icon.png") no-repeat;
+  background-size: 100%;
+}
+
+.menuBar,
+.menuBar > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.disable {
+  display: none !important;
+}
+
+select#mode {
+  margin: 0 10px;
+  padding: 0 16px 0 5px;
+  background: url("../images/buttons/arrow_down.png") no-repeat 100% 50%;
+  background-size: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-transform: uppercase;
+}
+
+#gnb {
+  position: relative;
+}
+
+#gnb #gnb_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 35px;
+}
+
+#gnb #gnb_menu li {
+  padding: 3px 8px;
+  margin: 0 10px;
+}
+
+#hamburger .line {
+  height: 2px;
+  background-color: #434547;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger:hover {
+  cursor: pointer;
+}
+
+#hamburger.active {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hamburger.active .line:nth-child(2) {
+  width: 0px;
+}
+
+#hamburger.active .line:nth-child(1),
+#hamburger.active .line:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+#hamburger.active .line:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(90deg);
+  transform: translateY(-10px) rotate(90deg);
+}

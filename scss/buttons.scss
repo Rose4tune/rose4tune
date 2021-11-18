@@ -1,4 +1,4 @@
-@import "variables"; 
+@import "variables", "animation"; 
 
 // sns buttons setting //
 @mixin sns{
@@ -40,18 +40,25 @@
   height: $wh;
   background: url('../images/buttons/pageUp.png')no-repeat 50% 50%;
   background-size: 100%;
-  transition: all .3s ease;
-  p{display: none;}
+  transition: all .3s ease-in;
+  animation: fadeIn 0.8s ease-in Alternate;
+
+  p {display: none;}
 
   &:hover{
     background: linear-gradient(rgba(245, 223, 77, 0.1), rgba(245, 223, 77, 0.8));
     border-radius: 100%;
-    p {display: block;}
+    transition: all ease-in;
+
+    p {
+      display: block;
+      animation: up 0.8s ease-in Infinite Alternate;
+    }
   }
 }
 
 
-// move to 2page //
+// move page //
 .scroll_icon {
   $wh: 50px;
   @include position($b:50px, $l:50%);

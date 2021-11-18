@@ -3,7 +3,8 @@ var totalPage = $sections.length;
 var $html = $("html");
 
 // Responsible //
-var tablet_size = window.matchMedia('(max-width: 757px)');
+var tablet_size = window.matchMedia('(max-width: 769px)');
+var desktop_size = window.matchMedia('(max-width: 1025px)');
 
 // HEADER //
 var $menuBar = document.getElementById("menuBar");
@@ -14,6 +15,7 @@ var $logo = document.getElementById("logo");
 window.onscroll = function () {
   headerScroll();
   photoScroll();
+  pageUp();
 };
 
 window.onload = function() {
@@ -26,7 +28,7 @@ function headerScroll(){
     $menuBar.classList.add('disable');
     $logo.classList.add('logo_icon');
 
-  } else if(tablet_size.matches){
+  } else if(desktop_size.matches){
     $logo.classList.add('logo_icon');
   } else {
     //스크롤 시 헤더 보이기
@@ -34,7 +36,7 @@ function headerScroll(){
 
     if ($hamburger.classList.contains('active') == true) {
       $menuBar.classList.add('disable');
-    } else if(tablet_size.matches){
+    } else if(desktop_size.matches){
         $menuBar.classList.add('disable');
     } else{
       $menuBar.classList.remove('disable');
@@ -42,7 +44,7 @@ function headerScroll(){
   };
 }
 
-if(tablet_size.matches){
+if(desktop_size.matches){
   $menuBar.classList.add('disable');
   $logo.classList.add('logo_icon');
 }
@@ -62,7 +64,7 @@ $hamburger.onclick = function () {
     $gnbMenu.classList.add('disable');
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       $menuBar.classList.add('disable');
-    } else if(tablet_size.matches){
+    } else if(desktop_size.matches){
       $menuBar.classList.add('disable');
     } else {
       $menuBar.classList.remove('disable');
@@ -177,6 +179,15 @@ $('.sns').append(sns);
 $('#pageUp').on('click', function() {
   $html.animate({scrollTop:0}, 1000);
 });
+
+function pageUp (){
+  if(window.pageYOffset < arr[1]){
+    console.log('arr 1 :' + arr[1]);
+    $('#pageUp').addClass('disable');
+  } else {
+    $('#pageUp').removeClass('disable');
+  }
+}
 
 
 
