@@ -4,7 +4,7 @@ var $html = $("html");
 
 // Responsible //
 var tablet_size = window.matchMedia('(max-width: 769px)');
-var desktop_size = window.matchMedia('(max-width: 1025px)');
+var labtop = window.matchMedia('(max-width: 1025px)');
 
 // HEADER //
 var $menuBar = document.getElementById("menuBar");
@@ -28,7 +28,7 @@ function headerScroll(){
     $menuBar.classList.add('disable');
     $logo.classList.add('logo_icon');
 
-  } else if(desktop_size.matches){
+  } else if(labtop.matches){
     $logo.classList.add('logo_icon');
   } else {
     //스크롤 시 헤더 보이기
@@ -36,7 +36,7 @@ function headerScroll(){
 
     if ($hamburger.classList.contains('active') == true) {
       $menuBar.classList.add('disable');
-    } else if(desktop_size.matches){
+    } else if(labtop.matches){
         $menuBar.classList.add('disable');
     } else{
       $menuBar.classList.remove('disable');
@@ -44,7 +44,7 @@ function headerScroll(){
   };
 }
 
-if(desktop_size.matches){
+if(labtop.matches){
   $menuBar.classList.add('disable');
   $logo.classList.add('logo_icon');
 }
@@ -64,7 +64,7 @@ $hamburger.onclick = function () {
     $gnbMenu.classList.add('disable');
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       $menuBar.classList.add('disable');
-    } else if(desktop_size.matches){
+    } else if(labtop.matches){
       $menuBar.classList.add('disable');
     } else {
       $menuBar.classList.remove('disable');

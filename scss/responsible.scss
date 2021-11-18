@@ -1,4 +1,14 @@
-@import "variables", "animation";
+@import "variables";
+
+// Animation
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+
+
+
 
 // DESKTOP(max 1400) //
 @include desktop {
@@ -47,6 +57,9 @@
 }
 
 
+
+
+
 // MOBILE(max 320) //
 @include mobile {
   // header
@@ -55,6 +68,9 @@
   // section1 - welcome
   .welcom .toRight{padding: 0 12%}
 } 
+
+
+
 
 
 // FOLD(max 280) //
