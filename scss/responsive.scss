@@ -6,27 +6,36 @@
   100% {opacity: 0;}
 }
 
-// DESKTOP(max 1400) //
-@include desktop {}
-
-
-
-
 
 // LABTOP(max 1024) //
 @include labtop {
-  header{padding:0 4vw}
+  // header
+  header{
+    padding:0 4vw;
+  }
+
   // all section
-  .s1{height: 100vh;}
-  section{height: auto;}
+  .s1 {
+    height: 100vh;
+  }
+  section {
+    height: auto;
+  }
   .inner{
     padding: 11%;
-    > div:first-child {width: 100%}
+
+    > div:first-child {
+      width: 100%;
+    }
   }
-  .toRight {width: 100%}
+  .toRight {
+    width: 100%;
+  }
 
   // section1 - welcome
-  .welcom > div {padding: 0 11%}
+  .welcom > div {
+    padding: 0 11%;
+  }
 
   // section2 - about
   .profile {
@@ -59,7 +68,9 @@
 @include tablet-L {
 
   // buttons
-  .btn_line{width: 60px}
+  .btn_line {
+    width: 60px;
+  }
   .scroll_icon {
     background: url('../images/buttons/scroll_down.png') no-repeat;
     background-size: 100%;
@@ -68,14 +79,18 @@
   }
 
   // all section
-  .inner{padding: 13%;}
+  .inner {
+    padding: 13%;
+  }
 
   // section 1 - welcome
-  .welcom > div {padding: 0 13%}
+  .welcom > div {
+    padding: 0 13%;
+  }
 
   // section 2 - about
   .profile {
-    > div{
+    > div {
       padding-bottom: 18rem;
     }
     .textBox {
@@ -88,17 +103,23 @@
   }
 
   // section 3 - skill
-.skillType .flexBox {gap: 4%;}
-#editor .item,
-#designTool .item,
-#publishing .item {flex-basis: 48%;}
+  .skillType .flexBox {
+    gap: 4%;
+  }
+  #editor .item,
+  #designTool .item,
+  #publishing .item {
+    flex-basis: 48%;
+  }
 }
 
 
 // TABLET Midium(max 640) //
 @include tablet-M {
   // header
-  #hamburger .line {margin: 6px auto;}
+  #hamburger .line {
+    margin: 6px auto;
+  }
   #hamburger.active .line:nth-child(1) {
     -webkit-transform: translateY(6px);
     -ms-transform: translateY(6px);
@@ -129,22 +150,35 @@
 // MOBILE Large(max 480) //
 @include mobile-L {
   // all section
-  .inner{padding: 15%;}
-  
-  .welcom > div {padding: 0 15%}
+  .inner {
+    padding: 15%;
+  }
+  .welcom > div {
+    padding: 0 15%;
+  }
 
   // section2 - about
   .profile {
-    > div{padding-bottom: 38rem;}
-    .textBox {width:100%}
-    .photo {min-height: unset;}
+    > div {
+      padding-bottom: 38rem;
+    }
+    .textBox {
+      width:100%;
+    }
+    .photo {
+      min-height: unset;
+    }
     #btn_modal {
       @include position($b:-5rem);
     }
   }
   .about .slick-prev,
-  .about .slick-next {bottom: -0.5rem;}
-  .about .slick-dots li{margin: 0 2.5rem}
+  .about .slick-next {
+    bottom: -0.5rem;
+  }
+  .about .slick-dots li{
+    margin: 0 2.5rem;
+  }
   .about .slick-dots li button:before {
     line-height: 2rem;
     width: 2.5rem;
@@ -157,13 +191,19 @@
 // MOBILE Midium(max 320) //
 @include mobile-M {
   // all section
-  .inner{padding: 17%;}
-  .about .slick-dots li{margin: 0 3.2rem}
+  .inner {
+    padding: 17%;
+  }
+  .about .slick-dots li {
+    margin: 0 3.2rem
+  }
   
   // section 3 - skill
   #editor .item,
   #designTool .item,
-  #publishing .item {flex-basis: 100%;}
+  #publishing .item {
+    flex-basis: 100%;
+  }
 } 
 
 

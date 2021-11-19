@@ -70,26 +70,14 @@ $color-3: #1d2123; //29, 33, 35
 }
 
 // Breakpoints
-// $monitor-XL: 4999px;
-// $monitor-L: 3999px;
-// $monitor-M: 2999px;
-// $monitor-S: 1999px;
-$desktop: 1400px;
 $labtop: 1024px;
-
 $tablet-L: 768px;
 $tablet-M: 640px;
 $tablet-S: 540px;
-
 $mobile-L: 480px;
 $mobile-M: 320px;
 $mobile-S: 280px;
 
-@mixin desktop {
-  @media (max-width: #{$desktop + 1}) {
-    @content;
-  }
-}
 @mixin labtop {
   @media (max-width: #{$labtop + 1}) {
     @content;

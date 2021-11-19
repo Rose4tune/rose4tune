@@ -8,7 +8,9 @@ section{
 .inner{
   height: 100%;
   padding: 6% 11.5%;
-  > div:first-child {width: 50%}
+  > div:first-child {
+    width: 50%;
+  }
 }
 .toRight{
   width: 50%;
@@ -37,12 +39,10 @@ section{
   position: relative;
   height: 100%;
   padding-right: 5.4%;
-
   > div{
     position: relative;
     height: 100%;
   }
-  
   .photo {
     @include position($t:-96vh, $l:0);
     width: 80%;
@@ -64,10 +64,12 @@ section{
     background: $subTheme-1;
     p {
       margin: 1.3rem 0;
-      &:first-child{margin-top:0}
-      &:last-child{margin-bottom: 3rem;}
+      &:first-child {margin-top:0}
+      &:last-child {margin-bottom: 3rem;}
     }
-    p.myName{margin-bottom:0;}
+    p.myName {
+      margin-bottom:0;
+    }
   }
   #btn_modal {
     @include position($b:3rem, $r:3rem);
@@ -79,9 +81,15 @@ section{
   padding-left: 5.4%;
 }
 .about {
-  li > div:nth-child(2) {margin-top: 4rem;}
-  h3 {margin-top: 1.8rem;}
-  dl {margin-left: 3.5rem;}
+  li > div:nth-child(2) {
+    margin-top: 4rem;
+  }
+  h3 {
+    margin-top: 1.8rem;
+  }
+  dl {
+    margin-left: 3.5rem;
+  }
   dt {
     position: relative;
     margin-top: 1rem;
@@ -93,7 +101,9 @@ section{
       border-radius: 100%; 
     }
   }
-  dd {margin-top: 0.5rem;}
+  dd {
+    margin-top: 0.5rem;
+  }
 }
 
 // section3 - skill //
@@ -103,7 +113,7 @@ section{
 }
 .skillType {
   margin-bottom: 8rem;
-  &:last-child{margin-bottom: 0}
+  &:last-child {margin-bottom: 0}
   
   .flexBox {
     @include flexBox($gap:2%);
@@ -128,5 +138,9 @@ section{
   }
 }
 #editor .item,
-#designTool .item {flex-basis: 23.5%;}
-#publishing .item {flex-basis: 31.3%;}
+#designTool .item {
+  flex-basis: 23.5%;
+}
+#publishing .item {
+  flex-basis: 31.3%;
+}
