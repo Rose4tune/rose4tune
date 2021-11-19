@@ -1,24 +1,24 @@
 /* ABOUT section slick custom*/
 /* arrow */
 .about .slick-prev,
-.about .slick-next {top:inherit; bottom: -10px;}
-.about .slick-prev {left: 30%;}
-[dir='rtl'] .about .slick-prev {right: 30%;}
+.about .slick-next {top:inherit; bottom: -1rem;}
+.about .slick-prev {left: 3rem;}
+[dir='rtl'] .about .slick-prev {right: 3rem;}
 .about .slick-prev:before {content: url('../../images/buttons/arrow_left.png');}
-.about .slick-next {right: 30%;}
-[dir='rtl'] .about .slick-next {left: 30%;}
+.about .slick-next {right: 3rem;}
+[dir='rtl'] .about .slick-next {left: 3rem;}
 .about .slick-next:before {content:  url('../../images/buttons/arrow_right.png');}
 
 /* dots */
 .about .slick-dots {
-  position: initial;
-  padding-top: 30px;
+  position: unset;
+  padding-top: 3rem;
 }
 .about .slick-dots li {margin: 0 15px;}
 .about .slick-dots li.slick-active button:before,
 .about .slick-dots li button:hover:before,
 .about .slick-dots li button:focus:before{
-  font-size: 16px;
+  font-size: 1.6rem;
   opacity: 0.4;
   margin-left: -50%;
 }
@@ -31,5 +31,11 @@
 .about .slick-dots li:nth-child(3).slick-active button:before,
 .about .slick-dots li:nth-child(3) button:hover:before,
 .about .slick-dots li:nth-child(3) button:focus:before {content:'WORK'}
-.about .slick-dots li button:before {content: url('../../images/buttons/slide_dot.png');}
-.about .slick-dots li.slick-active button:before {opacity: 1;}
+.about .slick-dots li button::before {
+  background: url('../../images/buttons/slide_dot.png') no-repeat;
+  background-size: 100%;
+}
+.about .slick-dots li.slick-active button:before {
+  opacity: 1;
+  background: none;
+}

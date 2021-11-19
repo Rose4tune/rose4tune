@@ -16,10 +16,25 @@ $color-3: #1d2123; //29, 33, 35
 }
 
 // flex
-@mixin flexBox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@mixin flexBox (
+  $d: flex,
+  $align: center,
+  $justify: center
+) {
+  @if
+  $d == flex
+  or $d == block
+
+  $align == center
+  or $align == unset
+  
+  $justify == center
+  or $justify == unset
+  { 
+    display: $d;
+    align-items: $align;
+    justify-content: $justify;
+  }
 }
 
 // position
@@ -35,6 +50,7 @@ $color-3: #1d2123; //29, 33, 35
   or $p == fixed
   or not $p == relative
   or not $p == static
+  or not $p == inherit
   {
     position: $p;
     top: $t;

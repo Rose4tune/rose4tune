@@ -6,7 +6,7 @@
 html {font-size: 62.5%;}
 
 h1 {
-  font-size: 4.2vmax;
+  font-size: 7rem;
   font-weight: 500;
   font-family: 'Raleway', sans-serif;
 }
@@ -32,7 +32,7 @@ span.date {
  font-size: 1.6rem;
  color: #c5c6c7;
  letter-spacing: 0.13rem;
- margin-left: 20rem;
+ margin-left: 20px;
 }
 
 
@@ -70,8 +70,8 @@ span.date {
 
 /* responsible */
 @media (max-width: 769px) {
-  html {font-size: 26.8%;}
   button {font-size: 3.27rem;}
   .open::before {font-size: 3.27rem;}
   #gnb #gnb_menu li{font-size: 3.27rem;}
+  .introduce {font-size: 4rem;}
 }

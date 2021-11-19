@@ -6,14 +6,8 @@
   100% {opacity: 0;}
 }
 
-
-
-
-
 // DESKTOP(max 1400) //
-@include desktop {
-
-}
+@include desktop {}
 
 
 
@@ -21,9 +15,41 @@
 
 // LABTOP(max 1024) //
 @include labtop {
-  // section1 - welcome
+  // all section //
+  .s1{height: 100vh;}
+  section{height: auto;}
+  .inner{
+    @include flexBox(block,unset,unset);
+    padding: 10.5%;
+    > div:first-child {width: 100%}
+  }
   .toRight {width: 100%}
-  .welcom .toRight {padding: 0 15%}
+
+  // section1 - welcome
+  .welcom {@include flexBox(block,unset,unset)}
+  .welcom > div {padding: 0 15%}
+
+  // section2 - about
+  .profile {
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 8rem;
+
+    > div{
+      height: auto;
+      padding-bottom: 20rem;
+    }
+    
+    .photo {
+      @include position($p:inherit, $t:0);
+      transition: none;
+    }
+  }
+
+  .inform{
+    height: auto;
+    padding-left: 0;
+  }
 }
 
 
@@ -32,6 +58,9 @@
 
 // TABLET(max 768) //
 @include tablet {
+
+  html {font-size: 26.8%;}
+
   // header
   #hamburger .line {
     width: 25px;
@@ -54,6 +83,18 @@
     animation: fadeOut 1s ease-in Infinite Alternate;
     animation-delay: 1s;
   }
+
+  // section2 - about
+  .profile {
+    > div{
+      padding-bottom: 30rem;
+    }
+  }
+  .about .slick-dots li button:before {
+    line-height: 3.8rem;
+    width: 4rem;
+    height: 4rem;
+  }
 }
 
 
@@ -66,7 +107,7 @@
   .btn_line {width: 60px;}
 
   // section1 - welcome
-  .welcom .toRight{padding: 0 12%}
+  .welcom > div{padding: 0 12%}
 } 
 
 

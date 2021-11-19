@@ -3,7 +3,8 @@ var totalPage = $sections.length;
 var $html = $("html");
 
 // Responsible //
-var tablet_size = window.matchMedia('(max-width: 769px)');
+var mobile = window.matchMedia('(max-width: 321px)');
+var tablet = window.matchMedia('(max-width: 769px)');
 var labtop = window.matchMedia('(max-width: 1025px)');
 
 // HEADER //
@@ -20,6 +21,7 @@ window.onscroll = function () {
 
 window.onload = function() {
   gnbMove();
+  photoScroll();
 }
 
 function headerScroll(){
@@ -194,24 +196,44 @@ function pageUp (){
 // 프로필 사진 이동
 function photoScroll(){
   var $photo = document.getElementById('photo');
-  if(window.pageYOffset < arr[1]/4){
+  if (labtop.matches) {
+    $photo.style.position = 'inherit';
+    $photo.style.top = 0;
+    $photo.style.width = 65 + '%';
+    $photo.style.height = 50 + 'vh';
+  } else if(window.pageYOffset < arr[1]/4){
     $photo.style.top = -96 + 'vh';
     $photo.style.width = 80 + '%';
+    $photo.style.height = 70 + 'vh';
   } else if(window.pageYOffset > arr[0]) {
     $photo.style.top = 0 + 'px';
     $photo.style.width = 60 + '%';
+    $photo.style.height = 50 + 'vh';
   }
 };
 
-
-
 // about section
-$(document).ready(function(){
-  $('.about').slick({
-    dots: true,
-    infinite: false,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
-  });
-});
+$(window).resize(function(){ 
+  if (window.innerWidth > 1025) {
+    $(document).ready(function(){
+      $('.about').slick({
+        dots: true,
+        infinite: false,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+  } else { 
+    $('.about').slick({
+      dots: true,
+      infinite: false,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      adaptiveHeight: true
+    });
+  }
+}).resize();
+
+

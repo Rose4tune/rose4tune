@@ -17,15 +17,63 @@
 }
 
 @media (max-width: 1025px) {
+  .s1 {
+    height: 100vh;
+  }
+  section {
+    height: auto;
+  }
+  .inner {
+    display: block;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    padding: 10.5%;
+  }
+  .inner > div:first-child {
+    width: 100%;
+  }
   .toRight {
     width: 100%;
   }
-  .welcom .toRight {
+  .welcom {
+    display: block;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .welcom > div {
     padding: 0 15%;
+  }
+  .profile {
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 8rem;
+  }
+  .profile > div {
+    height: auto;
+    padding-bottom: 20rem;
+  }
+  .profile .photo {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .inform {
+    height: auto;
+    padding-left: 0;
   }
 }
 
 @media (max-width: 769px) {
+  html {
+    font-size: 26.8%;
+  }
   #hamburger .line {
     width: 25px;
     margin: 6px auto;
@@ -52,13 +100,21 @@
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
   }
+  .profile > div {
+    padding-bottom: 30rem;
+  }
+  .about .slick-dots li button:before {
+    line-height: 3.8rem;
+    width: 4rem;
+    height: 4rem;
+  }
 }
 
 @media (max-width: 321px) {
   .btn_line {
     width: 60px;
   }
-  .welcom .toRight {
+  .welcom > div {
     padding: 0 12%;
   }
 }
