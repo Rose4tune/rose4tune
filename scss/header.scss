@@ -43,12 +43,11 @@ header {
   position: relative;
   margin-left: 1rem;
   #gnb_menu {
-    @include flexBox();
+    @include flexBox($wrap:nowrap, $gap:1rem, $justify:flex-end);
     @include position($t:0.8rem, $r:5rem);
 
     li {
       padding: 0.3rem 0.8rem;
-      margin: 0 1rem;
     }
   }
 }
