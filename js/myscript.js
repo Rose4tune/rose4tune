@@ -196,7 +196,12 @@ function pageUp (){
 // 프로필 사진 이동
 function photoScroll(){
   var $photo = document.getElementById('photo');
-  if (labtop.matches) {
+  if (window.innerWidth < 481) {
+    $photo.style.position = 'inherit';
+    $photo.style.top = 0;
+    $photo.style.width = 100 + '%';
+    $photo.style.height = 50 + 'vh';
+  } else if (window.innerWidth < 1025) {
     $photo.style.position = 'inherit';
     $photo.style.top = 0;
     $photo.style.width = 65 + '%';

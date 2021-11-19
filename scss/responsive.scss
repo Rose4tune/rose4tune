@@ -1,0 +1,168 @@
+@import "variables";
+
+// Animation
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+// DESKTOP(max 1400) //
+@include desktop {}
+
+
+
+
+
+// LABTOP(max 1024) //
+@include labtop {
+  header{padding:0 4vw}
+  // all section
+  .s1{height: 100vh;}
+  section{height: auto;}
+  .inner{
+    @include flexBox(block,unset,unset);
+    padding: 11%;
+    > div:first-child {width: 100%}
+  }
+  .toRight {width: 100%}
+
+  // section1 - welcome
+  .welcom {@include flexBox(block,unset,unset)}
+  .welcom > div {padding: 0 11%}
+
+  // section2 - about
+  .profile {
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 8rem;
+
+    > div{
+      height: auto;
+      padding-bottom: 20rem;
+    }
+    
+    .photo {
+      @include position($p:inherit, $t:0);
+      transition: none;
+    }
+  }
+
+  .inform{
+    height: auto;
+    padding-left: 0;
+  }
+}
+
+
+
+
+
+// TABLET Large(max 768) //
+@include tablet-L {
+
+  // buttons
+  .btn_line{width: 60px}
+  .scroll_icon {
+    background: url('../images/buttons/scroll_down.png') no-repeat;
+    background-size: 100%;
+    animation: fadeOut 1s ease-in Infinite Alternate;
+    animation-delay: 1s;
+  }
+
+  // all section
+  .inner{padding: 13%;}
+
+  // section1 - welcome
+  .welcom > div {padding: 0 13%}
+
+  // section2 - about
+  .profile {
+    > div{
+      padding-bottom: 18rem;
+    }
+    .textBox {
+      width: 90%;
+      padding: 2.5rem;
+    }
+    #btn_modal {
+      @include position($b:-4rem, $l:0, $r:unset);
+    }
+  }
+}
+
+
+// TABLET Midium(max 640) //
+@include tablet-M {
+  // header
+  #hamburger .line {margin: 6px auto;}
+  #hamburger.active .line:nth-child(1) {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    -o-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+
+
+
+
+// TABLET Samll(max 540) //
+@include tablet-S {
+  // section2 - about
+  .profile {
+    #btn_modal {
+      @include position($b:-4rem);
+    }
+  }
+  .about .slick-prev {left: 2rem;}
+  .about .slick-next {right: 2rem;}
+}
+
+
+
+
+// MOBILE Large(max 480) //
+@include mobile-L {
+  // all section
+  .inner{padding: 15%;}
+  
+  .welcom > div {padding: 0 15%}
+
+  // section2 - about
+  .profile {
+    > div{padding-bottom: 38rem;}
+    .textBox {width:100%}
+    .photo {min-height: unset;}
+    #btn_modal {
+      @include position($b:-5rem);
+    }
+  }
+  .about .slick-prev,
+  .about .slick-next {bottom: -0.5rem;}
+  .about .slick-dots li{margin: 0 2.5rem}
+  .about .slick-dots li button:before {
+    line-height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+} 
+
+
+
+// MOBILE Midium(max 320) //
+@include mobile-M {
+  // all section
+  .inner{padding: 17%;}
+  .about .slick-dots li{margin: 0 3.2rem}
+  
+} 
+
+
+
+
+
+// FOLD(max 280) //
+@include fold {
+}
+ 

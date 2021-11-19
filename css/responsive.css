@@ -1,0 +1,173 @@
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1025px) {
+  header {
+    padding: 0 4vw;
+  }
+  .s1 {
+    height: 100vh;
+  }
+  section {
+    height: auto;
+  }
+  .inner {
+    display: block;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    padding: 11%;
+  }
+  .inner > div:first-child {
+    width: 100%;
+  }
+  .toRight {
+    width: 100%;
+  }
+  .welcom {
+    display: block;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .welcom > div {
+    padding: 0 11%;
+  }
+  .profile {
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 8rem;
+  }
+  .profile > div {
+    height: auto;
+    padding-bottom: 20rem;
+  }
+  .profile .photo {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .inform {
+    height: auto;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 769px) {
+  .btn_line {
+    width: 60px;
+  }
+  .scroll_icon {
+    background: url("../images/buttons/scroll_down.png") no-repeat;
+    background-size: 100%;
+    -webkit-animation: fadeOut 1s ease-in Infinite Alternate;
+            animation: fadeOut 1s ease-in Infinite Alternate;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  .inner {
+    padding: 13%;
+  }
+  .welcom > div {
+    padding: 0 13%;
+  }
+  .profile > div {
+    padding-bottom: 18rem;
+  }
+  .profile .textBox {
+    width: 90%;
+    padding: 2.5rem;
+  }
+  .profile #btn_modal {
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    right: unset;
+  }
+}
+
+@media (max-width: 641px) {
+  #hamburger .line {
+    margin: 6px auto;
+  }
+  #hamburger.active .line:nth-child(1) {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@media (max-width: 541px) {
+  .profile #btn_modal {
+    position: absolute;
+    bottom: -4rem;
+  }
+  .about .slick-prev {
+    left: 2rem;
+  }
+  .about .slick-next {
+    right: 2rem;
+  }
+}
+
+@media (max-width: 481px) {
+  .inner {
+    padding: 15%;
+  }
+  .welcom > div {
+    padding: 0 15%;
+  }
+  .profile > div {
+    padding-bottom: 38rem;
+  }
+  .profile .textBox {
+    width: 100%;
+  }
+  .profile .photo {
+    min-height: unset;
+  }
+  .profile #btn_modal {
+    position: absolute;
+    bottom: -5rem;
+  }
+  .about .slick-prev,
+  .about .slick-next {
+    bottom: -0.5rem;
+  }
+  .about .slick-dots li {
+    margin: 0 2.5rem;
+  }
+  .about .slick-dots li button:before {
+    line-height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .inner {
+    padding: 17%;
+  }
+  .about .slick-dots li {
+    margin: 0 3.2rem;
+  }
+}

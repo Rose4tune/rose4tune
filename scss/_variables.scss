@@ -10,9 +10,16 @@ $color-2: #c5c6c7; //197, 198, 199
 $color-3: #1d2123; //29, 33, 35
 
 // boxes
-@mixin square ($wh:0) {
+@mixin square (
+  $wh: 0,
+  $minWh: null,
+  $minW: null,
+  $minH: null
+) {
   width: $wh;
   height: $wh;
+  min-width: $minWh or $minW;
+  min-height: $minWh or $minH;
 }
 
 // flex
@@ -61,9 +68,18 @@ $color-3: #1d2123; //29, 33, 35
 }
 
 // Breakpoints
+// $monitor-XL: 4999px;
+// $monitor-L: 3999px;
+// $monitor-M: 2999px;
+// $monitor-S: 1999px;
 $desktop: 1400px;
 $labtop: 1024px;
-$tablet: 768px;
+
+$tablet-L: 768px;
+$tablet-M: 640px;
+$tablet-S: 540px;
+
+$mobile-L: 480px;
 $mobile-M: 320px;
 $mobile-S: 280px;
 
@@ -77,12 +93,27 @@ $mobile-S: 280px;
     @content;
   }
 }
-@mixin tablet {
-  @media (max-width: #{$tablet + 1}) {
+@mixin tablet-L {
+  @media (max-width: #{$tablet-L + 1}) {
     @content;
   }
 }
-@mixin mobile {
+@mixin tablet-M {
+  @media (max-width: #{$tablet-M + 1}) {
+    @content;
+  }
+}
+@mixin tablet-S {
+  @media (max-width: #{$tablet-S + 1}) {
+    @content;
+  }
+}
+@mixin mobile-L {
+  @media (max-width: #{$mobile-L + 1}) {
+    @content;
+  }
+}
+@mixin mobile-M {
   @media (max-width: #{$mobile-M + 1}) {
     @content;
   }

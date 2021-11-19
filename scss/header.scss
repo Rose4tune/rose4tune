@@ -11,7 +11,7 @@ header {
 }
 
 .logo_icon{
-  @include square(40px);
+  @include square($wh:4rem, $minWh:30px);
   display: block;
   background: url('../images/logo_icon.png') no-repeat;
   background-size: 100%;
@@ -26,10 +26,10 @@ header {
 }
 
 #mode {
-  margin: 0 10px;
-  padding: 5px 16px 5px 5px;
+  margin: 0 1rem;
+  padding: 0.5rem 1.6rem 0.5rem 0.5rem;
   background: url('../images/buttons/arrow_down.png') no-repeat 100% 50%;
-  background-size: 10px;
+  background-size: 1rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance : none;
@@ -39,22 +39,23 @@ header {
 
 #gnb {
   position: relative;
-  margin-left: 10px;
+  margin-left: 1rem;
   #gnb_menu {
     @include flexBox();
-    @include position($t:8px, $r:50px);
+    @include position($t:0.8rem, $r:5rem);
 
     li {
-      padding: 3px 8px;
-      margin: 0 10px;
+      padding: 0.3rem 0.8rem;
+      margin: 0 1rem;
     }
   }
 }
 
 #hamburger {
   .line {
-    width: 35px;
-    height: 2px;
+    width: 3.5rem;
+    height: 0.2rem;
+    min-width: 25px;
     margin: 8px auto;
     background-color: #434547;
     display: block;

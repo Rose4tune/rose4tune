@@ -36,7 +36,7 @@ time, mark, audio, video {
 	outline: 0;
 	font-size: 100%;
 	vertical-align: baseline;
-	letter-spacing: 1px;
+	letter-spacing: 0.1rem;
 	text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */

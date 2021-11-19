@@ -32,7 +32,7 @@ span.date {
  font-size: 1.6rem;
  color: #c5c6c7;
  letter-spacing: 0.13rem;
- margin-left: 20px;
+ margin-left: 1rem;
 }
 
 
@@ -68,10 +68,56 @@ span.date {
 
 
 
-/* responsible */
+/* responsive */
+@media (min-width: 1999px) and (orientation: landscape) {html {font-size: 110%;}}
+@media (min-width: 2999px) and (orientation: landscape) {html {font-size: 135%;}}
+@media (min-width: 3999px) and (orientation: landscape) {html {font-size: 150%;}}
+@media (min-width: 4999px) and (orientation: landscape) {html {font-size: 190%;}}
+
+@media (min-width: 1999px) and (orientation: portrait) {}
+
 @media (max-width: 769px) {
-  button {font-size: 3.27rem;}
-  .open::before {font-size: 3.27rem;}
-  #gnb #gnb_menu li{font-size: 3.27rem;}
-  .introduce {font-size: 4rem;}
+  html {font-size: 62.5%;}
+}
+@media (max-width: 680px) {
+  html {font-size: 58%;}
+}
+@media (max-width: 640px) {
+  html {font-size: 55%;}
+}
+@media (max-width: 540px) {
+  html {font-size: 45%;}
+  .about .slick-dots li.slick-active button:before,
+  .about .slick-dots li button:hover:before,
+  .about .slick-dots li button:focus:before,
+  button, #mode, span.date, .introduce {
+    font-size: 1.95rem
+  }
+  .myName {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 481px) {
+  html {font-size: 36%}
+  h1{font-size: 6rem}
+  .about .slick-dots li.slick-active button:before,
+  .about .slick-dots li button:hover:before,
+  .about .slick-dots li button:focus:before,
+  button, #mode, span.date, .introduce, .about dl dd {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 321px) {
+  html {font-size: 30%;}
+  .about .slick-dots li.slick-active button:before,
+  .about .slick-dots li button:hover:before,
+  .about .slick-dots li button:focus:before,
+  button, #mode, span.date, .introduce, .about dl dd {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 321px) {
+  html {font-size: 28%;}
 }

@@ -10,11 +10,12 @@
 .about .slick-next:before {content:  url('../../images/buttons/arrow_right.png');}
 
 /* dots */
+.about.slick-dotted.slick-slider{margin-bottom:0}
 .about .slick-dots {
   position: unset;
   padding-top: 3rem;
 }
-.about .slick-dots li {margin: 0 15px;}
+.about .slick-dots li {margin: 0 1.5rem;}
 .about .slick-dots li.slick-active button:before,
 .about .slick-dots li button:hover:before,
 .about .slick-dots li button:focus:before{

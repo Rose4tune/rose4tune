@@ -65,7 +65,7 @@ section {
   left: 0;
   width: 80%;
   height: 70vh;
-  min-height: 400px;
+  min-height: 420px;
   overflow: hidden;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -96,7 +96,7 @@ section {
 }
 
 .profile .textBox p:last-child {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .profile .textBox p.myName {
@@ -119,7 +119,7 @@ section {
 }
 
 .about h3 {
-  margin-top: 3rem;
+  margin-top: 1.8rem;
 }
 
 .about dl {
@@ -133,15 +133,15 @@ section {
 
 .about dt::before {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: -1.7rem;
+  width: 0.4rem;
+  height: 0.4rem;
   content: '';
-  width: 5px;
-  height: 5px;
   background: #1d2123;
   border-radius: 100%;
 }
 
 .about dd {
-  margin-top: 5px;
+  margin-top: 0.5rem;
 }

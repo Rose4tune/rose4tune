@@ -45,7 +45,7 @@ section{
     @include position($t:-96vh, $l:0);
     width: 80%;
     height: 70vh;
-    min-height: 400px;
+    min-height: 420px;
     overflow: hidden;
     transition: all 1s;
 
@@ -63,7 +63,7 @@ section{
     p {
       margin: 1.3rem 0;
       &:first-child{margin-top:0}
-      &:last-child{margin-bottom: 30px;}
+      &:last-child{margin-bottom: 3rem;}
     }
     p.myName{margin-bottom:0;}
   }
@@ -78,19 +78,18 @@ section{
 }
 .about {
   li > div:nth-child(2) {margin-top: 4rem;}
-  h3 {margin-top: 3rem;}
+  h3 {margin-top: 1.8rem;}
   dl {margin-left: 3.5rem;}
   dt {
     position: relative;
     margin-top: 1rem;
     &::before {
-      @include position($t:30%, $l:-1.7rem);
+      @include position($t:40%, $l:-1.7rem);
+      @include square($wh:0.4rem);
       content: '';
-      width: 5px;
-      height: 5px;
       background: $color-3;
       border-radius: 100%; 
     }
   }
-  dd {margin-top: 5px;}
+  dd {margin-top: 0.5rem;}
 }
