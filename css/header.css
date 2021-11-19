@@ -1,7 +1,5 @@
 header {
-  margin-top: 4vh;
-  padding: 0 5vw;
-  width: 100vw;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,9 +9,23 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  padding: 0 5vw;
+  margin-top: 4vh;
+}
+
+header .item {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 header .toRight {
@@ -43,6 +55,18 @@ header .toRight {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0;
+}
+
+.menuBar .item,
+.menuBar > div .item {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .disable {
@@ -76,9 +100,20 @@ header .toRight {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0;
   position: absolute;
   top: 0.8rem;
   right: 5rem;
+}
+
+#gnb #gnb_menu .item {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 #gnb #gnb_menu li {
