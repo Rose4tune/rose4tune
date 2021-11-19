@@ -51,9 +51,9 @@ span.date {
 #gnb_menu li.on {color: brown;}
 
 
-/* section : welcome */
+/* section 1 : welcome */
 
-/* section : about */
+/* section 2 : about */
 .introduce {font-size: 1.8rem;}
 .myName {font-size: 2.5rem;}
 .about dl dt {
@@ -65,7 +65,8 @@ span.date {
   color: #939597;
 }
 
-
+/* section 3 : skill */
+.s3 {text-align: center;}
 
 
 /* responsive */

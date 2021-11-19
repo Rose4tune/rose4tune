@@ -9,7 +9,7 @@ $color-1: #fff;
 $color-2: #c5c6c7; //197, 198, 199
 $color-3: #1d2123; //29, 33, 35
 
-// boxes
+// icons box
 @mixin square (
   $wh: 0,
   $minWh: null,
@@ -26,21 +26,23 @@ $color-3: #1d2123; //29, 33, 35
 @mixin flexBox (
   $d: flex,
   $align: center,
-  $justify: center
+  $justify: center,
+  $wrap: wrap,
+  $gap: 0,
+  $basis: null,
+  $shrink: 1,
+  $grow: 1
 ) {
-  @if
-  $d == flex
-  or $d == block
+  display: $d;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+  gap: $gap;
 
-  $align == center
-  or $align == unset
-  
-  $justify == center
-  or $justify == unset
-  { 
-    display: $d;
-    align-items: $align;
-    justify-content: $justify;
+  .item {
+    flex-basis: $basis;
+    flex-shrink: $shrink;
+    flex-grow: $grow;
   }
 }
 

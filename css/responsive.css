@@ -27,13 +27,6 @@
     height: auto;
   }
   .inner {
-    display: block;
-    -webkit-box-align: unset;
-        -ms-flex-align: unset;
-            align-items: unset;
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
     padding: 11%;
   }
   .inner > div:first-child {
@@ -41,15 +34,6 @@
   }
   .toRight {
     width: 100%;
-  }
-  .welcom {
-    display: block;
-    -webkit-box-align: unset;
-        -ms-flex-align: unset;
-            align-items: unset;
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
   }
   .welcom > div {
     padding: 0 11%;
@@ -103,6 +87,15 @@
     bottom: -4rem;
     left: 0;
     right: unset;
+  }
+  .skillType .flexBox {
+    gap: 4%;
+  }
+  #editor .item,
+  #designTool .item,
+  #publishing .item {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
 }
 
@@ -169,5 +162,11 @@
   }
   .about .slick-dots li {
     margin: 0 3.2rem;
+  }
+  #editor .item,
+  #designTool .item,
+  #publishing .item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }

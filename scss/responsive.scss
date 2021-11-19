@@ -20,14 +20,12 @@
   .s1{height: 100vh;}
   section{height: auto;}
   .inner{
-    @include flexBox(block,unset,unset);
     padding: 11%;
     > div:first-child {width: 100%}
   }
   .toRight {width: 100%}
 
   // section1 - welcome
-  .welcom {@include flexBox(block,unset,unset)}
   .welcom > div {padding: 0 11%}
 
   // section2 - about
@@ -72,10 +70,10 @@
   // all section
   .inner{padding: 13%;}
 
-  // section1 - welcome
+  // section 1 - welcome
   .welcom > div {padding: 0 13%}
 
-  // section2 - about
+  // section 2 - about
   .profile {
     > div{
       padding-bottom: 18rem;
@@ -88,6 +86,12 @@
       @include position($b:-4rem, $l:0, $r:unset);
     }
   }
+
+  // section 3 - skill
+.skillType .flexBox {gap: 4%;}
+#editor .item,
+#designTool .item,
+#publishing .item {flex-basis: 48%;}
 }
 
 
@@ -156,6 +160,10 @@
   .inner{padding: 17%;}
   .about .slick-dots li{margin: 0 3.2rem}
   
+  // section 3 - skill
+  #editor .item,
+  #designTool .item,
+  #publishing .item {flex-basis: 100%;}
 } 
 
 
