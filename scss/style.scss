@@ -1,4 +1,12 @@
 @import "variables";
+// Animation
+@keyframes squareEffect {
+  0% {background-position-y: 10rem;}
+  50% {background-position-y: -10rem;}
+  100% {background-position-y: 10rem;}
+}
+
+
  
 // all section //
 section{
@@ -108,40 +116,53 @@ section{
 
 // section3 - skill //
 .s3 {
-  height: auto;
   background: $subTheme-2;
+
+  h3 {margin: 5rem 0 2rem;}
 }
-.skillType {
-  margin-bottom: 8rem;
-  &:last-child {margin-bottom: 0}
-  
-  .list {
-    @include flexBox($gap:2%);
-    .item {
-      margin-bottom: 3rem;
-      border: 1px solid darkorange;
-    }
+#editor p.explain {
+  margin-bottom: 3rem;
+}
+.list {
+  @include flexBox($gap:2%);
+  .item {
+    margin-bottom: 3rem;
   }
 }
 .squareEffect {
   position: relative;
+  background: $color-1;
+  transition: all .3s ease-in;
+
+  dt::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    margin: 1.5rem auto 3rem;
+    background: $theme-1;
+  }
   &::after {
     content: "";
     display: block;
     padding-bottom: 100%;
   }
+  &:hover {
+    &::after {
+      background: linear-gradient(rgba(245, 223, 77, 0.2), rgba(255, 255, 255, 0), rgba(245, 223, 77, 0.2));
+      opacity: 0.8;
+      animation: squareEffect 3s ease-in infinite Alternate;
+    }
+    dt::after {
+      background: #b89f00;
+    }
+  }
   .content {
     position: absolute;
     width: 100%;
     height: 100%;
+    padding: 3rem;
   }
-}
-#editor .item,
-#designTool .item {
-  flex-basis: 23.5%;
-}
-#publishing .item {
-  flex-basis: 31.3%;
 }
 
 // section4 - project //
@@ -160,35 +181,36 @@ section{
   @include flexBox();
   li {
     position: relative;
+    width: 25%;
     height: 100%;
     min-height: 120px;
     cursor: pointer;
 
-    &:hover {
-      opacity: 0.85;
-      filter: contrast(130%) saturate(2) grayscale(20%);
-    }
     &::after {
       @include position($t:50%, $l:50%);
       content: attr(data-project);
       transform: translate(-50%, -50%);
     }
 
-    &:nth-child(1){
-      background: url(../images/main/project1.jpg) no-repeat;
-      background-size: cover;
+    &:nth-child(1){background: url(../images/main/project1.jpg) no-repeat center top/cover;}
+    &:nth-child(2){background: url(../images/main/project2.jpg) no-repeat center top/cover;}
+    &:nth-child(3){background: url(../images/main/project3.jpg) no-repeat center top/cover;}
+    &:nth-child(4){background: url(../images/main/project4.jpg) no-repeat center top/cover;}
+    &:nth-child(1):hover{
+      background:linear-gradient($color-3), url(../images/main/project1.jpg) no-repeat center top/cover;
+      background-blend-mode: overlay;
     }
-    &:nth-child(2){
-      background: url(../images/main/project2.jpg) no-repeat;
-      background-size: cover;
+    &:nth-child(2):hover{
+      background:linear-gradient($color-3), url(../images/main/project2.jpg) no-repeat center top/cover;
+      background-blend-mode: overlay;
     }
-    &:nth-child(3){
-      background: url(../images/main/project3.jpg) no-repeat;
-      background-size: cover;
+    &:nth-child(3):hover{
+      background:linear-gradient($color-3), url(../images/main/project3.jpg) no-repeat center top/cover;
+      background-blend-mode: overlay;
     }
-    &:nth-child(4){
-      background: url(../images/main/project4.jpg) no-repeat;
-      background-size: cover;
+    &:nth-child(4):hover{
+      background:linear-gradient($color-3), url(../images/main/project4.jpg) no-repeat center top/cover;
+      background-blend-mode: overlay;
     }
   }
 }

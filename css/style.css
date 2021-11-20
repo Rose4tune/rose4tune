@@ -1,3 +1,27 @@
+@-webkit-keyframes squareEffect {
+  0% {
+    background-position-y: 10rem;
+  }
+  50% {
+    background-position-y: -10rem;
+  }
+  100% {
+    background-position-y: 10rem;
+  }
+}
+
+@keyframes squareEffect {
+  0% {
+    background-position-y: 10rem;
+  }
+  50% {
+    background-position-y: -10rem;
+  }
+  100% {
+    background-position-y: 10rem;
+  }
+}
+
 section {
   width: 100vw;
   height: 100vh;
@@ -172,19 +196,18 @@ section {
 }
 
 .s3 {
-  height: auto;
   background: #f7f6f2;
 }
 
-.skillType {
-  margin-bottom: 8rem;
+.s3 h3 {
+  margin: 5rem 0 2rem;
 }
 
-.skillType:last-child {
-  margin-bottom: 0;
+#editor p.explain {
+  margin-bottom: 3rem;
 }
 
-.skillType .list {
+.list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,7 +222,7 @@ section {
   gap: 2%;
 }
 
-.skillType .list .item {
+.list .item {
   -ms-flex-negative: 1;
       flex-shrink: 1;
   -webkit-box-flex: 1;
@@ -207,13 +230,24 @@ section {
           flex-grow: 1;
 }
 
-.skillType .list .item {
+.list .item {
   margin-bottom: 3rem;
-  border: 1px solid darkorange;
 }
 
 .squareEffect {
   position: relative;
+  background: #fff;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.squareEffect dt::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.2rem;
+  margin: 1.5rem auto 3rem;
+  background: #F5DF4D;
 }
 
 .squareEffect::after {
@@ -222,21 +256,23 @@ section {
   padding-bottom: 100%;
 }
 
+.squareEffect:hover::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 223, 77, 0.2)), color-stop(rgba(255, 255, 255, 0)), to(rgba(245, 223, 77, 0.2)));
+  background: linear-gradient(rgba(245, 223, 77, 0.2), rgba(255, 255, 255, 0), rgba(245, 223, 77, 0.2));
+  opacity: 0.8;
+  -webkit-animation: squareEffect 3s ease-in infinite Alternate;
+          animation: squareEffect 3s ease-in infinite Alternate;
+}
+
+.squareEffect:hover dt::after {
+  background: #b89f00;
+}
+
 .squareEffect .content {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-
-#editor .item,
-#designTool .item {
-  -ms-flex-preferred-size: 23.5%;
-      flex-basis: 23.5%;
-}
-
-#publishing .item {
-  -ms-flex-preferred-size: 31.3%;
-      flex-basis: 31.3%;
+  padding: 3rem;
 }
 
 .s4 {
@@ -278,15 +314,10 @@ section {
 
 #projects li {
   position: relative;
+  width: 25%;
   height: 100%;
   min-height: 120px;
   cursor: pointer;
-}
-
-#projects li:hover {
-  opacity: 0.85;
-  -webkit-filter: contrast(130%) saturate(2) grayscale(20%);
-          filter: contrast(130%) saturate(2) grayscale(20%);
 }
 
 #projects li::after {
@@ -299,21 +330,41 @@ section {
 }
 
 #projects li:nth-child(1) {
-  background: url(../images/main/project1.jpg) no-repeat;
-  background-size: cover;
+  background: url(../images/main/project1.jpg) no-repeat center top/cover;
 }
 
 #projects li:nth-child(2) {
-  background: url(../images/main/project2.jpg) no-repeat;
-  background-size: cover;
+  background: url(../images/main/project2.jpg) no-repeat center top/cover;
 }
 
 #projects li:nth-child(3) {
-  background: url(../images/main/project3.jpg) no-repeat;
-  background-size: cover;
+  background: url(../images/main/project3.jpg) no-repeat center top/cover;
 }
 
 #projects li:nth-child(4) {
-  background: url(../images/main/project4.jpg) no-repeat;
-  background-size: cover;
+  background: url(../images/main/project4.jpg) no-repeat center top/cover;
+}
+
+#projects li:nth-child(1):hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1d2123)), url(../images/main/project1.jpg) no-repeat center top/cover;
+  background: linear-gradient(#1d2123), url(../images/main/project1.jpg) no-repeat center top/cover;
+  background-blend-mode: overlay;
+}
+
+#projects li:nth-child(2):hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1d2123)), url(../images/main/project2.jpg) no-repeat center top/cover;
+  background: linear-gradient(#1d2123), url(../images/main/project2.jpg) no-repeat center top/cover;
+  background-blend-mode: overlay;
+}
+
+#projects li:nth-child(3):hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1d2123)), url(../images/main/project3.jpg) no-repeat center top/cover;
+  background: linear-gradient(#1d2123), url(../images/main/project3.jpg) no-repeat center top/cover;
+  background-blend-mode: overlay;
+}
+
+#projects li:nth-child(4):hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1d2123)), url(../images/main/project4.jpg) no-repeat center top/cover;
+  background: linear-gradient(#1d2123), url(../images/main/project4.jpg) no-repeat center top/cover;
+  background-blend-mode: overlay;
 }
