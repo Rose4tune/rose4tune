@@ -108,11 +108,13 @@ section{
 
 .certificate {
   dt:hover + dd{
-    display: block;
-    animation: fadeIn 0.3s ease-in;
+    opacity: 1;
+    height: auto;
+    animation: slideDown 0.2s ease-in;
   }
   dd {
-    display: none;
+    opacity: 0;
+    height: 0;
   }
 }
 

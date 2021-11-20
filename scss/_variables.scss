@@ -36,7 +36,10 @@ $color-3: #1d2123; //29, 33, 35
   50% {background-position-y: 10rem;}
   100% {background-position-y: -12rem;}
 }
-
+@keyframes slideDown {
+  0% {transform: translateY(-3px); opacity: 0;}
+  100% {transform: translateY(0); opacity: 1;}
+}
 
 
 

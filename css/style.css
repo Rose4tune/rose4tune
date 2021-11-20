@@ -112,6 +112,32 @@
   }
 }
 
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 section {
   width: 100vw;
   height: 100vh;
@@ -286,13 +312,15 @@ section {
 }
 
 .certificate dt:hover + dd {
-  display: block;
-  -webkit-animation: fadeIn 0.3s ease-in;
-          animation: fadeIn 0.3s ease-in;
+  opacity: 1;
+  height: auto;
+  -webkit-animation: slideDown 0.2s ease-in;
+          animation: slideDown 0.2s ease-in;
 }
 
 .certificate dd {
-  display: none;
+  opacity: 0;
+  height: 0;
 }
 
 .s3 {
