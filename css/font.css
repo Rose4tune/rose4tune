@@ -68,6 +68,33 @@ span.date {
 /* section 3 : skill */
 .s3 {text-align: center;}
 
+.s4 h2{
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 5px #1d2123;
+  text-align: center;
+}
+#projects li::after {
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 5px #1d2123;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive */
 @media (min-width: 1999px) and (orientation: landscape) {html {font-size: 110%;}}

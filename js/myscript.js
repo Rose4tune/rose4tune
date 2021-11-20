@@ -22,6 +22,7 @@ window.onscroll = function () {
 window.onload = function() {
   gnbMove();
   photoScroll();
+  window.scrollTo(0, arr[3]);
 }
 
 function headerScroll(){
@@ -163,8 +164,8 @@ for (let i = 0; i < totalPage; i++) {
 
 $('.scroll_icon').click(function() {
   $html.animate({scrollTop: arr[1]}, 800, "swing");
+  $("#gnb_menu > li:nth-child(2)").addClass("on").siblings("li").removeClass("on");
 })
-
 
 
 
@@ -180,6 +181,7 @@ $('.sns').append(sns);
 // 페이지 상단이동 버튼
 $('#pageUp').on('click', function() {
   $html.animate({scrollTop:0}, 1000);
+  $("#gnb_menu > li:first-child").addClass("on").siblings("li").removeClass("on");
 });
 
 function pageUp (){
@@ -240,5 +242,4 @@ $(window).resize(function(){
     });
   }
 }).resize();
-
 

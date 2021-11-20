@@ -66,8 +66,6 @@ section {
 }
 
 .s2 .inner .item {
-  -ms-flex-preferred-size: calc(calc(1025px - 100%) * 1000000);
-      flex-basis: calc(calc(1025px - 100%) * 1000000);
   -ms-flex-negative: 1;
       flex-shrink: 1;
   -webkit-box-flex: 1;
@@ -186,7 +184,7 @@ section {
   margin-bottom: 0;
 }
 
-.skillType .flexBox {
+.skillType .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,7 +199,7 @@ section {
   gap: 2%;
 }
 
-.skillType .flexBox .item {
+.skillType .list .item {
   -ms-flex-negative: 1;
       flex-shrink: 1;
   -webkit-box-flex: 1;
@@ -209,7 +207,7 @@ section {
           flex-grow: 1;
 }
 
-.skillType .flexBox .item {
+.skillType .list .item {
   margin-bottom: 3rem;
   border: 1px solid darkorange;
 }
@@ -239,4 +237,83 @@ section {
 #publishing .item {
   -ms-flex-preferred-size: 31.3%;
       flex-basis: 31.3%;
+}
+
+.s4 {
+  position: relative;
+}
+
+.s4 h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  margin-top: 13vh;
+}
+
+#projects {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0;
+}
+
+#projects .item {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#projects li {
+  position: relative;
+  height: 100%;
+  min-height: 120px;
+  cursor: pointer;
+}
+
+#projects li:hover {
+  opacity: 0.85;
+  -webkit-filter: contrast(130%) saturate(2) grayscale(20%);
+          filter: contrast(130%) saturate(2) grayscale(20%);
+}
+
+#projects li::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: attr(data-project);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#projects li:nth-child(1) {
+  background: url(../images/main/project1.jpg) no-repeat;
+  background-size: cover;
+}
+
+#projects li:nth-child(2) {
+  background: url(../images/main/project2.jpg) no-repeat;
+  background-size: cover;
+}
+
+#projects li:nth-child(3) {
+  background: url(../images/main/project3.jpg) no-repeat;
+  background-size: cover;
+}
+
+#projects li:nth-child(4) {
+  background: url(../images/main/project4.jpg) no-repeat;
+  background-size: cover;
 }
