@@ -266,3 +266,68 @@ skillNextBtn.onclick = function(){
     skillNextBtn.style.transform = 'rotate(180deg) translate(50%, 0)';
   }
 }
+
+
+
+// Create Modal Button
+var $btn_modal = document.getElementsByClassName('btn_modal');
+var btn_modalCnt = $btn_modal.length;
+
+var btns_hover = [];
+var btns_text = [];
+for(let i = 0; i < btn_modalCnt; i++) {
+  const $span_line = document.createElement('span');
+  const $span_text = document.createElement('span');
+  const $button = document.createElement('button');
+
+  btns_hover.push($btn_modal[i].dataset.hover);
+  btns_text.push($btn_modal[i].dataset.text);
+
+  $span_line.classList.add('btn_line');
+  $span_text.classList.add('btn_text');
+  $span_text.append(btns_text[i]);
+  
+  $button.classList.add('open');
+  $button.dataset.hover = btns_hover[i];
+  $button.appendChild($span_text);
+  
+  $btn_modal[i].append($span_line, $button);
+}
+
+
+
+
+// Section 4 - Projects // Create Contents
+var project = document.getElementsByClassName('project');
+var projectCnt = project.length;
+
+var pjTitle = [];
+var imgSrc = [];
+for (let i = 0; i < projectCnt; i++) {
+  pjTitle.push(project[i].dataset.project);
+
+  const $img = document.createElement('img');
+  $img.src = '/images/main/project' + [i+1] + '.jpg';
+  $img.alt = pjTitle[i];
+
+  const $div = document.createElement('div');
+  $div.classList.add('image');
+  $div.dataset.project = pjTitle[i];
+  $div.appendChild($img);
+  project[i].appendChild($div);
+}
+
+$("#projects img").click(function (){
+  const contentBox = $(this).parents('li.project');
+  const allBoxes = contentBox.siblings('li');
+
+  if(contentBox.hasClass('view') == true) {
+    contentBox.removeClass('view');
+    allBoxes.removeClass('view').css('width','auto');
+    $('.s4 h2').css('display', 'block');
+  } else {
+    allBoxes.removeClass('view').css('width','6.5%');
+    contentBox.addClass('view').css('width','80.5%');
+    $('.s4 h2').css('display', 'none');
+  }
+});

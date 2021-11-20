@@ -51,6 +51,14 @@
     height: auto;
     padding-left: 0;
   }
+
+  #projects li {
+    flex-basis: 100%;
+  }
+  .image {
+    width: 100%;
+    img{width: 100%;}
+  }
 }
 
 

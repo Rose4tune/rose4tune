@@ -138,6 +138,80 @@
   }
 }
 
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideLeftDelay {
+  0% {
+    margin-left: 20rem;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeftDelay {
+  0% {
+    margin-left: 20rem;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
 section {
   width: 100vw;
   height: 100vh;
@@ -456,12 +530,14 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   gap: 0;
 }
 
 #projects .item {
+  -ms-flex-preferred-size: 100vw;
+      flex-basis: 100vw;
   -ms-flex-negative: 1;
       flex-shrink: 1;
   -webkit-box-flex: 1;
@@ -469,15 +545,20 @@ section {
           flex-grow: 1;
 }
 
-#projects li {
+.image {
   position: relative;
-  width: 25%;
+  width: 25vw;
   height: 100%;
-  min-height: 120px;
+  overflow: hidden;
+}
+
+.image img:hover {
+  -webkit-filter: contrast(125%) brightness(98%) saturate(1.4);
+          filter: contrast(125%) brightness(98%) saturate(1.4);
   cursor: pointer;
 }
 
-#projects li::after {
+.image::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -486,42 +567,53 @@ section {
           transform: translate(-50%, -50%);
 }
 
-#projects li:nth-child(1) {
-  background: url(../images/main/project1.jpg) no-repeat center top/cover;
+li.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 0;
+  height: 100%;
+  min-height: 120px;
 }
 
-#projects li:nth-child(2) {
-  background: url(../images/main/project2.jpg) no-repeat center top/cover;
+li.project .item {
+  -ms-flex-preferred-size: 25vw;
+      flex-basis: 25vw;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-#projects li:nth-child(3) {
-  background: url(../images/main/project3.jpg) no-repeat center top/cover;
+li.project .content {
+  display: none;
 }
 
-#projects li:nth-child(4) {
-  background: url(../images/main/project4.jpg) no-repeat center top/cover;
+li.project.view {
+  -webkit-animation: slideLeftDelay 1s ease-in-out;
+          animation: slideLeftDelay 1s ease-in-out;
 }
 
-#projects li:nth-child(1):hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1d2123)), url(../images/main/project1.jpg) no-repeat center top/cover;
-  background: linear-gradient(#1d2123), url(../images/main/project1.jpg) no-repeat center top/cover;
-  background-blend-mode: overlay;
+li.project.view .content {
+  display: block;
+  width: 70%;
+  height: 100%;
 }
 
-#projects li:nth-child(2):hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1d2123)), url(../images/main/project2.jpg) no-repeat center top/cover;
-  background: linear-gradient(#1d2123), url(../images/main/project2.jpg) no-repeat center top/cover;
-  background-blend-mode: overlay;
+li.project.view .image {
+  width: 30%;
 }
 
-#projects li:nth-child(3):hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1d2123)), url(../images/main/project3.jpg) no-repeat center top/cover;
-  background: linear-gradient(#1d2123), url(../images/main/project3.jpg) no-repeat center top/cover;
-  background-blend-mode: overlay;
-}
-
-#projects li:nth-child(4):hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1d2123)), url(../images/main/project4.jpg) no-repeat center top/cover;
-  background: linear-gradient(#1d2123), url(../images/main/project4.jpg) no-repeat center top/cover;
-  background-blend-mode: overlay;
+li.project.view .image img {
+  -webkit-filter: contrast(125%) brightness(98%) saturate(1.4);
+          filter: contrast(125%) brightness(98%) saturate(1.4);
 }

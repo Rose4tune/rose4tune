@@ -88,7 +88,7 @@ span.date {
   text-shadow: 2px 2px 5px #1d2123;
   text-align: center;
 }
-#projects li::after {
+#projects .image::after {
   font-size: 3rem;
   font-weight: 600;
   color: white;

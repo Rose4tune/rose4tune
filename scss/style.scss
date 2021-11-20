@@ -128,7 +128,7 @@ section{
 #skillNext {
   position: relative;
   button {
-    @include position ($b:0, $l:50%);
+    @include position($b:0, $l:50%);
     width: 2.5rem;
     height: 2rem;
     min-width: 20px;
@@ -141,7 +141,7 @@ section{
   margin-bottom: 3rem;
 }
 .list {
-  @include flexBox ($align:stretch, $gap:2%, $basis:23.5%);
+  @include flexBox($align:stretch, $gap:2%, $basis:23.5%);
   .item {
     margin-bottom: 3rem;
   }
@@ -163,8 +163,8 @@ section{
     background: $theme-1;
   }
   &::after {
-    @include position ($t:0, $l:0);
-    @include square ($wh:100%);
+    @include position($t:0, $l:0);
+    @include square($wh:100%);
     content: "";
     display: block;
     // padding-bottom: 100%;
@@ -200,39 +200,37 @@ section{
 }
 #projects {
   height: 100%;
-  @include flexBox();
-  li {
-    position: relative;
-    width: 25%;
+  @include flexBox($wrap:nowrap, $basis:100vw);
+}
+.image {
+  position: relative;
+  width: 25vw;
+  height: 100%;
+  overflow: hidden;
+
+  img:hover{filter: contrast(125%) brightness(98%) saturate(1.4);
+    cursor: pointer;}
+  
+  &::after {
+    @include position($t:50%, $l:50%);
+    content: attr(data-project);
+    transform: translate(-50%, -50%);
+  }
+}
+li.project {
+  @include flexBox($wrap:nowrap, $justify:flex-end, $basis:25vw);
+  height: 100%;
+  min-height: 120px;
+  .content {display:none;}
+}
+li.project.view {
+  animation: slideLeftDelay 1s ease-in-out; 
+  .content {
+    display: block;
+    width: 70%;
     height: 100%;
-    min-height: 120px;
-    cursor: pointer;
-
-    &::after {
-      @include position($t:50%, $l:50%);
-      content: attr(data-project);
-      transform: translate(-50%, -50%);
-    }
-
-    &:nth-child(1){background: url(../images/main/project1.jpg) no-repeat center top/cover;}
-    &:nth-child(2){background: url(../images/main/project2.jpg) no-repeat center top/cover;}
-    &:nth-child(3){background: url(../images/main/project3.jpg) no-repeat center top/cover;}
-    &:nth-child(4){background: url(../images/main/project4.jpg) no-repeat center top/cover;}
-    &:nth-child(1):hover{
-      background:linear-gradient($color-3), url(../images/main/project1.jpg) no-repeat center top/cover;
-      background-blend-mode: overlay;
-    }
-    &:nth-child(2):hover{
-      background:linear-gradient($color-3), url(../images/main/project2.jpg) no-repeat center top/cover;
-      background-blend-mode: overlay;
-    }
-    &:nth-child(3):hover{
-      background:linear-gradient($color-3), url(../images/main/project3.jpg) no-repeat center top/cover;
-      background-blend-mode: overlay;
-    }
-    &:nth-child(4):hover{
-      background:linear-gradient($color-3), url(../images/main/project4.jpg) no-repeat center top/cover;
-      background-blend-mode: overlay;
-    }
+  }
+  .image {width: 30%;
+    img{filter: contrast(125%) brightness(98%) saturate(1.4);}
   }
 }
