@@ -35,8 +35,9 @@
 
 // page up button //
 #pageUp {
+  z-index: 100;
   @include position($p:fixed, $b:4vh, $r:4vw);
-  @include square($wh:4rem, $minWh:30px);
+  @include square($wh:5rem, $minWh:30px);
   background: url('../images/buttons/pageUp.png')no-repeat 50% 50%;
   background-size: 100%;
   transition: all .3s ease-in;
@@ -48,6 +49,7 @@
     background: linear-gradient(rgba(245, 223, 77, 0.1), rgba(245, 223, 77, 0.8));
     border-radius: 100%;
     transition: all ease-in;
+    box-shadow: 2px 2px 5px gray;
 
     p {
       display: block;
@@ -60,7 +62,7 @@
 // move page button //
 .scroll_icon {
   @include position($b:4vh, $l:50%);
-  @include square($wh:4.5rem, $minWh:35px);
+  @include square($wh:5rem, $minWh:35px);
   background: url('../images/buttons/scroll.png');
   background-size: 100%;
   transition: all .3s ease-in-out;

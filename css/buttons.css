@@ -50,6 +50,17 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0;
+}
+
+.sns .item {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .sns a {
@@ -81,11 +92,12 @@
 }
 
 #pageUp {
+  z-index: 100;
   position: fixed;
   bottom: 4vh;
   right: 4vw;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   min-width: 30px;
   min-height: 30px;
   background: url("../images/buttons/pageUp.png") no-repeat 50% 50%;
@@ -106,6 +118,8 @@
   border-radius: 100%;
   -webkit-transition: all ease-in;
   transition: all ease-in;
+  -webkit-box-shadow: 2px 2px 5px gray;
+          box-shadow: 2px 2px 5px gray;
 }
 
 #pageUp:hover p {
@@ -118,8 +132,8 @@
   position: absolute;
   bottom: 4vh;
   left: 50%;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 5rem;
+  height: 5rem;
   min-width: 35px;
   min-height: 35px;
   background: url("../images/buttons/scroll.png");
