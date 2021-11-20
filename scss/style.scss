@@ -1,9 +1,9 @@
 @import "variables";
 // Animation
 @keyframes squareEffect {
-  0% {background-position-y: 10rem;}
-  50% {background-position-y: -10rem;}
-  100% {background-position-y: 10rem;}
+  0% {background-position-y: -12rem;}
+  50% {background-position-y: 10rem;}
+  100% {background-position-y: -12rem;}
 }
 
 
@@ -79,7 +79,7 @@ section{
       margin-bottom:0;
     }
   }
-  #btn_modal {
+  .btn_modal {
     @include position($b:3rem, $r:3rem);
   }
 }
@@ -114,8 +114,19 @@ section{
   }
 }
 
+.certificate {
+  dt:hover + dd{
+    display: block;
+    animation: fadeIn 0.3s ease-in;
+  }
+  dd {
+    display: none;
+  }
+}
+
 // section3 - skill //
 .s3 {
+  height: auto;
   background: $subTheme-2;
 
   h3 {margin: 5rem 0 2rem;}
@@ -124,17 +135,20 @@ section{
   margin-bottom: 3rem;
 }
 .list {
-  @include flexBox($gap:2%);
+  @include flexBox ($align:stretch, $gap:2%, $basis:23.5%);
   .item {
     margin-bottom: 3rem;
   }
+}
+#publishing .item {
+  flex-basis: 31.3%;
 }
 .squareEffect {
   position: relative;
   background: $color-1;
   transition: all .3s ease-in;
 
-  dt::after {
+  h4::after {
     content: '';
     display: block;
     width: 5rem;
@@ -143,22 +157,24 @@ section{
     background: $theme-1;
   }
   &::after {
+    @include position ($t:0, $l:0);
+    @include square ($wh:100%);
     content: "";
     display: block;
-    padding-bottom: 100%;
+    // padding-bottom: 100%;
   }
   &:hover {
     &::after {
       background: linear-gradient(rgba(245, 223, 77, 0.2), rgba(255, 255, 255, 0), rgba(245, 223, 77, 0.2));
       opacity: 0.8;
-      animation: squareEffect 3s ease-in infinite Alternate;
+      animation: squareEffect 2.5s ease-in infinite Alternate;
     }
-    dt::after {
+    h4::after {
       background: #b89f00;
     }
   }
   .content {
-    position: absolute;
+    // position: absolute;
     width: 100%;
     height: 100%;
     padding: 3rem;

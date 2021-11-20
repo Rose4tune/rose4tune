@@ -91,11 +91,13 @@
   .skillType .flexBox {
     gap: 4%;
   }
-  #editor .item,
-  #designTool .item,
-  #publishing .item {
+  .list .item {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
+  }
+  #publishing .item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -163,9 +165,7 @@
   .about .slick-dots li {
     margin: 0 3.2rem;
   }
-  #editor .item,
-  #designTool .item,
-  #publishing .item {
+  .list .item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }

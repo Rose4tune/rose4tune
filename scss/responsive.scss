@@ -106,10 +106,11 @@
   .skillType .flexBox {
     gap: 4%;
   }
-  #editor .item,
-  #designTool .item,
-  #publishing .item {
+  .list .item {
     flex-basis: 48%;
+  }
+  #publishing .item {
+    flex-basis: 100%;
   }
 }
 
@@ -199,9 +200,7 @@
   }
   
   // section 3 - skill
-  #editor .item,
-  #designTool .item,
-  #publishing .item {
+  .list .item {
     flex-basis: 100%;
   }
 } 
