@@ -9,6 +9,39 @@ $color-1: #fff;
 $color-2: #c5c6c7; //197, 198, 199
 $color-3: #1d2123; //29, 33, 35
 
+
+// Animation
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes goUp {
+  0% {margin-top: 1.3rem;}
+  60% {margin-top: -1rem;}
+  100% {margin-top: -1rem;}
+}
+@keyframes goDown {
+  0% {bottom: -0.8rem; opacity: 0.6;}
+  60% {bottom: -2rem; opacity: 0.9;}
+  100% {bottom: -2rem; opacity: 1;}
+}
+
+@keyframes squareEffect {
+  0% {background-position-y: -12rem;}
+  50% {background-position-y: 10rem;}
+  100% {background-position-y: -12rem;}
+}
+
+
+
+
+
+
 // icons box
 @mixin square (
   $wh: 0,

@@ -16,6 +16,24 @@
   }
 }
 
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @-webkit-keyframes goUp {
   0% {
     margin-top: 1.3rem;
@@ -37,6 +55,30 @@
   }
   100% {
     margin-top: -1rem;
+  }
+}
+
+@-webkit-keyframes squareEffect {
+  0% {
+    background-position-y: -12rem;
+  }
+  50% {
+    background-position-y: 10rem;
+  }
+  100% {
+    background-position-y: -12rem;
+  }
+}
+
+@keyframes squareEffect {
+  0% {
+    background-position-y: -12rem;
+  }
+  50% {
+    background-position-y: 10rem;
+  }
+  100% {
+    background-position-y: -12rem;
   }
 }
 
@@ -82,13 +124,11 @@
 }
 
 .myblog {
-  background: url("../images/buttons/sns_blogY.png") no-repeat;
-  background-size: 100%;
+  background: url("../images/buttons/sns_blog.png") no-repeat center center/cover;
 }
 
 .mygit {
-  background: url("../images/buttons/sns_gitY.png") no-repeat;
-  background-size: 100%;
+  background: url("../images/buttons/sns_git.png") no-repeat center center/cover;
 }
 
 #pageUp {

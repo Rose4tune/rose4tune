@@ -6,7 +6,7 @@ window.addEventListener('resize', function(){
 });
 
 function resizing(){
-  // console.log('resizing window : ' + window.innerWidth);
-  // location.reload();
-  // scrollTo(0,0);
+  console.log('resizing window : ' + window.innerWidth);
+  location.reload();
+  scrollTo(0,0);
 }

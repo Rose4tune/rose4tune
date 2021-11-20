@@ -1,12 +1,5 @@
 @import "variables";
 
-// Animation
-@keyframes fadeOut {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
-}
-
-
 // LABTOP(max 1024) //
 @include labtop {
   // header

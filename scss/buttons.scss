@@ -1,16 +1,5 @@
 @import "variables";
 
-// Animation
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@keyframes goUp {
-  0% {margin-top: 1.3rem;}
-  60% {margin-top: -1rem;}
-  100% {margin-top: -1rem;}
-}
-
 
 // sns buttons //
 .sns{
@@ -25,12 +14,10 @@
   }
 }
 .myblog {
-  background: url('../images/buttons/sns_blogY.png') no-repeat;
-  background-size: 100%;
+  background: url('../images/buttons/sns_blog.png') no-repeat center center/cover;
 }
 .mygit {
-  background: url('../images/buttons/sns_gitY.png') no-repeat;
-  background-size: 100%;
+  background: url('../images/buttons/sns_git.png') no-repeat center center/cover;
 }
 
 // page up button //
