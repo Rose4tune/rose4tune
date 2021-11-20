@@ -67,7 +67,20 @@ span.date {
 
 /* section 3 : skill */
 .s3 {text-align: center;}
+.s3 h4 {
+  font-size: 2.8rem;
+  color: #60605e;
+}
+.s3 p {
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #939597;
+}
+.list .item:hover h4 {
+  color: #b89f00;
+}
 
+/* section 4 : project */
 .s4 h2{
   font-weight: 600;
   color: white;
