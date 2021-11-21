@@ -54,7 +54,7 @@
   </header>
 
   <!-- UP BUTTON -->
-  <button id="pageUp"><span>UP</span></button>
+  <button type="button" id="pageUp" class="button"><span>UP</span></button>
 
   <main>
     <!-- SECTION 1 [ WELCOM ] -->
@@ -65,7 +65,7 @@
           <h1>I'm Ye Seo Lee,<br>Rose</h1>
         </div>
       </div>
-      <button class="scroll_icon"></button>
+      <button type="button" class="scroll_icon"></button>
     </section>
     <!-- SECTION 2 [ ABOUT ] -->
     <section class="s2" data-title="about">
@@ -238,7 +238,7 @@
           </ul>
         </div>
         <div id="skillNext">
-          <button id="skillNextBtn" type="button"></button>
+          <button type="button" id="skillNextBtn"></button>
         </div>
         <!-- publishing skill -->
         <div id="publishing" class="skillType">
@@ -294,7 +294,7 @@
     <section class="s4" data-title="projects">
       <h2>Projects</h2>
       <ul id="projects">
-        <li class="project" data-project="Frients">
+        <li class="project item" data-project="Frients">
           <div class="content">
             <h3>Frients</h3>
             <p>사용자의 편리성과 다양한 고객층 확보를 목적으로 기존 웹사이트를 리뉴얼 하였으며, 모바일 반응형으로 제작되었습니다.</p>
@@ -328,13 +328,13 @@
               </li>
               <li>2</li>
             </ul>
-            <div class="demoBtns">
+            <!-- <div class="demoBtns">
               <div class="btn_modal" data-hover="go github" data-text="go github" data-btntype="link"></div>
               <div class="btn_modal" data-hover="view demo" data-text="view demo" data-btntype="modal"></div>
-            </div>
+            </div> -->
           </div>
         </li>
-        <li class="project" data-project="O-Mannager">
+        <li class="project item" data-project="O-Mannager">
           <div class="content">
             <h3>O-Mannager</h3>
             <p>사용자의 편리성과 다양한 고객층 확보를 목적으로 기존 웹사이트를 리뉴얼 하였으며, 모바일 반응형으로 제작되었습니다.</p>
@@ -368,13 +368,13 @@
               </li>
               <li>2</li>
             </ul>
-            <div class="demoBtns">
+            <!-- <div class="demoBtns">
               <div class="btn_modal" data-hover="go github" data-text="go github" data-btntype="link"></div>
               <div class="btn_modal" data-hover="view demo" data-text="view demo" data-btntype="modal"></div>
-            </div>
+            </div> -->
           </div>
         </li>
-        <li class="project" data-project="UNKNOWN">
+        <li class="project item" data-project="UNKNOWN">
           <div class="content">
             <h3>UNKNOWN</h3>
             <p>사용자의 편리성과 다양한 고객층 확보를 목적으로 기존 웹사이트를 리뉴얼 하였으며, 모바일 반응형으로 제작되었습니다.</p>
@@ -408,13 +408,13 @@
               </li>
               <li>2</li>
             </ul>
-            <div class="demoBtns">
+            <!-- <div class="demoBtns">
               <div class="btn_modal" data-hover="go github" data-text="go github" data-btntype="link"></div>
               <div class="btn_modal" data-hover="view demo" data-text="view demo" data-btntype="modal"></div>
-            </div>
+            </div> -->
           </div>
         </li>
-        <li class="project" data-project="Deers-M">
+        <li class="project item" data-project="Deers-M">
           <div class="content">
             <h3>Deers-M</h3>
             <p>사용자의 편리성과 다양한 고객층 확보를 목적으로 기존 웹사이트를 리뉴얼 하였으며, 모바일 반응형으로 제작되었습니다.</p>
@@ -448,10 +448,10 @@
               </li>
               <li>2</li>
             </ul>
-            <div class="demoBtns">
+            <!-- <div class="demoBtns">
               <div class="btn_modal" data-hover="go github" data-text="go github" data-btntype="link"></div>
               <div class="btn_modal" data-hover="view demo" data-text="view demo" data-btntype="modal"></div>
-            </div>
+            </div> -->
           </div>
         </li>
       </ul>
@@ -460,8 +460,30 @@
     <section class="s5" data-title="connect">
       <h2>connect</h2>
       <div class="inner">
-        <div>asdf</div>
-        <div class="toRight">asdf</div>
+        <div class="item">
+          <div class="photo">
+            <img src="/images/main/profile.jpg" alt="profile">
+          </div>
+        </div>
+        <div class="item">
+          <a class="button" href="mailto:rosefor2ne@gmail.com?body=안녕하세요.이예서입니다.">send message</a>
+          <button class="button" type="button">go to resume</button>
+          <ul>
+            <li>
+              <h3>want to talk?</h3>
+              <p><a href="mailto:rosefor2ne@gmail.com?body=안녕하세요.이예서입니다.">rosefor2ne@gmail.com</a></p>
+              <p><a href="tel:010-2974-1992">+82 10-2974-1992</a></p>
+            </li>
+            <li>
+              <h3>address</h3>
+              <p>59, Dorim-ro, Guro-gu,<br>Seoul, Republic of Korea</p>
+            </li>
+            <li>
+              <h3>me in social</h3>
+              <div class="sns"></div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>

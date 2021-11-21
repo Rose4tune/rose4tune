@@ -10,6 +10,7 @@ section{
   padding: 6% 11.5%;
   > div:first-child {
     width: 50%;
+    height: 100%;
   }
 }
 .toRight{
@@ -43,19 +44,12 @@ section{
     position: relative;
     height: 100%;
   }
-  .photo {
+  #photo {
     @include position($t:-96vh, $l:0);
     width: 80%;
     height: 70vh;
     min-height: 420px;
-    overflow: hidden;
     transition: all 1s;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
   .textBox{
     @include position($b:0, $r:0);
@@ -73,6 +67,15 @@ section{
   }
   .btn_modal {
     @include position($b:3rem, $r:3rem);
+  }
+}
+.photo{
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -200,11 +203,10 @@ section{
 }
 #projects {
   height: 100%;
-  @include flexBox($wrap:nowrap, $basis:100vw);
+  @include flexBox($wrap:nowrap);
 }
 .image {
   position: relative;
-  width: 25vw;
   height: 100%;
   overflow: hidden;
 
@@ -228,7 +230,6 @@ li.project {
     > p {
       margin: 3rem 0;
     }
-
   }
 }
 li.project.view {
@@ -250,15 +251,16 @@ li.project.view {
   @include flexBox ($justify:flex-start, $gap:3rem);
   margin-bottom: 2rem;
 
-  button {
+  li {
     padding: 0.8rem 1.8rem;
     border: 1px solid $theme-2;
     border-radius: 2rem;
+    cursor: pointer;
     &:focus, &:hover {
       background: rgba(96, 96, 94, 0.8);
     }
   }
-  .on button {
+  li.on {
     background: $subTheme-3;
   }
 }
@@ -281,4 +283,50 @@ li.project.view {
 .demoBtns {
   @include flexBox ($gap:3rem, $justify:flex-end);
   margin-top: 1.5rem;
+}
+
+
+// section5 - connect //
+.s5 {
+  .inner {
+    @include flexBox($basis:calc(calc(1025px - 100%) * 1000000));
+  .item:last-child {margin-left: 6%;}
+  }
+  .photo {
+    width: 60%;
+    height: 100%;
+    margin: {
+      left: auto;
+      right: 6%;
+    }
+  }
+  .button{
+    display: block;
+    width: fit-content;
+    padding: 1rem 4rem;
+    margin: 1.5rem 0;
+    border-radius: 4rem;
+    background: #fdf7c3;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    &:hover {
+      background: $subTheme-3;
+      color: $theme-1;
+    }
+  }
+  h3 {
+    margin: 7rem 0 1rem;
+    font-size: 2.4rem;
+    color: $color-2;
+    text-transform: uppercase;
+  }
+  p {
+    // margin-top: 2rem;
+    line-height: 230%;
+    font-size: 1.6rem;
+    color: $color-3;
+  }
+  .sns {
+    width: fit-content;
+  }
 }

@@ -57,7 +57,13 @@
   }
   .image {
     width: 100%;
+    height: 28vh;
     img{width: 100%;}
+  }
+
+  .s4 h2 {
+    position: unset;
+    margin: 10rem 0 2rem;
   }
 }
 

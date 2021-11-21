@@ -24,7 +24,7 @@ window.onload = function() {
   gnbMove();
   photoScroll();
   skillNextArrow();
-  window.scrollTo(0, arr[3]);
+  window.scrollTo(0, arr[4]);
 }
 
 function headerScroll(){
@@ -269,7 +269,7 @@ skillNextBtn.onclick = function(){
 
 
 
-// Create Modal Button
+// Create Modal/Link Button
 var $btn_modal = document.getElementsByClassName('btn_modal');
 var btn_modalCnt = $btn_modal.length;
 
@@ -303,7 +303,6 @@ for(let i = 0; i < btn_modalCnt; i++) {
   }
 }
 
-// Create Link button
 
 
 
@@ -368,8 +367,8 @@ for(let i = 0; i < pjTabBoxCnt; i++) {
   var pjTabs = [];
   for(let j = 0; j < pjTabCnt; j++) {
     const pjTab = document.createElement('li');
-    const button = document.createElement('button');
-    pjTab.appendChild(button).textContent = pjTabTitle[j];
+    pjTab.classList.add('button');
+    pjTab.textContent = pjTabTitle[j];
     pjTabs.push(pjTab);
     $pjTabBox[i].append(pjTabs[j]);
   }

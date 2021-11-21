@@ -22,12 +22,11 @@ h3 {
   color: #60605e;
 }
 
-button, .button {
+.button {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   color: #939597;
 }
-button.open::before,
 .button.open::before {font-size: 1.5rem;}
 
 span.date {
@@ -36,7 +35,6 @@ span.date {
  letter-spacing: 0.13rem;
  margin-left: 1rem;
 }
-
 
 /* header */
 #logo {font-size: 3.6rem;}
@@ -107,12 +105,12 @@ li.project .content p {
   text-align: center;
 }
 
-.pjTabBox button{
+.pjTabBox li{
   text-transform: uppercase;
 }
-.pjTabBox .on button,
-.pjTabBox button:focus,
-.pjTabBox button:hover{
+.pjTabBox li.on,
+.pjTabBox li:focus,
+.pjTabBox li:hover{
   color: #F5DF4D;
 }
 .tabContent *{

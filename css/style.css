@@ -36,7 +36,7 @@
 
 @-webkit-keyframes goUp {
   0% {
-    margin-top: 1.3rem;
+    margin-top: 1rem;
   }
   60% {
     margin-top: -1rem;
@@ -48,7 +48,7 @@
 
 @keyframes goUp {
   0% {
-    margin-top: 1.3rem;
+    margin-top: 1rem;
   }
   60% {
     margin-top: -1rem;
@@ -224,6 +224,7 @@ section {
 
 .inner > div:first-child {
   width: 50%;
+  height: 100%;
 }
 
 .toRight {
@@ -298,23 +299,15 @@ section {
   height: 100%;
 }
 
-.profile .photo {
+.profile #photo {
   position: absolute;
   top: -96vh;
   left: 0;
   width: 80%;
   height: 70vh;
   min-height: 420px;
-  overflow: hidden;
   -webkit-transition: all 1s;
   transition: all 1s;
-}
-
-.profile .photo img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .profile .textBox {
@@ -346,6 +339,17 @@ section {
   position: absolute;
   bottom: 3rem;
   right: 3rem;
+}
+
+.photo {
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .inform {
@@ -536,8 +540,6 @@ section {
 }
 
 #projects .item {
-  -ms-flex-preferred-size: 100vw;
-      flex-basis: 100vw;
   -ms-flex-negative: 1;
       flex-shrink: 1;
   -webkit-box-flex: 1;
@@ -547,7 +549,6 @@ section {
 
 .image {
   position: relative;
-  width: 25vw;
   height: 100%;
   overflow: hidden;
 }
@@ -651,17 +652,18 @@ li.project.view .image span {
           flex-grow: 1;
 }
 
-.pjTabBox button {
+.pjTabBox li {
   padding: 0.8rem 1.8rem;
   border: 1px solid #939597;
   border-radius: 2rem;
+  cursor: pointer;
 }
 
-.pjTabBox button:focus, .pjTabBox button:hover {
+.pjTabBox li:focus, .pjTabBox li:hover {
   background: rgba(96, 96, 94, 0.8);
 }
 
-.pjTabBox .on button {
+.pjTabBox li.on {
   background: #60605e;
 }
 
@@ -706,4 +708,77 @@ li.project.view .image span {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.s5 .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0;
+}
+
+.s5 .inner .item {
+  -ms-flex-preferred-size: calc(calc(1025px - 100%) * 1000000);
+      flex-basis: calc(calc(1025px - 100%) * 1000000);
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.s5 .inner .item:last-child {
+  margin-left: 6%;
+}
+
+.s5 .photo {
+  width: 60%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: 6%;
+}
+
+.s5 .button {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 4rem;
+  margin: 1.5rem 0;
+  border-radius: 4rem;
+  background: #fdf7c3;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.s5 .button:hover {
+  background: #60605e;
+  color: #F5DF4D;
+}
+
+.s5 h3 {
+  margin: 7rem 0 1rem;
+  font-size: 2.4rem;
+  color: #c5c6c7;
+  text-transform: uppercase;
+}
+
+.s5 p {
+  line-height: 230%;
+  font-size: 1.6rem;
+  color: #1d2123;
+}
+
+.s5 .sns {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
