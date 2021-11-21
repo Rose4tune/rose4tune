@@ -558,10 +558,11 @@ section {
   cursor: pointer;
 }
 
-.image::after {
+.image span {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   content: attr(data-project);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -581,7 +582,6 @@ li.project {
       flex-wrap: nowrap;
   gap: 0;
   height: 100%;
-  min-height: 120px;
 }
 
 li.project .item {
@@ -598,6 +598,10 @@ li.project .content {
   display: none;
 }
 
+li.project .content > p {
+  margin: 3rem 0;
+}
+
 li.project.view {
   -webkit-animation: slideLeftDelay 1s ease-in-out;
           animation: slideLeftDelay 1s ease-in-out;
@@ -607,6 +611,7 @@ li.project.view .content {
   display: block;
   width: 70%;
   height: 100%;
+  padding: 18vh 6vw;
 }
 
 li.project.view .image {
@@ -616,4 +621,89 @@ li.project.view .image {
 li.project.view .image img {
   -webkit-filter: contrast(125%) brightness(98%) saturate(1.4);
           filter: contrast(125%) brightness(98%) saturate(1.4);
+}
+
+li.project.view .image span {
+  display: none;
+}
+
+.pjTabBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.pjTabBox .item {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.pjTabBox button {
+  padding: 0.8rem 1.8rem;
+  border: 1px solid #939597;
+  border-radius: 2rem;
+}
+
+.pjTabBox button:focus, .pjTabBox button:hover {
+  background: rgba(96, 96, 94, 0.8);
+}
+
+.pjTabBox .on button {
+  background: #60605e;
+}
+
+.tabContent {
+  padding: 1rem;
+  border-top: 1px solid #434547;
+  border-bottom: 1px solid #434547;
+}
+
+.tabContent li {
+  display: none;
+}
+
+.tabContent li.on {
+  display: block;
+}
+
+.tabContent table {
+  border-collapse: separate;
+  border-spacing: 0.5rem 2rem;
+}
+
+.demoBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 1.5rem;
+}
+
+.demoBtns .item {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }

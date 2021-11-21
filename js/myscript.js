@@ -278,21 +278,32 @@ var btns_text = [];
 for(let i = 0; i < btn_modalCnt; i++) {
   const $span_line = document.createElement('span');
   const $span_text = document.createElement('span');
-  const $button = document.createElement('button');
-
+  
   btns_hover.push($btn_modal[i].dataset.hover);
   btns_text.push($btn_modal[i].dataset.text);
 
   $span_line.classList.add('btn_line');
   $span_text.classList.add('btn_text');
-  $span_text.append(btns_text[i]);
+  $span_text.textContent = btns_text[i];
   
-  $button.classList.add('open');
-  $button.dataset.hover = btns_hover[i];
-  $button.appendChild($span_text);
   
-  $btn_modal[i].append($span_line, $button);
+  if($btn_modal[i].dataset.btntype == 'link') {
+    const $button = document.createElement('a');
+    $button.classList.add('open', 'button');
+    $button.dataset.hover = btns_hover[i];
+    $button.appendChild($span_text);
+    $btn_modal[i].append($span_line, $button);
+
+  } else if($btn_modal[i].dataset.btntype == 'modal') {
+    const $button = document.createElement('button');
+    $button.classList.add('open', 'button');
+    $button.dataset.hover = btns_hover[i];
+    $button.appendChild($span_text);
+    $btn_modal[i].append($span_line, $button);
+  }
 }
+
+// Create Link button
 
 
 
@@ -303,17 +314,20 @@ var projectCnt = project.length;
 
 var pjTitle = [];
 var imgSrc = [];
-for (let i = 0; i < projectCnt; i++) {
+for(let i = 0; i < projectCnt; i++) {
   pjTitle.push(project[i].dataset.project);
 
   const $img = document.createElement('img');
   $img.src = '/images/main/project' + [i+1] + '.jpg';
   $img.alt = pjTitle[i];
 
+  const $span = document.createElement('span');
+  $span.textContent = pjTitle[i];
+
   const $div = document.createElement('div');
   $div.classList.add('image');
   $div.dataset.project = pjTitle[i];
-  $div.appendChild($img);
+  $div.append($img, $span);
   project[i].appendChild($div);
 }
 
@@ -325,9 +339,51 @@ $("#projects img").click(function (){
     contentBox.removeClass('view');
     allBoxes.removeClass('view').css('width','auto');
     $('.s4 h2').css('display', 'block');
+    $('.s4 .image span').css({
+      'top':'50%',
+      'left':'50%',
+      'transform':'translate(-50%, 50%)'
+    });
   } else {
     allBoxes.removeClass('view').css('width','6.5%');
     contentBox.addClass('view').css('width','80.5%');
     $('.s4 h2').css('display', 'none');
+    $('.s4 .image span').css({
+      'top':'18vh',
+      'left':'0',
+      'white-space':'nowrap',
+      'transform':'rotate(90deg) translate(0, 0)'
+    });
   }
 });
+
+// 탭메뉴 만들기
+var $pjTabBox = document.getElementsByClassName('pjTabBox');
+var pjTabBoxCnt = $pjTabBox.length;
+// var pjTabTitle = ['summary', 'plan', 'wireframe', 'design', 'informaion architetuer'];
+var pjTabTitle = ['summary', 'design'];
+var pjTabCnt = pjTabTitle.length;
+
+for(let i = 0; i < pjTabBoxCnt; i++) {
+  var pjTabs = [];
+  for(let j = 0; j < pjTabCnt; j++) {
+    const pjTab = document.createElement('li');
+    const button = document.createElement('button');
+    pjTab.appendChild(button).textContent = pjTabTitle[j];
+    pjTabs.push(pjTab);
+    $pjTabBox[i].append(pjTabs[j]);
+  }
+}
+
+// 탭 메뉴 작동시키기
+$('.pjTabBox li:first-child').addClass('on');
+$('.tabContent li:first-child').addClass('on');
+
+$('.pjTabBox li').click(function(){
+  const pjTabIdx = $(this).index();
+  const pjContents = $(this).parents('ul').siblings('.tabContent').find('li');
+  $(this).addClass("on").siblings("li").removeClass("on");
+  pjContents.removeClass('on');
+  pjContents[pjTabIdx].classList.add('on');
+});
+

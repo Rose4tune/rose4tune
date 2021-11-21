@@ -13,7 +13,6 @@
 .about.slick-dotted.slick-slider{margin-bottom:0}
 .about .slick-dots {
   position: unset;
-  padding-top: 3rem;
 }
 .about .slick-dots li {margin: 0 1.5rem;}
 .about .slick-dots li.slick-active button:before,
@@ -22,6 +21,7 @@
   font-size: 1.6rem;
   opacity: 0.4;
   margin-left: -50%;
+  background: none;
 }
 .about .slick-dots li:nth-child(1).slick-active button:before,
 .about .slick-dots li:nth-child(1) button:hover:before,

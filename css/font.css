@@ -21,12 +21,13 @@ h3 {
   color: #60605e;
 }
 
-button {
+button, .button {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   color: #939597;
 }
-button.open::before {font-size: 1.5rem;}
+button.open::before,
+.button.open::before {font-size: 1.5rem;}
 
 span.date {
  font-size: 1.6rem;
@@ -88,7 +89,16 @@ span.date {
   text-shadow: 2px 2px 5px #1d2123;
   text-align: center;
 }
-#projects .image::after {
+.s4 h3 {
+  font-weight: 600;
+  color: #1d2123;
+}
+li.project .content p {
+  font-size: 2rem;
+  line-height: 130%;
+  color: #1d2123;
+}
+#projects .image span {
   font-size: 3rem;
   font-weight: 600;
   color: white;
@@ -96,12 +106,18 @@ span.date {
   text-align: center;
 }
 
-
-
-
-
-
-
+.pjTabBox button{
+  text-transform: uppercase;
+}
+.pjTabBox .on button,
+.pjTabBox button:focus,
+.pjTabBox button:hover{
+  color: #F5DF4D;
+}
+.tabContent *{
+  font-size: 1.8rem;
+  color: #60605e;
+}
 
 
 

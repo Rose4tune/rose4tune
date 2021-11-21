@@ -211,8 +211,9 @@ section{
   img:hover{filter: contrast(125%) brightness(98%) saturate(1.4);
     cursor: pointer;}
   
-  &::after {
+  span {
     @include position($t:50%, $l:50%);
+    width: 100%;
     content: attr(data-project);
     transform: translate(-50%, -50%);
   }
@@ -220,17 +221,64 @@ section{
 li.project {
   @include flexBox($wrap:nowrap, $justify:flex-end, $basis:25vw);
   height: 100%;
-  min-height: 120px;
-  .content {display:none;}
+  
+  .content {
+    display:none;
+
+    > p {
+      margin: 3rem 0;
+    }
+
+  }
 }
 li.project.view {
-  animation: slideLeftDelay 1s ease-in-out; 
+  animation: slideLeftDelay 1s ease-in-out;
+  
   .content {
     display: block;
     width: 70%;
     height: 100%;
+    padding: 18vh 6vw;
   }
   .image {width: 30%;
-    img{filter: contrast(125%) brightness(98%) saturate(1.4);}
+    img {filter: contrast(125%) brightness(98%) saturate(1.4);}
+    span {display: none;}
   }
+}
+
+.pjTabBox {
+  @include flexBox ($justify:flex-start, $gap:3rem);
+  margin-bottom: 2rem;
+
+  button {
+    padding: 0.8rem 1.8rem;
+    border: 1px solid $theme-2;
+    border-radius: 2rem;
+    &:focus, &:hover {
+      background: rgba(96, 96, 94, 0.8);
+    }
+  }
+  .on button {
+    background: $subTheme-3;
+  }
+}
+.tabContent {
+  padding: 1rem;
+  border: {
+    top: 1px solid $subTheme-4;
+    bottom: 1px solid $subTheme-4;
+  }
+
+  li {display: none;}
+  li.on {display:block}
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0.5rem 2rem;
+  }
+}
+
+.demoBtns {
+  @include flexBox ($gap:3rem, $justify:flex-end);
+  margin-top: 1.5rem;
 }
