@@ -30,7 +30,7 @@
   transition: all .3s ease-in;
   animation: fadeIn 0.8s ease-in Alternate;
 
-  p {display: none;}
+  span {display: none;}
 
   &:hover{
     background: linear-gradient(rgba(245, 223, 77, 0.1), rgba(245, 223, 77, 0.8));
@@ -38,7 +38,7 @@
     transition: all ease-in;
     box-shadow: 2px 2px 5px gray;
 
-    p {
+    span {
       display: block;
       animation: goUp 0.8s ease-in Infinite Alternate;
     }

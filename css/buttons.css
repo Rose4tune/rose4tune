@@ -36,7 +36,7 @@
 
 @-webkit-keyframes goUp {
   0% {
-    margin-top: 1.3rem;
+    margin-top: 1rem;
   }
   60% {
     margin-top: -1rem;
@@ -48,7 +48,7 @@
 
 @keyframes goUp {
   0% {
-    margin-top: 1.3rem;
+    margin-top: 1rem;
   }
   60% {
     margin-top: -1rem;
@@ -140,8 +140,8 @@
 
 @-webkit-keyframes slideRight {
   0% {
-    -webkit-transform: translateX(-3px);
-            transform: translateX(-3px);
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
     opacity: 0;
   }
   100% {
@@ -153,8 +153,8 @@
 
 @keyframes slideRight {
   0% {
-    -webkit-transform: translateX(-3px);
-            transform: translateX(-3px);
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
     opacity: 0;
   }
   100% {
@@ -166,14 +166,9 @@
 
 @-webkit-keyframes slideLeft {
   0% {
-    -webkit-transform: translateX(25vw);
-            transform: translateX(25vw);
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
     opacity: 0;
-  }
-  70% {
-    -webkit-transform: translateX(5vw);
-            transform: translateX(5vw);
-    opacity: 0.3;
   }
   100% {
     -webkit-transform: translateX(0);
@@ -184,18 +179,35 @@
 
 @keyframes slideLeft {
   0% {
-    -webkit-transform: translateX(25vw);
-            transform: translateX(25vw);
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
     opacity: 0;
-  }
-  70% {
-    -webkit-transform: translateX(5vw);
-            transform: translateX(5vw);
-    opacity: 0.3;
   }
   100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideLeftDelay {
+  0% {
+    margin-left: 20rem;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeftDelay {
+  0% {
+    margin-left: 20rem;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
     opacity: 1;
   }
 }
@@ -266,7 +278,7 @@
           animation: fadeIn 0.8s ease-in Alternate;
 }
 
-#pageUp p {
+#pageUp span {
   display: none;
 }
 
@@ -280,7 +292,7 @@
           box-shadow: 2px 2px 5px gray;
 }
 
-#pageUp:hover p {
+#pageUp:hover span {
   display: block;
   -webkit-animation: goUp 0.8s ease-in Infinite Alternate;
           animation: goUp 0.8s ease-in Infinite Alternate;
