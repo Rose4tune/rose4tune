@@ -48,6 +48,7 @@
 
 // move page button //
 .scroll_icon {
+  z-index: 5;
   @include position($b:4vh, $l:50%);
   @include square($wh:5rem, $minWh:35px);
   background: url('../images/buttons/scroll.png');

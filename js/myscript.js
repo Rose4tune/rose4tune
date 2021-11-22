@@ -297,8 +297,13 @@ for(let i = 0; i < btn_modalCnt; i++) {
   
   if($btn_modal[i].dataset.btntype == 'link') {
     const $button = document.createElement('a');
+    const $btnLink = $btn_modal[i].dataset.value;
+    console.log($btn_modal[i].dataset.value);
+
     $button.classList.add('open', 'button');
     $button.dataset.hover = btns_hover[i];
+    $button.href = $btnLink;
+    $button.target = "_black";
     $button.appendChild($span_text);
     $btn_modal[i].append($span_line, $button);
 

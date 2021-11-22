@@ -299,6 +299,7 @@
 }
 
 .scroll_icon {
+  z-index: 5;
   position: absolute;
   bottom: 4vh;
   left: 50%;

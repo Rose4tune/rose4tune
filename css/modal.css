@@ -36,7 +36,7 @@
 
 @-webkit-keyframes goUp {
   0% {
-    margin-top: 1.3rem;
+    margin-top: 1rem;
   }
   60% {
     margin-top: -1rem;
@@ -48,7 +48,7 @@
 
 @keyframes goUp {
   0% {
-    margin-top: 1.3rem;
+    margin-top: 1rem;
   }
   60% {
     margin-top: -1rem;
