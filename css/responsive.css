@@ -216,6 +216,38 @@
   header {
     padding: 0 4vw;
   }
+  #gnb #gnb_menu {
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100vh;
+    text-align: center;
+    background: rgba(96, 96, 94, 0.9);
+    padding: 7rem 7rem;
+    -webkit-box-shadow: 0 0 20px #434547;
+            box-shadow: 0 0 20px #434547;
+    -webkit-animation: slideLeft 0.8s ease;
+            animation: slideLeft 0.8s ease;
+  }
+  #gnb #gnb_menu li {
+    padding: 1rem;
+    margin: 1rem;
+    color: #fff;
+  }
+  #gnb #gnb_menu li.on {
+    color: #F5DF4D;
+  }
+  #hamburger.active {
+    z-index: 30;
+  }
+  #hamburger.active .line {
+    background: #fff;
+  }
   .s1 {
     height: 100vh;
   }
@@ -257,11 +289,42 @@
   }
   .image {
     width: 100%;
-    height: 28vh;
+    height: 28rem;
+  }
+  .image img {
+    width: 100%;
+  }
+  #skillNext {
+    display: none;
   }
   .s4 h2 {
     position: unset;
     margin: 10rem 0 2rem;
+  }
+  .s4 h3 {
+    text-align: center;
+  }
+  #projects {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  li.project.view .content {
+    width: 100%;
+    padding: 8rem 6vw;
+    -webkit-box-shadow: 5px 0 5px #c5c6c7;
+            box-shadow: 5px 0 5px #c5c6c7;
+  }
+  li.project.view .image {
+    display: none;
+  }
+  .s5 .inner .item:last-child,
+  .s5 .photo {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .s5 .button,
+  .s5 .sns {
+    margin: 1.5rem auto;
   }
 }
 
@@ -307,15 +370,26 @@
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .image {
+    height: 20rem;
+  }
+  .s5 .photo {
+    width: 80%;
+  }
 }
 
 @media (max-width: 641px) {
   #hamburger .line {
+    width: 25px;
     margin: 6px auto;
   }
   #hamburger.active .line:nth-child(1) {
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
+    -webkit-transform: translateY(7px);
+    transform: translateY(7px);
+  }
+  #hamburger.active .line:nth-child(3) {
+    -webkit-transform: translateY(-7px) rotate(90deg);
+    transform: translateY(-7px) rotate(90deg);
   }
 }
 

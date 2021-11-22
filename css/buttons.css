@@ -262,7 +262,7 @@
 }
 
 #pageUp {
-  z-index: 100;
+  z-index: 9;
   position: fixed;
   bottom: 4vh;
   right: 4vw;

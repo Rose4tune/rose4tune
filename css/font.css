@@ -17,15 +17,26 @@ h2 {
   text-transform: capitalize;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 500;
   color: #60605e;
+}
+h4 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #60605e;
+}
+p {
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #939597;
 }
 
 .button {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   color: #939597;
+  text-align: center;
 }
 .button.open::before {font-size: 1.5rem;}
 
@@ -67,16 +78,6 @@ span.date {
 
 /* section 3 : skill */
 .s3 {text-align: center;}
-.s3 h4 {
-  font-size: 2.8rem;
-  font-weight: 400;
-  color: #60605e;
-}
-.s3 p {
-  font-size: 2rem;
-  line-height: 1.4;
-  color: #939597;
-}
 .list .item:hover h4 {
   color: #b89f00;
 }
@@ -93,8 +94,6 @@ span.date {
   color: #1d2123;
 }
 li.project .content p {
-  font-size: 2rem;
-  line-height: 130%;
   color: #1d2123;
 }
 #projects .image span {
@@ -125,7 +124,6 @@ li.project .content p {
 
 
 
-
 /* responsive */
 @media (min-width: 1999px) and (orientation: landscape) {html {font-size: 110%;}}
 @media (min-width: 2999px) and (orientation: landscape) {html {font-size: 135%;}}
@@ -134,8 +132,11 @@ li.project .content p {
 
 @media (min-width: 1999px) and (orientation: portrait) {}
 
-@media (max-width: 769px) {
-  html {font-size: 62.5%;}
+@media (max-width: 1025px) {
+  .s4 h2 {
+    color: #1d2123;
+    text-shadow: none;
+  }
 }
 @media (max-width: 680px) {
   html {font-size: 58%;}
@@ -148,7 +149,8 @@ li.project .content p {
   .about .slick-dots li.slick-active button:before,
   .about .slick-dots li button:hover:before,
   .about .slick-dots li button:focus:before,
-  button, #mode, span.date, .introduce {
+  .button, #mode, span.date, .introduce, p,
+  .tabContent *, .s5 a {
     font-size: 1.95rem
   }
   .myName {
@@ -161,7 +163,8 @@ li.project .content p {
   .about .slick-dots li.slick-active button:before,
   .about .slick-dots li button:hover:before,
   .about .slick-dots li button:focus:before,
-  button, #mode, span.date, .introduce, .about dl dd {
+  .button, #mode, span.date, .introduce, .about dl dd,
+  p, .tabContent *, .s5 a {
     font-size: 2.3rem;
   }
 }
@@ -171,7 +174,8 @@ li.project .content p {
   .about .slick-dots li.slick-active button:before,
   .about .slick-dots li button:hover:before,
   .about .slick-dots li button:focus:before,
-  button, #mode, span.date, .introduce, .about dl dd {
+  .button, #mode, span.date, .introduce, .about dl dd,
+  p, .tabContent *, .s5 a {
     font-size: 2.6rem;
   }
 }

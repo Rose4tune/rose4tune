@@ -22,7 +22,7 @@
 
 // page up button //
 #pageUp {
-  z-index: 100;
+  z-index: 9;
   @include position($p:fixed, $b:4vh, $r:4vw);
   @include square($wh:5rem, $minWh:30px);
   background: url('../images/buttons/pageUp.png')no-repeat 50% 50%;

@@ -23,6 +23,7 @@ section{
 .welcom {
   @include flexBox();
   > div {
+    z-index: 3;
     padding: 6.3%;
     background: $subTheme-2;
 
@@ -221,7 +222,7 @@ section{
   }
 }
 li.project {
-  @include flexBox($wrap:nowrap, $justify:flex-end, $basis:25vw);
+  @include flexBox($justify:flex-end, $basis:25vw);
   height: 100%;
   
   .content {
@@ -239,7 +240,7 @@ li.project.view {
     display: block;
     width: 70%;
     height: 100%;
-    padding: 18vh 6vw;
+    padding: 18rem 6vw;
   }
   .image {width: 30%;
     img {filter: contrast(125%) brightness(98%) saturate(1.4);}
@@ -248,7 +249,7 @@ li.project.view {
 }
 
 .pjTabBox {
-  @include flexBox ($justify:flex-start, $gap:3rem);
+  @include flexBox ($wrap:nowrap, $justify:flex-start, $gap:3rem);
   margin-bottom: 2rem;
 
   li {

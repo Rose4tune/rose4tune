@@ -257,6 +257,7 @@ section {
 }
 
 .welcom > div {
+  z-index: 3;
   padding: 6.3%;
   background: #f7f6f2;
 }
@@ -579,8 +580,8 @@ li.project {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 0;
   height: 100%;
 }
@@ -612,7 +613,7 @@ li.project.view .content {
   display: block;
   width: 70%;
   height: 100%;
-  padding: 18vh 6vw;
+  padding: 18rem 6vw;
 }
 
 li.project.view .image {
@@ -638,8 +639,8 @@ li.project.view .image span {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   gap: 3rem;
   margin-bottom: 2rem;
 }

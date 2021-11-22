@@ -62,6 +62,8 @@ for (let i = 0; i < 3; i++) {
   $hamburger.append($span);
 };
 
+var $gnbLayer = document.getElementById('gnb_layer');
+
 $hamburger.onclick = function () { 
   if ($hamburger.classList.contains('active') == true) {
     //gnb 메뉴 숨기기
@@ -74,6 +76,9 @@ $hamburger.onclick = function () {
     } else {
       $menuBar.classList.remove('disable');
     };
+    if (labtop.matches) {
+      $gnbLayer.style.display = 'none';
+    }
   } else {
     //gnb 메뉴 보이기
     $hamburger.classList.add('active');
@@ -83,6 +88,9 @@ $hamburger.onclick = function () {
     } else {
       $menuBar.classList.add('disable');
     };
+    if (labtop.matches) {
+      $gnbLayer.style.display = 'block';
+    }
   };
 };
 
@@ -336,7 +344,7 @@ $("#projects img").click(function (){
 
   if(contentBox.hasClass('view') == true) {
     contentBox.removeClass('view');
-    allBoxes.removeClass('view').css('width','auto');
+    allBoxes.removeClass('view').css('width','25vw');
     $('.s4 h2').css('display', 'block');
     $('.s4 .image span').css({
       'top':'50%',
@@ -353,8 +361,30 @@ $("#projects img").click(function (){
       'white-space':'nowrap',
       'transform':'rotate(90deg) translate(0, 0)'
     });
+    if (labtop.matches) {
+      $('.s4 h2').css('display', 'block');
+      $('.s4 .image span').css({
+        'top':'50%',
+        'left':'50%',
+        'transform':'translate(-50%, 0)'
+      });
+    }
   }
 });
+if (labtop.matches) {
+  $('.pjClose').click(function (){
+    const contentBox = $(this).parents('li.project');
+    const allBoxes = contentBox.siblings('li');
+    contentBox.removeClass('view');
+    allBoxes.removeClass('view').css('width','auto');
+    $('.s4 h2').css('display', 'block');
+    $('.s4 .image span').css({
+      'top':'50%',
+      'left':'50%',
+      'transform':'translate(-50%, 0)'
+    });
+  });
+}
 
 // 탭메뉴 만들기
 var $pjTabBox = document.getElementsByClassName('pjTabBox');

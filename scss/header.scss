@@ -42,7 +42,16 @@ header {
 #gnb {
   position: relative;
   margin-left: 1rem;
-  
+
+  #gnb_layer {
+    z-index: 10;
+    display: none;
+    @include position($p:fixed, $t:0, $l:0);
+    width: 100vw;
+    height: 100vh;
+    background:rgba(96, 96, 94, 0.6);
+    // animation: slideLeft 0.8s ease;
+  }
   #gnb_menu {
     @include flexBox($wrap:nowrap, $gap:1rem, $justify:flex-end);
     @include position($t:0.8rem, $r:5rem);
