@@ -404,6 +404,12 @@
   .about .slick-next {
     right: 2rem;
   }
+  .tabContent table col:first-child {
+    width: 22%;
+  }
+  .tabContent table col:last-child {
+    width: 78%;
+  }
 }
 
 @media (max-width: 481px) {

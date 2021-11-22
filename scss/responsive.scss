@@ -221,6 +221,11 @@
   }
   .about .slick-prev {left: 2rem;}
   .about .slick-next {right: 2rem;}
+
+  .tabContent table col{
+    &:first-child{width: 22%}
+    &:last-child{width: 78%;}
+  }
 }
 
 

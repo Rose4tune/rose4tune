@@ -272,10 +272,20 @@ li.project.view {
     bottom: 1px solid $subTheme-4;
   }
 
-  li {display: none;}
-  li.on {display:block}
+  li {
+    @include flexBox($wrap:nowrap, $align:flex-start, $justify:flex-start);
+    overflow-y: scroll;
+    display: none;
+
+    img{
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
+  li.on {display: flex;}
 
   table {
+    width: 100%;
     border-collapse: separate;
     border-spacing: 0.5rem 2rem;
   }

@@ -675,14 +675,43 @@ li.project.view .image span {
 }
 
 .tabContent li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 0;
+  overflow-y: scroll;
   display: none;
 }
 
+.tabContent li .item {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.tabContent li img {
+  width: 100%;
+  padding: 0.5rem;
+}
+
 .tabContent li.on {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .tabContent table {
+  width: 100%;
   border-collapse: separate;
   border-spacing: 0.5rem 2rem;
 }
