@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/css/header.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      border: none;
+      list-style: none;
+    }
+
+    html,
+    body {
+      -ms-overflow-style: none;
+    }
+
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    html.onscroll,
+    body.onscroll {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    main {
+      position: relative;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+    }
+
+    section {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h2 {
+      width: 100%;
+      height: 100%;
+      line-height: 100vh;
+    }
+
+    #gnb_menu li {
+      font-size: 1.6rem;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    #gnb_menu li:focus,
+    #gnb_menu li:hover {
+      color: #907f0e;
+    }
+
+    #gnb_menu li.on {
+      color: brown;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="menuBar toRight">
+      <!-- gnb -->
+      <div id="gnb">
+        <!-- <div id="gnb_layer"></div> -->
+        <div id="hamburger"></div>
+        <ul id="gnb_menu" class="disable"></ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="s1" style="background: lightblue;" data-title="1">
+      <h2>1</h2>
+    </section>
+    <section class="s2" style="background: lightcoral;" data-title="2">
+      <h2>2</h2>
+    </section>
+    <section class="s3" style="background: lightsalmon;" data-title="3">
+      <h2>3</h2>
+    </section>
+    <section class="s4" style="background: lightgray;" data-title="4">
+      <h2>4</h2>
+    </section>
+    <section class="s5" style="background: lightgreen;" data-title="5">
+      <h2>5</h2>
+    </section>
+    <section class="s6" style="background: lightpink;" data-title="6">
+      <h2>6</h2>
+    </section>
+  </main>
+
+  <script src="plugin/js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript">
+    var $html = $('html');
+    var $body = $('body');
+    var $main = $('main');
+
+    var labtop = window.matchMedia('(max-width: 1025px)');
+
+    var $hamburger = document.getElementById('hamburger');
+    var $sections = $('section');
+    var $gnbMenu = document.getElementById('gnb_menu');
+    var totalPage = $sections.length;
+
+
+    window.addEventListener('onload', function () {
+      scroll();
+    });
+
+    window.addEventListener('scroll', function () {
+      scroll();
+      moving();
+    });
+
+    window.addEventListener('resize', function () {
+      scroll();
+    });
+
+    // HAMBURGER MENU
+    for (let i = 0; i < 3; i++) {
+      // hamburger 라인 넣기
+      let $span = document.createElement('span');
+      $span.classList.add('line');
+      $hamburger.append($span);
+    };
+
+    $hamburger.onclick = function () {
+      if ($hamburger.classList.contains('active') == true) {
+        //gnb 메뉴 숨기기
+        $hamburger.classList.remove('active');
+        $gnbMenu.classList.add('disable');
+      } else {
+        //gnb 메뉴 보이기
+        $hamburger.classList.add('active');
+        $gnbMenu.classList.remove('disable');
+      };
+    };
+
+    var wTop = window.pageYOffset;
+    var arr = []; //section 절대좌표 배열
+    for (let i = 0; i < totalPage; i++) {
+      var relativeTop = $sections[i].getBoundingClientRect().top;
+      var absoluteTop = wTop + relativeTop;
+      arr.push(absoluteTop);
+    }
+
+    // GNB MENU
+    // section 별 gnb 메뉴 생성하기
+    for (let i = 0; i < totalPage; i++) {
+      $('#gnb_menu').append("<li>" + $sections[i].dataset.title + "</li>");
+    };
+    $("#gnb_menu > li:first-child").addClass("on");
+
+
+    function moving(){
+
+      for (let i = 0; i < totalPage; i++) {
+        if(length == arr[i]){
+          $("#gnb_menu > li").index(i).addClass("on").siblings("li").removeClass("on");
+          }
+      }
+    }
+
+
+    // gnb 메뉴 클릭 시 해당 section으로 화면 scroll하기
+    $("#gnb_menu > li").click(function () {
+      var gnbIndex = $(this).index() + 1;
+      var length = 0;
+
+      for (let i = 1; i < (gnbIndex); i++) {
+        length += $('.s' + i).height();
+      };
+
+      $(this).addClass("on").siblings("li").removeClass("on");
+
+      if (labtop.matches) {
+        $html.animate({ scrollTop: length }, 800, "swing");
+      } else {
+        $main.animate({ "top": -length + "px" }, 800, "swing");
+      }
+      return false;
+    });
+    
+
+
+    if (labtop.matches) {
+      $html.removeClass('onscroll');
+      $body.removeClass('onscroll');
+    } else {
+      $html.addClass('onscroll');
+      $body.addClass('onscroll');
+    }
+
+    var mainTop = parseInt($main.css("top"));
+    var secHeight = $sections.height();
+    var totalPage = $sections.length;
+
+    var $pages = $("#gnb_menu li");
+    var $pageOn = $("#gnb_menu li.on");
+    var pageOnIdx = $pageOn.index();
+
+    var d = false;
+    $(function () {
+      // 크롬, 익스, 사파리, 오페라 mousewheel / 파이어폭스 DOMMouseScroll
+      $("html, body").on('mousewheel DOMMouseScroll', function (e) {
+        var E = e.originalEvent;
+        delta = 0;
+        // DOMMouseScroll 처리
+        if (E.detail) {
+          delta = E.detail * -40;
+        } else {
+          delta = E.wheelDelta;
+        };
+
+
+        if (E.wheelDelta < 0 && mainTop > (totalPage - 1) * -secHeight && !d) {
+          // 마우스 휠을 아래로 내렸을 경우
+          // $pageOn.next().addClass('on').siblings('.on').removeClass('on');
+          d = true;
+          if (labtop.matches) {
+          } else {
+            $main.stop().animate({
+              "top": mainTop += -secHeight
+            }, 400, function () {
+              d = false;
+            });
+          }
+        };
+        if (E.wheelDelta > 0 && mainTop < 0 && !d) {
+          // 마우스 휠을 위로 올렸을 경우
+          // $pageOn.prev().addClass('on').siblings('.on').removeClass('on');
+          d = true;
+          if (labtop.matches){
+          } else {
+            $main.stop().animate({
+              "top": mainTop += secHeight
+            }, 400, function () {
+              d = false;
+            });
+          }
+        };
+      });
+    });
+
+    // 뱡향키
+    window.onkeyup = function (e) {
+      var code = e.keyCode;
+      console.log(code);
+      // down
+        if (code == 40 || code == 32 && mainTop > (totalPage - 1) * -secHeight && !d) {
+          // $pageOn.next().addClass('on').siblings('.on').removeClass('on');
+          d = true;
+          if (labtop.matches) {
+          } else {
+            $main.stop().animate({
+              "top": mainTop += -secHeight
+            }, 400, function () {
+              d = false;
+            });
+          }
+        };
+        // up
+        if (code == 38 && mainTop < 0 && !d) {
+          // $pageOn.prev().addClass('on').siblings('.on').removeClass('on');
+          d = true;
+          if (labtop.matches){
+          } else {
+            $main.stop().animate({
+              "top": mainTop += secHeight
+            }, 400, function () {
+              d = false;
+            });
+          }
+        };
+    }
+
+  </script>
+</body>
+
+</html>

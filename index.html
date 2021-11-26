@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rose-Fortune's portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png">
+
+  <!-- Plugin -->
+  <link rel="stylesheet" href="/plugin/css/slick.css">
+  <link rel="stylesheet" href="/plugin/css/slick_theme.css">
+  <link rel="stylesheet" href="/plugin/css/slick_custom.css">
+
+  <!-- My stylese -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/font.css">
+  <link rel="stylesheet" href="/css/buttons.css">
+  <link rel="stylesheet" href="/css/modal.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div>
+      <a id="logo" href="#">
+        <strong>RoseFortune</strong>
+      </a>
+    </div>
+    <div class="menuBar toRight">
+      <div id="menuBar">
+        <!-- sns -->
+        <div class="sns"></div>
+        <!-- mode -->
+        <div class="mode">
+          <select name="mode" id="mode">
+            <option value="white">white</option>
+            <option value="black">black</option>
+          </select>
+        </div>
+      </div>
+      <!-- gnb -->
+      <div id="gnb">
+        <div id="gnb_layer"></div>
+        <div id="hamburger"></div>
+        <ul id="gnb_menu" class="disable"></ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- UP BUTTON -->
+  <button type="button" id="pageUp" class="button"><span>UP</span></button>
+
+  <main>
+    <!-- SECTION 1 [ WELCOM ] -->
+    <section class="s1 welcom" data-title="home">
+      <div class="toRight">
+        <div class="welcom_text">
+          <div class="btn_modal" data-hover="view resome" data-text="Web publisher" data-btntype="link"></div>
+          <h1>I'm Ye Seo Lee,<br>Rose</h1>
+        </div>
+      </div>
+      <button type="button" class="scroll_icon"></button>
+    </section>
+    <!-- SECTION 2 [ ABOUT ] -->
+    <section class="s2" data-title="about">
+      <div class="inner">
+        <!-- profile -->
+        <div class="profile">
+          <div>
+            <div id="photo" class="photo">
+              <img src="/images/main/profile.jpg" alt="profile">
+            </div>
+            <div class="textBox">
+              <div class="introduce">
+                <p>
+                  안녕하세요. 퍼블리셔 이예서입니다.
+                </p>
+                <p>
+                  사용자와의 소통을 우선시하는 최상의 경험을 제공하고자
+                  끊임없이 계발을 거듭하는 열정적인 개발자입니다.
+                </p>
+                <p>
+                  웹 디자인과 퍼블리셔 과정을 이수한 후,
+                  1년간 회사 소속의 개발팀에서 자체 프로그램의 UI/UX를
+                  전담하여 개발을 해온 경력을 가지고 있습니다.
+                </p>
+                <p>보다 더 발전하는 개발자가 되도록 노력하겠습니다.</p>
+              </div>
+              <p class="myName">
+                <strong>Ye Seo Lee (Rose)</strong><br>
+                Front Developer
+              </p>
+              <div class="btn_modal" data-hover="view resome" data-text="view resome" data-btntype="link"></div>
+            </div>
+          </div>
+        </div>
+        <!-- about -->
+        <div class="inform toRight">
+          <ul class="about">
+            <li>
+              <div class="carrer">
+                <h2>Carrer</h2>
+                <h3>프렌츠<span class="date">2020.05~2021.05</span></h3>
+                <dl>
+                  <dt>Frients I.O. Website</dt>
+                  <dd>자사 프로그램 서버 화면 반응형 개발</dd>
+                  <dt>Frients I.O. Landing Page Services</dt>
+                  <dd>자사 웹 랜딩페이지 제작 서비스 화면과 기능 개발</dd>
+                  <dt>Frients Landing Page Redesing</dt>
+                  <dd>자사 웹 랜딩페이지 디자인 리뉴얼</dd>
+                </dl>
+              </div>
+              <div class="certificate">
+                <h2>Certificate</h2>
+                <dl>
+                  <dt>정보처리기능사<span class="date">2021.02(필기)</span></dt>
+                  <dd>컴퓨터를 사용하는 영역에서 정보처리에 관한 숙련기능을 가지고, 컴퓨터 시스템의 운용 및 개발 업무 수행</dd>
+                  <dt>웹디자인기능사<span class="date">2019.12.20</span></dt>
+                  <dd>시스템 자원 및 S/W를 이용하여 홈페이지를 기획, 디자인, 설계제작하는 업무 수행</dd>
+                  <dt>컴퓨터그래픽스 운용기능사<span class="date">2019.12.27</span></dt>
+                  <dd>포토샴, 일러스트, 인디자인 전부를 활용하여 디자인 작업과 인쇄물 출력 작업 수행</dd>
+                  <dt>GTQ 포토샵 1급<span class="date">2019.09.11</span></dt>
+                  <dd>사진 및 각종 이미지 편집, 웹디자인 등 포토샵 디자인 프로그램을 활용하여 작업 수행</dd>
+                  <dt>GTQ 일러스트 1급<span class="date">2020.03.13</span></dt>
+                  <dd>일러스트, 캐릭터, 그래픽디자인, 심벌, 로고, 명함 제작 등 일러스트레이터 프로그램을 활용하여 작업 수행</dd>
+                  <dt>GTQ 인디자인 1급<span class="date">2019.10.18</span></dt>
+                  <dd>인쇄출판, 전자책, 웹북 등 다양한 인쇄 및 디지털 출판 제작 작업 수행</dd>
+                  <dt>Mos Master<span class="date">2013.02.06</span></dt>
+                  <dd>Excel(Expert), Word(Expert), PowerPoint, Access를 통과하여 Master 자격 취득 </dd>
+                </dl>
+              </div>
+            </li>
+            <li class="education">
+              <h2>Education</h2>
+              <h3>국비 웹 표준 디지털 디자인<span class="date">2019.08~2020.01</span></h3>
+              <dl>
+                <dt>웹 표준 실무 프로젝트</dt>
+                <dd>2D 그래픽 디자인, 웹 psd디자인 (Photoshop)</dd>
+                <dd>백터디자인활용 (Illustrator)</dd>
+                <dd>웹 기획과 스토리 보드 작성</dd>
+                <dd>UX / UI 디자인</dd>
+                <dd>웹 표준 HTML5를 이용한 웹 페이지 코딩 제작</dd>
+                <dd>웹 페이지 만들고 스타일시트 (CSS), 반응형 적용</dd>
+                <dd>Javascript, Jquery 등 인터렉티브 화면 적용</dd>
+              </dl>
+              <h3>대진대학교<span class="date">2011.03~2015.02</span></h3>
+              <dl>
+                <dt>식품영양학과</dt>
+                <dd>식품영양학과 학사 졸업 (3.86/4.5만점)</dd>
+                <dd>영양사, 위생사, 영양교사 2급 외 5개 관련 자격증 취득</dd>
+              </dl>
+            </li>
+            <li class="work">
+              <h2>Work Experience</h2>
+              <h3>오매니져<span class="date">2020.02</span></h3>
+              <dl>
+                <dt>O-Manager Landing Page</dt>
+                <dd>랜딩페이지 디자인 리뉴얼 및 반응형 제작</dd>
+              </dl>
+              <h3>UNKNOWN<span class="date">2020.05</span></h3>
+              <dl>
+                <dt>Shopping Mall Website</dt>
+                <dd>쇼핑몰 홈페이지 디자인 및 반응형 제작</dd>
+              </dl>
+              <h3>Deers-M<span class="date">2020.12</span></h3>
+              <dl>
+                <dt>Shopping Mall Landing Page</dt>
+                <dd>쇼핑몰 광고 랜딩페이지 반응형 제작</dd>
+              </dl>
+              <h3>포트폴리오<span class="date">2021.11</span></h3>
+              <dl>
+                <dt>Personer Portfolio Landing Page</dt>
+                <dd>개인 포트폴리오 페이지 디자인 및 반응형 제작</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 [ SKILL ] -->
+    <section class="s3 skill" data-title="skill">
+      <div class="inner">
+        <h2>What I can Handle</h2>
+        <!-- text editor -->
+        <div id="editor" class="skillType">
+          <h3>TEXT EDITOR</h3>
+          <p>웹 퍼블리셔에게 가장 중요한 텍스트 에디터는 메인으로 Visual Studio Code를 사용하였으며, 경우에 따라 IntelliJ를 병행하여 사용합니다. </p>
+          <ul class="list">
+            <li class="item">
+              <h4>Visual Studio</h4>
+            </li>
+            <li class="item">
+              <h4>Intelli J</h4>
+            </li>
+            <li class="item">
+              <h4>Eclips</h4>
+            </li>
+            <li class="item">
+              <h4>Atom</h4>
+            </li>
+          </ul>
+        </div>
+        <!-- design tool skill -->
+        <div id="designTool" class="skillType">
+          <h3>DESIGN SKILL</h3>
+          <ul class="list">
+            <li class="item squareEffect">
+              <div class="content">
+                <h4>Photoshop</h4>
+                <p>웹 디자인 소스 구축 및 디자인이 가능하며, 이미지와 인물에 관한 보정을 할 수 있습니다. 또한 화면별 사용성에 최적화된레이아웃 구상에 있어 디자인적 이해도가 있습니다.</p>
+              </div>
+            </li>
+            <li class="item squareEffect">
+              <div class="content">
+                <h4>Illustrator</h4>
+                <p>일러스트레이터 툴에 대한 깊은 이해와 스킬로 전문가 못지않은 응용력을 가지고있으며, 각종 일러스트 및 이미지,아이콘, 3D 등의 제작을할 수 있습니다.</p>
+              </div>
+            </li>
+            <li class="item squareEffect">
+              <div class="content">
+                <h4>xd / figma</h4>
+                <p>기본적인 아이콘 및 와이어프레임 등을 만들 수 있습니다. 플로우 기능과 반응형 레이아웃에 대한 이해를 기반으로, 프로토타입 제작과 모션 구현, 그리고 협업도 가능합니다.</p>
+              </div>
+            </li>
+            <li class="item squareEffect">
+              <div class="content">
+                <h4>indesign</h4>
+                <p>기본적인 편집 디자인에 대한 이해와 스킬을 활용하여 포스터, 카탈로그 등의 출력/인쇄물의 디자인 제작 및 편집을 할 수 있습니다.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="skillNext">
+          <button type="button" id="skillNextBtn"></button>
+        </div>
+        <!-- publishing skill -->
+        <div id="publishing" class="skillType">
+          <h3>PUBLISHING SKILL</h3>
+          <ul class="list">
+            <li class="item squareEffect">
+              <div class="content">
+                <h4>html 5</h4>
+                <p>웹 표준과 웹 접근성을 준수하며 HTML5에서 권장하는 마크업 방식과 시멘틱 태그를 사용해 전체 레이아웃을 설계합니다. 웹 UI 디자인 작업 후 클래스 네임과 함께 HTML 정보
+                  구조설계를 꼼꼼히 작업한 후 퍼블리싱 작업을 진행합니다.</p>
+              </div>
+            </li>
+            <li class="item squareEffect">
+              <div class="content">
+                <h4>css 3</h4>
+                <p>CSS 코딩은 IE의 지원도 충분히 고려하는 크로스브라우징(Cross Browsing)을 위해 안정적인 CSS 속성을 사용해서 HTML Elements를 배치하고 디자인합니다.
+                  특별한 경우 CSS3에서 새롭게 지원하는 속성을 활용해서 좀 더 다양한 CSS 배치와 디자인을 합니다.</p>
+              </div>
+            </li>
+            <li class="item squareEffect">
+              <div class="content">
+                <h4>scss (sass)</h4>
+                <p>scss에서 사용하는 variable, nesting, mixin, inheritance 등의 개념을 이해하고 있으며, 코드작성 시 이를 활용하여 보다 간편한 코드 작성을 사용할 수
+                  있습니다.</p>
+              </div>
+            </li>
+            <li class="item squareEffect">
+              <div class="content">
+                <h4>responsive web</h4>
+                <p>반응형 웹 제작에 있어서 크로스브라우징을 위해 안정적인 기존 방식인 float, position, Media Query를 활용한 반응형 웹 사이트 제작도 충분히 가능합니다. 대부분
+                  기존 방식으로 제작하지만 모바일 웹 앱 제작의 경우 Flex와 Grid를 충분히 활용해서 제작합니다.</p>
+              </div>
+            </li>
+            <li class="item squareEffect">
+              <div class="content">
+                <h4>mobile web app</h4>
+                <p>UI/UX 측면에서 미적인 디자인뿐만 아니라 모바일 사용자 경험에 최적화를 위해 효율적인 컨텐츠 배치를 우선적으로 생각합니다. 그리고 모바일 대응을 위한 플랫폼으로 반응형 웹,
+                  모바일 웹, 모바일 웹 앱, 네이티브앱에 대한 충분한 이해도를 갖고 있습니다.</p>
+              </div>
+            </li>
+            <li class="item squareEffect">
+              <div class="content">
+                <h4>javascript</h4>
+                <p>네비게이션, 탭 메뉴, 아코디언 등 웹 퍼블리싱에 반드시 필요한 상호작용을 위한 제이쿼리는 플러그인을 사용하지 않고 순수한 제이쿼리 코딩으로 제작합니다. 필수적인 자바스크립트 활용은
+                  가능하며 주로 제이쿼리와 병행해서 활용합니다.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION 4 [ PROJECTS ] -->
+    <section class="s4" data-title="projects">
+      <h2>Projects</h2>
+      <ul id="projects">
+        <li class="project item" data-project="Frients">
+          <div class="content">
+            <h3 class="pjClose">Frients</h3>
+            <p>자사 빅데이터 분석과 자동화 마케팅과 관련한 서비스 개발에 적극 참여하여 사용자 중심의 UI, UX를 개발했습니다.</p>
+            <ul class="pjTabBox"></ul>
+            <ul class="tabContent">
+              <li>
+                <table>
+                  <colgroup>
+                  <col width="13%">
+                  <col width="87%">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>작업기간 :</td>
+                      <td>2020.05 ~ 2021.05</td>
+                    </tr>
+                    <tr>
+                      <td>작업범위 :</td>
+                      <td>자사 서비스 UI 개발 전담</td>
+                    </tr>
+                    <tr>
+                      <td>제작방식 :</td>
+                      <td>HTML5, CSS3, BOOTSTRAP, JQUERY, JAVASCRIPT</td>
+                    </tr>
+                    <tr>
+                      <td>환경 :</td>
+                      <td>Intelli J, Adobe Photoshop/Illustrator, Zira, GitLab, Bitbucket, Jenkins</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>
+                <div><img src="/images/projects/frients.jpg" alt="frients"></div>
+                <div><img src="/images/projects/frients-1.jpg" alt="frients"></div>
+                <div><img src="/images/projects/frients-2.jpg" alt="frients"></div>
+                <div><img src="/images/projects/frients-3.jpg" alt="frients"></div>
+                <div><img src="/images/projects/frients-4.jpg" alt="frients"></div>
+              </li>
+            </ul>
+            <!-- <div class="demoBtns">
+              <div class="btn_modal" data-hover="go github" data-text="go github" data-btntype="link"></div>
+              <div class="btn_modal" data-hover="view demo" data-text="view demo" data-btntype="modal"></div>
+            </div> -->
+          </div>
+        </li>
+        <li class="project item" data-project="O-Manager">
+          <div class="content">
+            <h3 class="pjClose">O-Manager</h3>
+            <p>사용자의 편리성과 다양한 고객층 확보를 목적으로 밝은 느낌과 친근한 이미지로 새롭게 디자인하였으며, 모바일 반응형으로 제작되었습니다.</p>
+            <ul class="pjTabBox"></ul>
+            <ul class="tabContent">
+              <li>
+                <table>
+                  <colgroup>
+                    <col width="13%">
+                    <col width="87%">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>작업기간 :</td>
+                      <td>2020.02</td>
+                    </tr>
+                    <tr>
+                      <td>작업범위 :</td>
+                      <td>포토샵 UI 디자인 및 반응형 웹 퍼블리싱</td>
+                    </tr>
+                    <tr>
+                      <td>제작방식 :</td>
+                      <td>HTML5, CSS3, JQUERY, JAVASCRIPT</td>
+                    </tr>
+                    <tr>
+                      <td>작업참여 :</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>환경 :</td>
+                      <td>Adobe Photoshop/Illustrator, Eclips</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>
+                <div><img src="/images/projects/omanager.jpg" alt="frients"></div>
+                <div><img src="/images/projects/omanager-1.jpg" alt="frients"></div>
+                <div><img src="/images/projects/omanager-2.jpg" alt="frients"></div>
+                <div><img src="/images/projects/omanager-3.jpg" alt="frients"></div>
+                <div><img src="/images/projects/omanager-4.jpg" alt="frients"></div>
+              </li>
+            </ul>
+            <!-- <div class="demoBtns">
+              <div class="btn_modal" data-hover="go github" data-text="go github" data-btntype="link"></div>
+              <div class="btn_modal" data-hover="view demo" data-text="view demo" data-btntype="modal"></div>
+            </div> -->
+          </div>
+        </li>
+        <li class="project item" data-project="Portfolio">
+          <div class="content">
+            <h3 class="pjClose">Portfolio</h3>
+            <p>본인 포트폴리오를 제작하였습니다.</p>
+            <ul class="pjTabBox"></ul>
+            <ul class="tabContent">
+              <li>
+                <table>
+                  <colgroup>
+                    <col width="13%">
+                    <col width="87%">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>작업기간 :</td>
+                      <td>2021.11.16 ~ 2021.11.25(일부 진행중)</td>
+                    </tr>
+                    <tr>
+                      <td>작업범위 :</td>
+                      <td>포토샵 UX/UI 디자인 및 퍼블리싱</td>
+                    </tr>
+                    <tr>
+                      <td>제작방식 :</td>
+                      <td>HTML5, CSS3, SASS(SCSS), RUBY, JQUERY, JAVASCRIPT</td>
+                    </tr>
+                    <tr>
+                      <td>작업참여 :</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>환경 :</td>
+                      <td>Adobe Photoshop/Illustrator, VScode, FileZilla, cafe24 Domain</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>
+                <div><img src="/images/projects/unknown.jpg" alt="frients"></div>
+                <div><img src="/images/projects/unknown-1.jpg" alt="frients"></div>
+                <div><img src="/images/projects/unknown-2.jpg" alt="frients"></div>
+                <div><img src="/images/projects/unknown-3.jpg" alt="frients"></div>
+                <div><img src="/images/projects/unknown-4.jpg" alt="frients"></div>
+              </li>
+            </ul>
+            <!-- <div class="demoBtns">
+              <div class="btn_modal" data-hover="go github" data-text="go github" data-btntype="link"></div>
+              <div class="btn_modal" data-hover="view demo" data-text="view demo" data-btntype="modal"></div>
+            </div> -->
+          </div>
+        </li>
+        <li class="project item" data-project="UNKNOWN">
+          <div class="content">
+            <h3 class="pjClose">UNKNOWN</h3>
+            <p>새로 오픈하는 샵의 웹과 모바일 쇼핑몰을 디자인하고 제작하였습니다.</p>
+            <ul class="pjTabBox"></ul>
+            <ul class="tabContent">
+              <li>
+                <table>
+                  <colgroup>
+                    <col width="13%">
+                    <col width="87%">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>작업기간 :</td>
+                      <td>2020.10 ~ 2020.10</td>
+                    </tr>
+                    <tr>
+                      <td>작업범위 :</td>
+                      <td>포토샵 UI 디자인 및 퍼블리싱</td>
+                    </tr>
+                    <tr>
+                      <td>제작방식 :</td>
+                      <td>HTML5, CSS3, JQUERY, JAVASCRIPT</td>
+                    </tr>
+                    <tr>
+                      <td>작업참여 :</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>환경 :</td>
+                      <td>카페24 내의 환경에서 작업하였습니다.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>
+                <div><img src="/images/projects/unknown.jpg" alt="frients"></div>
+                <div><img src="/images/projects/unknown-1.jpg" alt="frients"></div>
+                <div><img src="/images/projects/unknown-2.jpg" alt="frients"></div>
+                <div><img src="/images/projects/unknown-3.jpg" alt="frients"></div>
+                <div><img src="/images/projects/unknown-4.jpg" alt="frients"></div>
+              </li>
+            </ul>
+            <!-- <div class="demoBtns">
+              <div class="btn_modal" data-hover="go github" data-text="go github" data-btntype="link"></div>
+              <div class="btn_modal" data-hover="view demo" data-text="view demo" data-btntype="modal"></div>
+            </div> -->
+          </div>
+        </li>
+        <li class="project item" data-project="Deers-M">
+          <div class="content">
+            <h3 class="pjClose">Deers-M</h3>
+            <p>새로 출시되는 제품에 맞는 웹 쇼핑몰 페이지 제작에 참여하였습니다.</p>
+            <ul class="pjTabBox"></ul>
+            <ul class="tabContent">
+              <li>
+                <table>
+                  <colgroup>
+                    <col width="13%">
+                    <col width="87%">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>작업기간 :</td>
+                      <td>2020.12 ~ 2021.01</td>
+                    </tr>
+                    <tr>
+                      <td>작업범위 :</td>
+                      <td>웹 서비스의 UI 개발 전담</td>
+                    </tr>
+                    <tr>
+                      <td>제작방식 :</td>
+                      <td>HTML5, CSS3, JQUERY, JAVASCRIPT</td>
+                    </tr>
+                    <tr>
+                      <td>작업참여 :</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td>환경 :</td>
+                      <td>카페24 내의 환경에서 작업하였습니다.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>2</li>
+            </ul>
+            <!-- <div class="demoBtns">
+              <div class="btn_modal" data-hover="go github" data-text="go github" data-btntype="link"></div>
+              <div class="btn_modal" data-hover="view demo" data-text="view demo" data-btntype="modal"></div>
+            </div> -->
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- SECTION 5 [ CONNECT ] -->
+    <section class="s5" data-title="connect">
+      <h2>connect</h2>
+      <div class="inner">
+        <div class="item">
+          <div class="photo">
+            <img src="/images/main/profile.jpg" alt="profile">
+          </div>
+        </div>
+        <div class="item">
+          <a class="button" href="mailto:rosefor2ne@gmail.com?body=안녕하세요.이예서입니다.">send message</a>
+          <button class="button" type="button">go to resume</button>
+          <ul>
+            <li>
+              <h3>want to talk?</h3>
+              <p><a href="mailto:rosefor2ne@gmail.com?body=안녕하세요.이예서입니다.">rosefor2ne@gmail.com</a></p>
+              <p><a href="tel:010-2974-1992">+82 10-2974-1992</a></p>
+            </li>
+            <li>
+              <h3>address</h3>
+              <p>59, Dorim-ro, Guro-gu,<br>Seoul, Republic of Korea</p>
+            </li>
+            <li>
+              <h3>me in social</h3>
+              <div class="sns"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+  <!-- MODAL POP-UP -->
+
+  <div class="modal modal_overlay">
+    <div class="modal_window">
+      <div class="btn_close">X</div>
+      <div class="modal_content">
+        <div style="width: 100%; height: 100%; background:lightgreen"></div>
+        <div style="width: 100%; height: 100%; background:lightseagreen"></div>
+        <div style="width: 100%; height: 100%; background:lightslategray"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Plugin -->
+  <script src="plugin/js/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="plugin/js/slick.js"></script>
+
+  <!-- My scripts -->
+  <script src="js/modal.js"></script>
+  <script src="js/myscript.js"></script>
+  <!-- <script src="js/resize.js"></script> -->
+
+</body>
+
+</html>
