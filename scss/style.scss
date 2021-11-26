@@ -222,7 +222,8 @@ section{
   }
 }
 li.project {
-  @include flexBox($justify:flex-end, $basis:25vw);
+  @include flexBox($justify:flex-end);
+  width: 20vw;
   height: 100%;
   
   .content {

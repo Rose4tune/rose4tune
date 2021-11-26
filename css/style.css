@@ -583,12 +583,11 @@ li.project {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 0;
+  width: 20vw;
   height: 100%;
 }
 
 li.project .item {
-  -ms-flex-preferred-size: 25vw;
-      flex-basis: 25vw;
   -ms-flex-negative: 1;
       flex-shrink: 1;
   -webkit-box-flex: 1;

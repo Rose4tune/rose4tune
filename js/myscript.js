@@ -24,7 +24,7 @@ window.onload = function() {
   gnbMove();
   photoScroll();
   skillNextArrow();
-  window.scrollTo(0, arr[4]);
+  window.scrollTo(0, 0);
 }
 
 function headerScroll(){
@@ -296,24 +296,21 @@ for(let i = 0; i < btn_modalCnt; i++) {
   
   
   if($btn_modal[i].dataset.btntype == 'link') {
-    const $button = document.createElement('a');
+    var $button = document.createElement('a');
     // const $btnLink = $btn_modal[i].dataset.value;
-    console.log($btn_modal[i].dataset.value);
+    // console.log($btn_modal[i].dataset.value);
 
-    $button.classList.add('open', 'button');
-    $button.dataset.hover = btns_hover[i];
     // $button.href = $btnLink;
     // $button.target = "_black";
-    $button.appendChild($span_text);
-    $btn_modal[i].append($span_line, $button);
 
   } else if($btn_modal[i].dataset.btntype == 'modal') {
-    const $button = document.createElement('button');
-    $button.classList.add('open', 'button');
-    $button.dataset.hover = btns_hover[i];
-    $button.appendChild($span_text);
-    $btn_modal[i].append($span_line, $button);
+    var $button = document.createElement('button');
   }
+  
+  $button.classList.add('open', 'button');
+  $button.dataset.hover = btns_hover[i];
+  $button.appendChild($span_text);
+  $btn_modal[i].append($span_line, $button);
 }
 
 
@@ -343,13 +340,15 @@ for(let i = 0; i < projectCnt; i++) {
   project[i].appendChild($div);
 }
 
-$("#projects img").click(function (){
+$("#projects img, #projects .image span").click(function (){
   const contentBox = $(this).parents('li.project');
   const allBoxes = contentBox.siblings('li');
+  const boxCnt = allBoxes.length + 1;
+  console.log('boxCnt :' + boxCnt);
 
   if(contentBox.hasClass('view') == true) {
-    contentBox.removeClass('view');
-    allBoxes.removeClass('view').css('width','25vw');
+    contentBox.removeClass('view').css('width', 100/boxCnt+'vw');
+    allBoxes.removeClass('view').css('width', 100/boxCnt+'vw');
     $('.s4 h2').css('display', 'block');
     $('.s4 .image span').css({
       'top':'50%',
@@ -357,8 +356,8 @@ $("#projects img").click(function (){
       'transform':'translate(-50%, 50%)'
     });
   } else {
-    allBoxes.removeClass('view').css('width','6.5%');
-    contentBox.addClass('view').css('width','80.5%');
+    allBoxes.removeClass('view').css('width','6vw');
+    contentBox.addClass('view').css('width', 100-(6*(boxCnt-1))+'vw');
     $('.s4 h2').css('display', 'none');
     $('.s4 .image span').css({
       'top':'18vh',
