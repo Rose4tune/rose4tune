@@ -214,6 +214,47 @@
     var pageOnIdx = $pageOn.index();
 
     var d = false;
+
+    function downPage(){
+          // $pageOn.next().addClass('on').siblings('.on').removeClass('on');
+      d = true;
+      $main.stop().animate({
+        "top": mainTop += -secHeight
+      }, 400, function () {
+        d = false;
+      });
+    }
+
+    function upPage(){
+          // $pageOn.prev().addClass('on').siblings('.on').removeClass('on');
+      d = true;
+      $main.stop().animate({
+        "top": mainTop += secHeight
+      }, 400, function () {
+        d = false;
+      });
+    }
+    
+    function goHome(){
+          // $pageOn.prev().addClass('on').siblings('.on').removeClass('on');
+      d = true;
+      $main.stop().animate({
+        "top": 0
+      }, 400, function () {
+        d = false;
+      });
+    }
+    function goEnd(){
+          // $pageOn.prev().addClass('on').siblings('.on').removeClass('on');
+      d = true;
+      $main.stop().animate({
+        "top": (totalPage - 1) * -secHeight
+      }, 400, function () {
+        d = false;
+      });
+    }
+
+
     $(function () {
       // 크롬, 익스, 사파리, 오페라 mousewheel / 파이어폭스 DOMMouseScroll
       $("html, body").on('mousewheel DOMMouseScroll', function (e) {
@@ -226,31 +267,16 @@
           delta = E.wheelDelta;
         };
 
-
         if (E.wheelDelta < 0 && mainTop > (totalPage - 1) * -secHeight && !d) {
-          // 마우스 휠을 아래로 내렸을 경우
-          // $pageOn.next().addClass('on').siblings('.on').removeClass('on');
-          d = true;
           if (labtop.matches) {
           } else {
-            $main.stop().animate({
-              "top": mainTop += -secHeight
-            }, 400, function () {
-              d = false;
-            });
+            downPage();
           }
         };
         if (E.wheelDelta > 0 && mainTop < 0 && !d) {
-          // 마우스 휠을 위로 올렸을 경우
-          // $pageOn.prev().addClass('on').siblings('.on').removeClass('on');
-          d = true;
           if (labtop.matches){
           } else {
-            $main.stop().animate({
-              "top": mainTop += secHeight
-            }, 400, function () {
-              d = false;
-            });
+            upPage();
           }
         };
       });
@@ -258,35 +284,35 @@
 
     // 뱡향키
     window.onkeyup = function (e) {
-      var code = e.keyCode;
+      const code = e.keyCode;
+      const lastSecHeight = (totalPage - 2) * -secHeight;
       console.log(code);
+
       // down
-        if (code == 40 || code == 32 && mainTop > (totalPage - 1) * -secHeight && !d) {
-          // $pageOn.next().addClass('on').siblings('.on').removeClass('on');
-          d = true;
-          if (labtop.matches) {
-          } else {
-            $main.stop().animate({
-              "top": mainTop += -secHeight
-            }, 400, function () {
-              d = false;
-            });
+        if(mainTop >= lastSecHeight && !d){
+          if(code == 40 || code == 32 || code == 13 || code == 34){
+            downPage();
           }
-        };
+        }
+
         // up
-        if (code == 38 && mainTop < 0 && !d) {
-          // $pageOn.prev().addClass('on').siblings('.on').removeClass('on');
-          d = true;
-          if (labtop.matches){
-          } else {
-            $main.stop().animate({
-              "top": mainTop += secHeight
-            }, 400, function () {
-              d = false;
-            });
+        if(mainTop < 0 && !d){
+          if(code == 33 || code == 38){
+            upPage();
           }
-        };
+        }
+
+        // home
+        if (code == 36) {goHome()};
+        
+        // end
+        if (code == 35) {goEnd()};
+
     }
+
+    
+
+
 
   </script>
 </body>
