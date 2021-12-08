@@ -212,7 +212,22 @@
   }
 }
 
+html.onscroll,
+body.onscroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
 section {
+  position: relative;
   width: 100vw;
   height: 100vh;
 }
