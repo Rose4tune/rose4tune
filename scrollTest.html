@@ -210,6 +210,15 @@
       }
 
       if (labtop.matches) {
+        const winY = window.pageYOffset;
+        // console.log(winY);
+
+        for (let i = 0; i < arr.length; i++) {
+          if(winY >= arr[i] && winY < arr[i+1]){
+            console.log('same!!' + (i+1));
+            $pages.index(i).addClass('on').siblings().removeClass('on')
+          }
+        }
       } else {
         d = true;
         $main.stop().animate({
@@ -254,10 +263,10 @@
 
         // Mousewheel 처리
         if (E.wheelDelta < 0 && mainTop > (totalPage - 1) * -secHeight && !d) {
-            downPage();
+          downPage();
         };
         if (E.wheelDelta > 0 && mainTop < 0 && !d) {
-            upPage();
+          upPage();
         };
       });
     });
@@ -266,14 +275,12 @@
     window.onkeyup = function (e) {
       const code = e.keyCode;
       const lastSecHeight = (totalPage - 2) * -secHeight;
-
       // down
       if (mainTop >= lastSecHeight && !d) {
         if (code == 40 || code == 32 || code == 13 || code == 34) {
           downPage();
         }
       }
-
       // up
       if (mainTop < 0 && !d) {
         if (code == 33 || code == 38) {
