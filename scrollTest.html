@@ -205,21 +205,20 @@
       const $pageOn = $("#gnb_menu li.on");
       const pageOnIdx = $pageOn.index();
 
-      if (pageOnIdx <= totalPage - 1) {
-        $pageOn.next().addClass('on').siblings('.on').removeClass('on');
-      }
-
       if (labtop.matches) {
         const winY = window.pageYOffset;
-        // console.log(winY);
-
         for (let i = 0; i < arr.length; i++) {
-          if(winY >= arr[i] && winY < arr[i+1]){
-            console.log('same!!' + (i+1));
-            $pages.index(i).addClass('on').siblings().removeClass('on')
+          const bottomLine = parseInt(arr[i+1]) - 10;
+          if(winY >= bottomLine){
+            const thispage = $pages[i+1];
+            $pages.removeClass('on');
+            thispage.classList.add('on');
           }
         }
       } else {
+        if (pageOnIdx <= totalPage - 1) {
+          $pageOn.next().addClass('on').siblings('.on').removeClass('on');
+        }
         d = true;
         $main.stop().animate({
           "top": mainTop += -secHeight
@@ -233,12 +232,20 @@
       const $pageOn = $("#gnb_menu li.on");
       const pageOnIdx = $pageOn.index();
 
-      if (pageOnIdx >= 0) {
-        $pageOn.prev().addClass('on').siblings('.on').removeClass('on');
-      }
-
       if (labtop.matches) {
+        const winY = window.pageYOffset;
+        for (let i = 0; i < arr.length; i++) {
+          const bottomLine = parseInt(arr[i+1]) - 10;
+          if(winY >= arr[i] && winY < bottomLine){
+            const thispage = $pages[i];
+            $pages.removeClass('on');
+            thispage.classList.add('on');
+          }
+        }
       } else {
+        if (pageOnIdx >= 0) {
+          $pageOn.prev().addClass('on').siblings('.on').removeClass('on');
+        }
         d = true;
         $main.stop().animate({
           "top": mainTop += secHeight
@@ -265,7 +272,7 @@
         if (E.wheelDelta < 0 && mainTop > (totalPage - 1) * -secHeight && !d) {
           downPage();
         };
-        if (E.wheelDelta > 0 && mainTop < 0 && !d) {
+        if (E.wheelDelta > 0 && !d) {
           upPage();
         };
       });
