@@ -31,37 +31,18 @@
       $hamburger.append($span);
     };
 
-    var $gnbLayer = document.getElementById('gnb_layer');
-
-    $hamburger.onclick = function () { 
+    $hamburger.onclick = function () {
       if ($hamburger.classList.contains('active') == true) {
         //gnb 메뉴 숨기기
         $hamburger.classList.remove('active');
         $gnbMenu.classList.add('disable');
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-          $menuBar.classList.add('disable');
-        } else if(labtop.matches){
-          $menuBar.classList.add('disable');
-        } else {
-          $menuBar.classList.remove('disable');
-        };
-        if (labtop.matches) {
-          $gnbLayer.style.display = 'none';
-        }
       } else {
         //gnb 메뉴 보이기
         $hamburger.classList.add('active');
         $gnbMenu.classList.remove('disable');
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-          $menuBar.classList.add('disable');
-        } else {
-          $menuBar.classList.add('disable');
-        };
-        if (labtop.matches) {
-          $gnbLayer.style.display = 'block';
-        }
       };
     };
+
     var wTop = window.pageYOffset;
     var arr = []; //section 절대좌표 배열
     for (let i = 0; i < totalPage; i++) {
