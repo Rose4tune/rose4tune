@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Wep Practice</title>
+
+  <style>
+    body {
+      position: relative;
+      background: blueviolet;
+      cursor: none;
+      overflow: hidden;
+    }
+    h1 {
+      color: white;
+    }
+    .cursor_item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      margin: -50px 0 0 -50px;
+      background: red;
+      transition: all 500ms cubic-bezier(0.695, -0.485, 0.670, 1.445);
+    }
+    button {
+      font-size: 40px;
+      font-weight: bold;
+      background: coral;
+      color: white;
+      padding: 30px 80px;
+      margin: 50px;
+      cursor: pointer;
+      transition: all 500ms cubic-bezier(0.695, -0.485, 0.670, 1.445);
+    }
+    button:hover {
+      background: wheat;
+      color: violet;
+      font-size: 80px;
+      padding: 80px 150px;
+    }
+
+    .puppy {
+      position: absolute;
+      left: calc(50% - 150px);
+      width: 300px;
+    }
+  </style>
+  <script>
+    let h1, cursor_item;
+    let puppy;
+    let x = 0, y = 0;
+    let mx = 0, my = 0, speed = 0.1;
+
+    window.onload = function(){
+      h1 = document.getElementsByTagName('h1')[0];
+      cursor_item = document.getElementsByClassName('cursor_item')[0];
+      puppy = document.getElementsByClassName('puppy')[0];
+
+      window.addEventListener("mousemove", mouseFunc, false);
+  
+      function mouseFunc(e){
+        x = (e.clientX - window.innerWidth / 2);
+        y = (e.clientY - window.innerHeight / 2);
+        // cursor_item.style.transform = `translate(${x}px, ${y}px)`;
+      }
+      loop();
+    }
+    
+    function loop(){
+      mx += (x - mx) * speed;
+      my += (y - my) * speed;
+      
+      h1.innerHTML = `x : ${x}, mx : ${mx}`;
+      // cursor_item.style.transform = `translate(${mx}px, ${my}px)`;
+      puppy.style.transform = `translate(${mx}px, ${-my}px)`;
+
+      window.requestAnimationFrame(loop);
+    }
+  </script>
+</head>
+<body>
+  <h1>test</h1>
+  <!-- <button>start</button> -->
+  <!-- <div class="cursor_item"></div> -->
+
+  <img class="puppy" src="image/puppy.png" alt="puppy">
+
+
+
+  <!-- 레퍼런스 사이트 https://www.fixnothing.com/ -->
+</body>
+</html>
