@@ -10,8 +10,9 @@
     body {
       position: relative;
       background: blueviolet;
-      cursor: none;
+      /* cursor: none; */
       overflow: hidden;
+      padding: none;
     }
     h1 {
       color: white;
@@ -43,15 +44,21 @@
       padding: 80px 150px;
     }
 
+    img {width: 100%;}
     .puppy {
       position: absolute;
       left: calc(50% - 150px);
-      width: 300px;
+      width: 450px;
+      z-index: 1;
     }
+    .puppy:hover {
+      width: 500px;
+    }
+    .back {z-index: 0;}
   </style>
   <script>
     let h1, cursor_item;
-    let puppy;
+    let puppy, back;
     let x = 0, y = 0;
     let mx = 0, my = 0, speed = 0.1;
 
@@ -59,6 +66,7 @@
       h1 = document.getElementsByTagName('h1')[0];
       cursor_item = document.getElementsByClassName('cursor_item')[0];
       puppy = document.getElementsByClassName('puppy')[0];
+      back = document.getElementsByClassName('back')[0];
 
       window.addEventListener("mousemove", mouseFunc, false);
   
@@ -74,20 +82,22 @@
       mx += (x - mx) * speed;
       my += (y - my) * speed;
       
-      h1.innerHTML = `x : ${x}, mx : ${mx}`;
+      // h1.innerHTML = `x : ${x}, mx : ${mx}`;
       // cursor_item.style.transform = `translate(${mx}px, ${my}px)`;
-      puppy.style.transform = `translate(${mx}px, ${-my}px)`;
+      puppy.style.transform = `translate(${-mx / 10 - 183}px, ${-my / 20 + 220}px)`;
+      back.style.transform = `translate(${mx/30}px, ${my/50}px)`;
 
       window.requestAnimationFrame(loop);
     }
   </script>
 </head>
 <body>
-  <h1>test</h1>
+  <!-- <h1>test</h1> -->
   <!-- <button>start</button> -->
   <!-- <div class="cursor_item"></div> -->
 
   <img class="puppy" src="image/puppy.png" alt="puppy">
+  <img class="back" src="image/back.png" alt="puppy">
 
 
 
