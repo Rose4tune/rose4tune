@@ -1,11 +1,17 @@
 body {
-  height: 1000vh;
+  /* height: 1000vh; */
   background: linear-gradient(skyblue, darkblue, black);
 }
 
 h1 {
+  text-align: center;
   font-size: 100px;
   color: white;
+}
+h2 {
+  font-size: 50px;
+  color: deepskyblue;
+  margin-bottom: 40px;
 }
 
 #progress {
@@ -25,4 +31,83 @@ h1 {
   left: 2%;
   background: yellow;
   z-index: 11;
+}
+
+
+section {
+  position: relative;
+  width: 60vw;
+  background: rgba(0, 0, 0, .4);
+  margin: 30px auto;
+  padding: 20px;
+  z-index: 100;
+}
+
+p {
+  color : #eee;
+  font-size : 20px;
+}
+
+
+
+/* 구름 */
+.cloudWrap {
+  position: absolute;
+}
+.cloudWrap.cloud2 {
+  position: fixed;
+  top: 50vh;
+  left: -30vw;
+}
+
+.cloudWrap img {
+  position: absolute;
+  width: 400px;
+  top:0; left: 0;
+}
+
+/* 구름 각각 위치 잡아주기 */
+.cloudWrap img:nth-child(1) {
+  top : 10vh;
+  left : 60vw;
+  width: 500px;
+}
+.cloudWrap img:nth-child(2) {
+  top : 120vh;
+  left : 0vw;
+  width: 600px;
+}
+.cloudWrap img:nth-child(3) {
+  top : 180vh;
+  left : 75vw;
+}
+.cloudWrap img:nth-child(4) {
+  top : 300vh;
+  left : 0vw;
+  width: 700px;
+}
+.cloudWrap img:nth-child(5) {
+  top : 400vh;
+  left : 50vw;
+  width: 800px;
+}
+.cloudWrap img:nth-child(6) {
+  top : 590vh;
+  left : -5vw;
+  width: 1200px;
+}
+.cloudWrap img:nth-child(7) {
+  top : 680vh;
+  left : 80vw;
+  width: 800px;
+}
+.cloudWrap img:nth-child(8) {
+  top : 800vh;
+  left : 10vw;
+  width: 600px;
+}
+.cloudWrap img:nth-child(9) {
+  top : 950vh;
+  left : 70vw;
+  width: 500px;
 }
