@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Wep Practice 2</title>
+  <style>
+    body {position: relative;}
+    img {
+      position: absolute;
+      top: 0;
+    }
+    .rock {left: calc(50% - 420px)}
+    .branch {left: calc(50% - 410px)}
+    .vod {
+      width: 980px;
+      position: absolute;
+      top: -120px;
+      left: calc(50% - 470px);
+    }
+    video {width: 100%}
+    .bug {left: calc(50% - 460px)}
+    .leaf {left: calc(50% - 440px)}
+  </style>
+  <script>
+    let x = 0, y = 0;
+    let mx = 0, my = 0, speed = 0.01;
+
+    let imgArr, bird;
+
+    window.onload = function(){
+      imgArr = document.getElementsByTagName('img');
+      bird = document.getElementsByClassName('vod');
+
+      window.addEventListener("mousemove", mouseFunc, false);
+
+      function mouseFunc(e){
+        x = (e.clientX - window.innerWidth / 2);
+        y = (e.clientY - window.innerHeight / 2);
+      }
+      loop();
+    }
+
+    function loop(){
+      mx += (x - mx) * speed;
+      my += (y - my) * speed;
+      imgArr[0].style.transform = `translate(${(mx/9)}px, ${(my/9)}px)`;
+      imgArr[1].style.transform = `translate(${(mx/5)}px, ${(my/5)}px)`;
+      imgArr[2].style.transform = `translate(${(mx/3)}px, ${(my/3)}px)`;
+      imgArr[3].style.transform = `translate(${(mx/2)}px, ${(my/2)}px)`;
+      
+      bird[0].style.transform = `translate(${(mx/5)}px, ${(my/5)}px)`;
+
+      window.requestAnimationFrame(loop);
+    }
+  </script>
+</head>
+<body>
+  <section>
+    <img class="rock" src="https://paidpost-assets.nyt.com/paidpost/allbirds/birds-eye-view/images/1-b90e91a4.png">
+    <img class="branch" src="https://paidpost-assets.nyt.com/paidpost/allbirds/birds-eye-view/images/2-f3fd6cf5.png">
+    <div class="vod">
+      <video autoplay="" playsinline="" loop="" muted="" src="https://paidpost-assets.nyt.com/paidpost/allbirds/birds-eye-view/videos/3-27c8c3ea.webm"></video>
+    </div>
+    <img class="bug" src="https://paidpost-assets.nyt.com/paidpost/allbirds/birds-eye-view/images/4-105dd65b.png">
+    <img class="leaf" src="https://paidpost-assets.nyt.com/paidpost/allbirds/birds-eye-view/images/5-ac49bfdc.png">
+  </section>
+
+  <!-- 레퍼런스 사이트 https://www.nytimes.com/paidpost/allbirds/the-view-from-above.html -->
+</body>
+</html>
