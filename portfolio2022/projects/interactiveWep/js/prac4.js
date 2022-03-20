@@ -11,5 +11,5 @@ window.addEventListener("scroll", function(e){
   let per = Math.ceil(scrollTop / (this.document.body.scrollHeight - this.outerHeight) * 100);
   // console.log(scrollTop, per)
 
-  bar.style.width = per + "%";
+  bar.style.height = per + "%";
 }, false)
