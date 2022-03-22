@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Scissors Paper Game</title>
+</head>
+<body>
+  <button type="button" class="btn">reset</button>
+  <h1>가위</h1>
+  
+  <script>
+    window.onload = function(){
+      const btn = document.querySelector('.btn'),
+            h1 = document.getElementsByTagName('h1')[0];
+
+      let handArr = ['가위', '바위', '보'];
+
+      btn.addEventListener("click", function(){
+        let num = Math.round(Math.random() * (handArr.length - 1));
+        h1.innerHTML = handArr[num];
+      })
+
+    }
+  </script>
+</body>
+</html>
