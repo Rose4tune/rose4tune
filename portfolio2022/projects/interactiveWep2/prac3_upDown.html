@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Up Down Game</title>
+  <style>
+    div {
+      width: 400px;
+      margin: 0 auto;
+      background: lightgoldenrodyellow;
+      padding: 40px;
+      text-align: center;
+    }
+    h3 {font-size: 25px;}
+    input {
+      padding: 10px;
+      font-size: 15px;
+    }
+    button {
+      padding: 10px;
+      font-size: 15px;
+    }
+  </style>
+  <script>
+    window.onload = function(){
+      const input = document.getElementsByTagName('input')[0],
+            result = document.getElementById('result'),
+            button = document.getElementsByTagName('button')[0];
+
+      button.addEventListener('click', function(){
+        resultFunc();
+      });
+      function resultFunc(){
+        
+      }
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <h3>숫자를 맞춰봐</h3>
+    <p id="result">(1부터 10사이)</p>
+    <input type="number" value="" max="10" min="1">
+    <button type="button" id="startBnt">COMFORM</button>
+  </div>
+</body>
+</html>
