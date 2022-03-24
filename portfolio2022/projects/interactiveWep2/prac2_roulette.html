@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>룰렛을 돌려라~!!</title>
+
+  <style>
+    body{overflow: hidden;}
+    h1{font-size: 20px;}
+    button{font-size: 20px; padding: 10px 30px;}
+    .arroWrap {margin: 30px;}
+    .arroWrap img {
+      transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+      width: 30%;
+    }
+  </style>
+  <script>
+    window.onload = function(){
+      const resetBtn = document.getElementById('resetBtn'),
+            startBtn = document.getElementById('startBtn'),
+            arrow = document.getElementById('arrow'),
+            h1 = document.getElementsByTagName('h1')[0];
+      let rotateNum = 0;
+
+      resetBtn.addEventListener("click", function(){
+        h1.innerHTML = "0deg";
+        arrow.style.transform = `rotate(0deg)`;
+      })
+
+      startBtn.addEventListener("click", function(){
+        rotateNum = Math.round(Math.random()*720);
+        h1.innerHTML = rotateNum + "deg";
+        arrow.style.transform = `rotate(${rotateNum}deg)`;
+      })
+    }
+  </script>
+</head>
+<body>
+  <button type="reset" id="resetBtn">RESET</button>
+  <button type="button" id="startBtn">START</button>
+  <h1></h1>
+  <div class="arroWrap">
+    <img src="image/up-arrow.svg" alt="arrow" id="arrow">
+  </div>
+</body>
+</html>
