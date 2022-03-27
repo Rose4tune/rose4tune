@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pagenation</title>
+
+  <style>
+    button {
+      padding: 20px 40px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>0</h1>
+  <button type="button" class="prevBtn">PREV</button>
+  <button type="button" class="nextBtn">NEXT</button>
+
+  
+  <script>
+    // (function(){
+      const prevBtn = document.getElementsByClassName('prevBtn')[0],
+            nextBtn = document.getElementsByClassName('nextBtn')[0],
+            h1 = document.getElementsByTagName('h1')[0];
+
+      let pageNum = 0, totalNum = 3;
+
+      
+      prevBtn.addEventListener('click', function(){
+        if(pageNum > 0){
+          pageNum --;
+        } else {
+          pageNum = totalNum -1;
+        }
+        h1.innerHTML = pageNum;
+      })
+      nextBtn.addEventListener('click', function(){
+        if(pageNum < totalNum-1){
+          pageNum ++;
+        } else {
+          pageNum = 0;
+        }
+        h1.innerHTML = pageNum;
+      })
+    // })
+  </script>
+</body>
+</html>
