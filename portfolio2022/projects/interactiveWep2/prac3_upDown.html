@@ -28,12 +28,37 @@
       const input = document.getElementsByTagName('input')[0],
             result = document.getElementById('result'),
             button = document.getElementsByTagName('button')[0];
+      const lastNum = 50;
 
       button.addEventListener('click', function(){
         resultFunc();
       });
+
+      const resultArr = ["업", "다운", '정답!!'];
+      let randomNum = returnNum(lastNum);
+
       function resultFunc(){
-        
+        let value = input.value;
+        if(value < randomNum){
+          result.innerHTML = resultArr[0];
+        } else if(value > randomNum) {
+          result.innerHTML = resultArr[1];
+        } else {
+          result.innerHTML = resultArr[2];
+          setTimeout(function(){
+            resetFunc();
+          }, 1000);
+        }
+      }
+
+      function resetFunc(){
+        input.value = 1
+        result.innerHTML = "one more time";
+        randomNum = returnNum(lastNum);
+      }
+
+      function returnNum(num){
+        return Math.round(Math.random()*num);
       }
     }
   </script>
