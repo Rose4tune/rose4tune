@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>timer</title>
+
+  <style>
+    .wrap {
+      width: 40%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 30px;
+      background: darkcyan;
+      color: white;
+    }
+    button {padding: 10px 20px;}
+  </style>
+
+  <script>
+    window.onload = function(){
+      const num = document.getElementById('num'),
+            btn = document.getElementById('startBtn');
+
+      btn.addEventListener("click", function(){
+        interval();
+      });
+
+      let timer;
+
+      function interval(){
+        clearInterval(timer);
+
+        let secNum = 0;
+        timer = setInterval(function(){
+          secNum ++;
+          num.innerHTML = secNum;
+        }, 10);
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <button type="button" id="startBtn">더하기 시작</button>
+    <h1 id="num">0</h1>
+  </div>
+</body>
+</html>
