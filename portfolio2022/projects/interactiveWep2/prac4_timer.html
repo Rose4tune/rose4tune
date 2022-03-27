@@ -15,13 +15,14 @@
       background: darkcyan;
       color: white;
     }
-    button {padding: 10px 20px;}
+    button, input {padding: 10px 20px;}
   </style>
 
   <script>
     window.onload = function(){
-      const num = document.getElementById('num'),
-            btn = document.getElementById('startBtn');
+      const sec = document.getElementById('sec'),
+            btn = document.getElementById('startBtn'),
+            input = document.getElementsByTagName('input')[0];
 
       btn.addEventListener("click", function(){
         interval();
@@ -32,19 +33,24 @@
       function interval(){
         clearInterval(timer);
 
+        value = input.value * 10000;
+        secValue = value / 365 / 24 / 60 / 60;
+
         let secNum = 0;
         timer = setInterval(function(){
           secNum ++;
-          num.innerHTML = secNum;
-        }, 10);
+          sec.innerHTML = `당신은 ${secNum}초에 ${(secValue * secNum).toFixed(0)}원 벌고 있습니다.`;
+        }, 1000);
       }
     }
   </script>
 </head>
 <body>
   <div class="wrap">
-    <button type="button" id="startBtn">더하기 시작</button>
-    <h1 id="num">0</h1>
+    <h2>연봉을 입력하세요 (만원)</h2>
+    <input type="number" value="5000">
+    <button type="button" id="startBtn">확인</button>
+    <p id="sec">1초에 얼마를 벌고있을까?</p>
   </div>
 </body>
 </html>
