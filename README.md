@@ -26,6 +26,6 @@ C62563
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose&layout=compact&bg_color=90,FFECF4,FFBE98,FFBE98&title_color=C62563&text_color=#560625)](https://github.com/anuraghazra/github-readme-stats)
 <br><br>
 2021 PANTONE COLOR : Illuminating(13-0647/#F5DF4D) & Ultimate Gray(17-5104/#939597)<br>
-2022 PANTONE COLOR : Very Peri(17-3938/#6667AB)
-2023 PANTONE COLOR : Viva Magenta(18-1750/#BB2649)
+2022 PANTONE COLOR : Very Peri(17-3938/#6667AB)<br>
+2023 PANTONE COLOR : Viva Magenta(18-1750/#BB2649)<br>
 2024 PANTONE COLOR : Peach Fuzz(13-1023/#FFBE98)
