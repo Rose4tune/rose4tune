@@ -4,14 +4,15 @@
 효율적인 코드와 매끄러운 사용자 경험을 만들기 위해 노력하며, 성장하는 개발자가 되는 것이 목표입니다.
 
 ---
-
 ### 🛠 기술 스택
-- **언어:** JavaScript (ES6+), TypeScript, SQL
-- **프레임워크 & 라이브러리:** React, Next.js, Express, Three.js
-- **스타일링:** Tailwind CSS, Material-UI, Sass
-- **CI/CD & 배포:** GitHub Actions, Vercel
-- **도구:** Git, Figma, Jira, Notion
-- **데이터베이스:** Supabase, MongoDB
+| 분류               | 기술 / 도구                           | 설명                                     |
+|--------------------|--------------------------------------|------------------------------------------|
+| **언어**          | JavaScript (ES6+), TypeScript, SQL   | 웹 및 서버 개발에 활용                   |
+| **프레임워크**     | React, Next.js, Express              | SPA 및 서버사이드 렌더링 구현             |
+| **스타일링**       | Sass, Tailwind CSS, Material-UI      | 반응형 UI와 커스터마이징 가능한 디자인   |
+| **CI/CD & 테스트** | Jest, GitHub Actions, Vercel         | 자동 테스트 및 배포 파이프라인 구축       |
+| **도구**          | Git, Figma, Jira, Notion             | 버전 관리, 협업, 디자인 및 프로젝트 관리 |
+| **데이터베이스**   | Supabase, MongoDB                    | 실시간 데이터 관리 및 비관계형 데이터베이스 |
 
 <!--
 #### 활용 예시
@@ -27,6 +28,9 @@
 - **Netlify를 활용한 Jamstack 배포**:
    - 정적 사이트 생성(SSR) 프로젝트에 대해 Netlify를 활용해 CI/CD 파이프라인 구현.
    - 자동 SSL 인증서 갱신 및 글로벌 CDN 제공.
+- **Jest**:
+   - Jest로 React 컴포넌트 스냅샷 테스트 작성 경험.
+   - API 통신 로직의 모의(Mock) 테스트를 통해 비즈니스 로직 검증.
 -->
 
 ---
@@ -42,7 +46,12 @@
   소규모의 서점 책 관리 시스템으로 node.js로 벡엔드와 React로 프론트를 구현.
   - 사용 기술: React, Next.js, Node.js, TypeScript, Material-UI, Express, Jest
   - [소스 코드](https://github.com/Rose4tune/bookstore-app)
-
+<!--
+- **[Team Collaboration App](#):**
+  팀 프로젝트 관리 애플리케이션으로 유닛 테스트와 통합 테스트를 구현하여 코드 안정성을 확보.  
+  - **테스트 도구**: Jest를 사용해 주요 컴포넌트 및 API 로직에 대한 테스트 작성.
+  - **CI/CD**: GitHub Actions를 통해 테스트 자동 실행 및 배포.
+-->
 ---
 
 ### 📊 GitHub 통계
