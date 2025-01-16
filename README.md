@@ -54,7 +54,7 @@
 ---
 
 ### 📄 이력서 & 포트폴리오
-- [이력서](https://drive.google.com/drive/u/0/folders/1NSdhqP4cMIKsTXY6f0BQq3Z6Q9vbpbYY)
+- [이력서](https://drive.google.com/file/d/1iG79EtHSKrckGNb-jtHRLlPKRnZ6eEzT/view?usp=sharing)
 - [포트폴리오 웹사이트](https://www.dlfly.seoul.kr/)
 
 ---
