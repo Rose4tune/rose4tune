@@ -36,16 +36,31 @@
 ---
 
 ### 🚀 프로젝트
-- **DateLeaf:**
-  여러명의 일정을 자동 계산해서 효율적인 모임 일정을 정할수 있게 해주는 스케쥴러.
-  - 사용 기술: React, Vite, TypeScript, Tailwind CSS, PWA, SWC, Jest, Husky, Vercel, Supabase, Zustand
-  - 주요 기능: 모임 가능날짜 자동 계산 및 추천
-  - [Live Demo](https://www.date-leaf.com/) | [소스 코드](https://github.com/imaginer-dev/DateLeaf)
+- **TTAL-GI Quest**
+   - 팀 프로젝트 (FE 1명, BE 2명, DESIGN 2명 , PM 1명)<br>
+   - 특정 음료를 파는 카페를 쉽게 찾도록 해주는 지도 기반 웹앱 서비스.
+   - 사용 기술: React, Next, TypeScript, Zustand, Tailwind CSS, Jest, Vercel
+   - [Live Demo](https://todo-list-three-gamma-42.vercel.app/) | [소스 코드](https://github.com/Rose4tune/todo-list)
 
-- **BookStore App:**
-  소규모의 서점 책 관리 시스템으로 node.js로 벡엔드와 React로 프론트를 구현.
-  - 사용 기술: React, Next.js, Node.js, TypeScript, Material-UI, Express, Jest
-  - [소스 코드](https://github.com/Rose4tune/bookstore-app)
+- **Todo List**
+   - 개인 프로젝트
+   - 할 일에 대한 CRUD가 가능하고, presist 적용으로 데이터의 지속성을 유지하도록 구현.
+   - 사용 기술: React, Next, TypeScript, Zustand, Tailwind CSS, Jest, Vercel
+   - [Live Demo](https://todo-list-three-gamma-42.vercel.app/) | [소스 코드](https://github.com/Rose4tune/todo-list)
+
+- **BookStore App**
+   - 개인 프로젝트
+   - 소규모의 서점 책 관리 시스템으로 node.js로 벡엔드와 React로 프론트를 구현.
+   - 사용 기술: React, Next.js, Node.js, TypeScript, Material-UI, Express, Jest
+   - [소스 코드](https://github.com/Rose4tune/bookstore-app)
+
+- **DateLeaf**
+   - 팀 프로젝트 (FE 5명)
+   - 여러명의 일정을 자동 계산해서 효율적인 모임 일정을 정할수 있게 해주는 스케쥴러.
+   - 사용 기술: React, Vite, TypeScript, Tailwind CSS, PWA, SWC, Jest, Husky, Vercel, Supabase, Zustand
+   - 주요 기능: 모임 가능날짜 자동 계산 및 추천
+   - [Live Demo](https://www.date-leaf.com/) | [소스 코드](https://github.com/imaginer-dev/DateLeaf)
+
 <!--
 - **[Team Collaboration App](#):**
   팀 프로젝트 관리 애플리케이션으로 유닛 테스트와 통합 테스트를 구현하여 코드 안정성을 확보.  
@@ -56,18 +71,12 @@
 
 ### 📊 GitHub 통계
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Rose4tune&show_icons=true&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=777173&show_icons=true&icon_color=46b1ef)
-<!--
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose4tune&layout=compact&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=#777173)
--->
+
 
 ---
 
-### 📄 이력서 & 포트폴리오
-- [이력서](https://drive.google.com/file/d/1iG79EtHSKrckGNb-jtHRLlPKRnZ6eEzT/view?usp=sharing)
-- [포트폴리오 웹사이트](https://www.dlfly.seoul.kr/)
-
----
-<!--
 ### 🌱 함께하고 싶으신가요?
-- [LinkedIn](#)
-- [블로그](#)-->
+- [이력서](https://drive.google.com/drive/folders/1NSdhqP4cMIKsTXY6f0BQq3Z6Q9vbpbYY)
+- [블로그](https://rosesbook.super.site/)
+- [포트폴리오](https://roses-portfolio.notion.site/) (노션)
