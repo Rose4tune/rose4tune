@@ -40,8 +40,9 @@
    - 팀 프로젝트 (FE 1명, BE 2명, DESIGN 2명 , PM 1명)<br>
    - 특정 음료를 파는 카페를 쉽게 찾도록 해주는 지도 기반 웹앱 서비스.
    - 사용 기술: React, Next, TypeScript, Zustand, Tailwind CSS, Jest, Vercel
-   - [Live Demo](https://todo-list-three-gamma-42.vercel.app/) | [소스 코드](https://github.com/Rose4tune/todo-list)
+   - [소스 코드](https://github.com/berry-quest-dev/ttalgi-front-end)
 
+<!--
 - **Todo List**
    - 개인 프로젝트
    - 할 일에 대한 CRUD가 가능하고, presist 적용으로 데이터의 지속성을 유지하도록 구현.
@@ -53,6 +54,7 @@
    - 소규모의 서점 책 관리 시스템으로 node.js로 벡엔드와 React로 프론트를 구현.
    - 사용 기술: React, Next.js, Node.js, TypeScript, Material-UI, Express, Jest
    - [소스 코드](https://github.com/Rose4tune/bookstore-app)
+-->
 
 - **DateLeaf**
    - 팀 프로젝트 (FE 5명)
@@ -76,7 +78,9 @@
 
 ---
 
+<!--
 ### 🌱 함께하고 싶으신가요?
 - [이력서](https://drive.google.com/drive/folders/1NSdhqP4cMIKsTXY6f0BQq3Z6Q9vbpbYY)
 - [블로그](https://rosesbook.super.site/)
 - [포트폴리오](https://roses-portfolio.notion.site/) (노션)
+-->
