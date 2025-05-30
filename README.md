@@ -14,6 +14,8 @@
 | **도구**          | <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"> <img src="https://img.shields.io/badge/jira software-0052CC?style=flat-square&logo=jirasoftware&logoColor=white"> <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"> |
 | **데이터베이스**   | <img src="https://img.shields.io/badge/supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white"> <img src="https://img.shields.io/badge/mongodb-47A248?style=flat-square&logo=mongodb&logoColor=white"> |
 <!--
+https://simpleicons.org/
+<img src="https://img.shields.io/badge/스택이름-색깔?style=for-the-badge&logo=스택아이콘&logoColor=black">
 #### 활용 예시
 - **React & TypeScript**: 개인 포트폴리오 제작 및 데이터 시각화 프로젝트에 활용.
 - **Three.js**: 3D 인터랙션을 구현한 웹 애플리케이션 제작 경험.
@@ -68,16 +70,16 @@
   - **테스트 도구**: Jest를 사용해 주요 컴포넌트 및 API 로직에 대한 테스트 작성.
   - **CI/CD**: GitHub Actions를 통해 테스트 자동 실행 및 배포.
 -->
+
 ---
 
 ### 📊 GitHub 통계
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Rose4tune&show_icons=true&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=777173&show_icons=true&icon_color=46b1ef)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose4tune&layout=compact&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=#777173)
 
-
+<!--
 ---
 
-<!--
 ### 🌱 함께하고 싶으신가요?
 - [이력서](https://drive.google.com/drive/folders/1NSdhqP4cMIKsTXY6f0BQq3Z6Q9vbpbYY)
 - [블로그](https://rosesbook.super.site/)
