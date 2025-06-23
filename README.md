@@ -63,21 +63,18 @@ flat-square
    - 할 일에 대한 CRUD가 가능하고, presist 적용으로 데이터의 지속성을 유지하도록 구현.
    - 사용 기술: React, Next, TypeScript, Zustand, Tailwind CSS, Jest, Vercel
    - [Live Demo](https://todo-list-three-gamma-42.vercel.app/) | [소스 코드](https://github.com/Rose4tune/todo-list)
--->
-<!--
+   
 - **[Team Collaboration App](#):**
   팀 프로젝트 관리 애플리케이션으로 유닛 테스트와 통합 테스트를 구현하여 코드 안정성을 확보.  
   - **테스트 도구**: Jest를 사용해 주요 컴포넌트 및 API 로직에 대한 테스트 작성.
   - **CI/CD**: GitHub Actions를 통해 테스트 자동 실행 및 배포.
--->
-
+  
 ---
 
 ### 📊 GitHub 통계
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Rose4tune&show_icons=true&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=777173&show_icons=true&icon_color=46b1ef)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose4tune&layout=compact&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=#777173)
 
-<!--
 ---
 
 ### 🌱 함께하고 싶으신가요?
