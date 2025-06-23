@@ -7,16 +7,16 @@
 ### 🛠 기술 스택
 | 분류               | 기술 / 도구                           |
 |--------------------|--------------------------------------|
-| **언어**          | <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=Typescript&logoColor=white"/> <img src="https://img.shields.io/badge/postgresql-4169E1?style=flat-square&logo=postgresql&logoColor=white"> |
-| **프레임워크**     | <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white"/> <img src="https://img.shields.io/badge/node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white"> |
-| **스타일링**       | <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=Sass&logoColor=white"/> <img src="https://img.shields.io/badge/styled components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"/> <img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"/> <img src="https://img.shields.io/badge/mui-007FFF?style=for-the-badge&logo=mui&logoColor=white"> |
-| **CI/CD & 테스트** | <img src="https://img.shields.io/badge/jest-C21325?style=for-the-badge&logo=jest&logoColor=white"> <img src="https://img.shields.io/badge/github actions-2088FF?style=flat-squar&logo=githubactions&logoColor=white"> <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=Vercel&logoColor=white"/> <img src="https://img.shields.io/badge/Storybook-FF4785?style=for-the-badge&logo=Storybook&logoColor=white"/> |
-| **도구**          | <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"> <img src="https://img.shields.io/badge/jira software-0052CC?style=flat-square&logo=jirasoftware&logoColor=white"> <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"> |
-| **데이터베이스**   | <img src="https://img.shields.io/badge/supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white"> <img src="https://img.shields.io/badge/mongodb-47A248?style=flat-square&logo=mongodb&logoColor=white"> |
+| **언어**          | <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=Typescript&logoColor=white"/> <img src="https://img.shields.io/badge/postgresql-4169E1?style=flat-square&logo=postgresql&logoColor=white"> |
+| **프레임워크**     | <img src="https://img.shields.io/badge/react-61DAFB?style=flat-square&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white"/> <img src="https://img.shields.io/badge/node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white"> |
+| **스타일링**       | <img src="https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=Sass&logoColor=white"/> <img src="https://img.shields.io/badge/styled components-DB7093?style=flat-square&logo=styled-components&logoColor=white"/> <img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"/> <img src="https://img.shields.io/badge/mui-007FFF?style=flat-square&logo=mui&logoColor=white"> |
+| **CI/CD & 테스트** | <img src="https://img.shields.io/badge/jest-C21325?style=flat-square&logo=jest&logoColor=white"> <img src="https://img.shields.io/badge/github actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"> <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=Vercel&logoColor=white"/> <img src="https://img.shields.io/badge/Storybook-FF4785?style=flat-square&logo=Storybook&logoColor=white"/> |
+| **도구**          | <img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/figma-F24E1E?style=flat-square&logo=figma&logoColor=white"> <img src="https://img.shields.io/badge/jira software-0052CC?style=flat-square&logo=jirasoftware&logoColor=white"> <img src="https://img.shields.io/badge/notion-000000?style=flat-square&logo=notion&logoColor=white"> |
+| **데이터베이스**   | <img src="https://img.shields.io/badge/supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white"> <img src="https://img.shields.io/badge/mongodb-47A248?style=flat-square&logo=mongodb&logoColor=white"> |
 <!--
 https://simpleicons.org/
 <img src="https://img.shields.io/badge/스택이름-색깔?style=for-the-badge&logo=스택아이콘&logoColor=black">
-flat-squar
+flat-square
 #### 활용 예시
 - **React & TypeScript**: 개인 포트폴리오 제작 및 데이터 시각화 프로젝트에 활용.
 - **Three.js**: 3D 인터랙션을 구현한 웹 애플리케이션 제작 경험.
@@ -44,20 +44,6 @@ flat-squar
    - 사용 기술: React, Next, TypeScript, Zustand, Tailwind CSS, Jest, Vercel
    - [소스 코드](https://github.com/berry-quest-dev/ttalgi-front-end)
 
-<!--
-- **Todo List**
-   - 개인 프로젝트
-   - 할 일에 대한 CRUD가 가능하고, presist 적용으로 데이터의 지속성을 유지하도록 구현.
-   - 사용 기술: React, Next, TypeScript, Zustand, Tailwind CSS, Jest, Vercel
-   - [Live Demo](https://todo-list-three-gamma-42.vercel.app/) | [소스 코드](https://github.com/Rose4tune/todo-list)
-
-- **BookStore App**
-   - 개인 프로젝트
-   - 소규모의 서점 책 관리 시스템으로 node.js로 벡엔드와 React로 프론트를 구현.
-   - 사용 기술: React, Next.js, Node.js, TypeScript, Material-UI, Express, Jest
-   - [소스 코드](https://github.com/Rose4tune/bookstore-app)
--->
-
 - **DateLeaf**
    - 팀 프로젝트 (FE 5명)
    - 여러명의 일정을 자동 계산해서 효율적인 모임 일정을 정할수 있게 해주는 스케쥴러.
@@ -65,6 +51,19 @@ flat-squar
    - 주요 기능: 모임 가능날짜 자동 계산 및 추천
    - [Live Demo](https://www.date-leaf.com/) | [소스 코드](https://github.com/imaginer-dev/DateLeaf)
 
+- **BookStore App**
+   - 개인 프로젝트
+   - 소규모의 서점 책 관리 시스템으로 node.js로 벡엔드와 React로 프론트를 구현.
+   - 사용 기술: React, Next.js, Node.js, TypeScript, Material-UI, Express, Jest
+   - [소스 코드](https://github.com/Rose4tune/bookstore-app)
+
+<!--
+- **Todo List**
+   - 개인 프로젝트
+   - 할 일에 대한 CRUD가 가능하고, presist 적용으로 데이터의 지속성을 유지하도록 구현.
+   - 사용 기술: React, Next, TypeScript, Zustand, Tailwind CSS, Jest, Vercel
+   - [Live Demo](https://todo-list-three-gamma-42.vercel.app/) | [소스 코드](https://github.com/Rose4tune/todo-list)
+-->
 <!--
 - **[Team Collaboration App](#):**
   팀 프로젝트 관리 애플리케이션으로 유닛 테스트와 통합 테스트를 구현하여 코드 안정성을 확보.  
@@ -72,13 +71,13 @@ flat-squar
   - **CI/CD**: GitHub Actions를 통해 테스트 자동 실행 및 배포.
 -->
 
-<!--
 ---
 
 ### 📊 GitHub 통계
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Rose4tune&show_icons=true&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=777173&show_icons=true&icon_color=46b1ef)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose4tune&layout=compact&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=#777173)
 
+<!--
 ---
 
 ### 🌱 함께하고 싶으신가요?
