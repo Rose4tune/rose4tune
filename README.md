@@ -13,6 +13,7 @@
 | **CI/CD & 테스트** | <img src="https://img.shields.io/badge/jest-C21325?style=flat-square&logo=jest&logoColor=white"> <img src="https://img.shields.io/badge/github actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"> <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=Vercel&logoColor=white"/> <img src="https://img.shields.io/badge/Storybook-FF4785?style=flat-square&logo=Storybook&logoColor=white"/> |
 | **도구**          | <img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/figma-F24E1E?style=flat-square&logo=figma&logoColor=white"> <img src="https://img.shields.io/badge/jira software-0052CC?style=flat-square&logo=jirasoftware&logoColor=white"> <img src="https://img.shields.io/badge/notion-000000?style=flat-square&logo=notion&logoColor=white"> |
 | **데이터베이스**   | <img src="https://img.shields.io/badge/supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white"> <img src="https://img.shields.io/badge/mongodb-47A248?style=flat-square&logo=mongodb&logoColor=white"> |
+
 <!--
 https://simpleicons.org/
 <img src="https://img.shields.io/badge/스택이름-색깔?style=for-the-badge&logo=스택아이콘&logoColor=black">
@@ -35,6 +36,7 @@ flat-square
    - API 통신 로직의 모의(Mock) 테스트를 통해 비즈니스 로직 검증.
 -->
 
+<!--
 ---
 
 ### 🚀 프로젝트
@@ -57,7 +59,6 @@ flat-square
    - 사용 기술: React, Next.js, Node.js, TypeScript, Material-UI, Express, Jest
    - [소스 코드](https://github.com/Rose4tune/bookstore-app)
 
-<!--
 - **Todo List**
    - 개인 프로젝트
    - 할 일에 대한 CRUD가 가능하고, presist 적용으로 데이터의 지속성을 유지하도록 구현.
