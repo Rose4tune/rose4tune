@@ -69,16 +69,24 @@ flat-square
   팀 프로젝트 관리 애플리케이션으로 유닛 테스트와 통합 테스트를 구현하여 코드 안정성을 확보.  
   - **테스트 도구**: Jest를 사용해 주요 컴포넌트 및 API 로직에 대한 테스트 작성.
   - **CI/CD**: GitHub Actions를 통해 테스트 자동 실행 및 배포.
-  
+
+- 백준 카드
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=rosefor2ne)](https://solved.ac/rosefor2ne)
+- 백준 뱃지
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=rosefor2ne)](https://solved.ac/rosefor2ne)
+
 -->
 
 ---
 
 ### 📊 GitHub 통계
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Rose4tune&show_icons=true&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=777173&show_icons=true&icon_color=46b1ef)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose4tune&layout=compact&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=#777173&exclude_repo=z_ngenebio_work1,z_ngenebio_work2,prac_book,plus_frontlecture_react30project,lecture_100ScenarioFront,myProjects,my_portfolio,myPortfolio&hide=html,php)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose4tune&exclude_repo=lecture_3DThreeJS,hanghea_front_1st&hide=html&layout=compact&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=#777173)
 
 <!--
+z_ngenebio_work1,z_ngenebio_work2,prac_book,plus_frontlecture_react30project,lecture_100ScenarioFront,myProjects,my_portfolio,myPortfolio,hanghea_front_1st,
 ---
 
 ### 🌱 함께하고 싶으신가요?
