@@ -82,7 +82,7 @@ flat-square
 ---
 
 ### 📊 GitHub 통계
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Rose4tune&show_icons=true&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=777173&show_icons=true&icon_color=46b1ef)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Rose4tune&show_icons=true&icon_color=ff4690&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=777173)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose4tune&exclude_repo=lecture_3DThreeJS,hanghea_front_1st&hide=html&layout=compact&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=#777173)
 
 <!--
