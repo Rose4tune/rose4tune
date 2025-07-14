@@ -70,12 +70,15 @@ flat-square
   - **테스트 도구**: Jest를 사용해 주요 컴포넌트 및 API 로직에 대한 테스트 작성.
   - **CI/CD**: GitHub Actions를 통해 테스트 자동 실행 및 배포.
   
+-->
+
 ---
 
 ### 📊 GitHub 통계
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Rose4tune&show_icons=true&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=777173&show_icons=true&icon_color=46b1ef)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose4tune&layout=compact&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=#777173)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose4tune&layout=compact&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=#777173&exclude_repo=z_ngenebio_work1,z_ngenebio_work2,prac_book,plus_frontlecture_react30project,lecture_100ScenarioFront,myProjects,my_portfolio,myPortfolio&hide=html,php)
 
+<!--
 ---
 
 ### 🌱 함께하고 싶으신가요?
