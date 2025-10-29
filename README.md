@@ -3,18 +3,18 @@
 저는 **프론트엔드 개발자**로, **React**와 **TypeScript**를 활용한 사용자 친화적인 인터페이스 제작에 열정을 가지고 있습니다.  
 효율적인 코드와 매끄러운 사용자 경험을 만들기 위해 노력하며, 성장하는 개발자가 되는 것이 목표입니다.
 
----
-### 🛠 기술 스택
+### 기술 스택
 | 분류               | 기술 / 도구                           |
 |--------------------|--------------------------------------|
 | **언어**          | <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=Typescript&logoColor=white"/> <img src="https://img.shields.io/badge/postgresql-4169E1?style=flat-square&logo=postgresql&logoColor=white"> |
 | **프레임워크**     | <img src="https://img.shields.io/badge/react-61DAFB?style=flat-square&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white"/> <img src="https://img.shields.io/badge/node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white"> |
 | **스타일링**       | <img src="https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=Sass&logoColor=white"/> <img src="https://img.shields.io/badge/styled components-DB7093?style=flat-square&logo=styled-components&logoColor=white"/> <img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"/> <img src="https://img.shields.io/badge/mui-007FFF?style=flat-square&logo=mui&logoColor=white"> |
 | **CI/CD & 테스트** | <img src="https://img.shields.io/badge/jest-C21325?style=flat-square&logo=jest&logoColor=white"> <img src="https://img.shields.io/badge/github actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"> <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=Vercel&logoColor=white"/> <img src="https://img.shields.io/badge/Storybook-FF4785?style=flat-square&logo=Storybook&logoColor=white"/> |
-| **도구**          | <img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/figma-F24E1E?style=flat-square&logo=figma&logoColor=white"> <img src="https://img.shields.io/badge/jira software-0052CC?style=flat-square&logo=jirasoftware&logoColor=white"> <img src="https://img.shields.io/badge/notion-000000?style=flat-square&logo=notion&logoColor=white"> |
-| **데이터베이스**   | <img src="https://img.shields.io/badge/supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white"> <img src="https://img.shields.io/badge/mongodb-47A248?style=flat-square&logo=mongodb&logoColor=white"> |
+| **도구**          | <img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/figma-F24E1E?style=flat-square&logo=figma&logoColor=white"> <img src="https://img.shields.io/badge/jira software-0052CC?style=flat-square&logo=jirasoftware&logoColor=white"> <img src="https://img.shields.io/badge/notion-000000?style=flat-square&logo=notion&logoColor=white"> <img src="https://img.shields.io/badge/supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white"> |
 
 <!--
+| **데이터베이스**   | <img src="https://img.shields.io/badge/supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white"> <img src="https://img.shields.io/badge/mongodb-47A248?style=flat-square&logo=mongodb&logoColor=white"> |
+
 https://simpleicons.org/
 <img src="https://img.shields.io/badge/스택이름-색깔?style=for-the-badge&logo=스택아이콘&logoColor=black">
 flat-square
@@ -79,18 +79,17 @@ flat-square
 
 -->
 
----
-
-### 📊 GitHub 통계
+### GitHub 통계
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Rose4tune&show_icons=true&icon_color=ff4690&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=777173)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Rose4tune&exclude_repo=lecture_3DThreeJS,hanghea_front_1st&hide=html&layout=compact&bg_color=90,ffeff5,dbfaf8,dbfaf8,dbfaf8&title_color=ff4690&text_color=#777173)
 
 <!--
 z_ngenebio_work1,z_ngenebio_work2,prac_book,plus_frontlecture_react30project,lecture_100ScenarioFront,myProjects,my_portfolio,myPortfolio,hanghea_front_1st,
 ---
-
-### 🌱 함께하고 싶으신가요?
-- [이력서](https://drive.google.com/drive/folders/1NSdhqP4cMIKsTXY6f0BQq3Z6Q9vbpbYY)
-- [블로그](https://rosesbook.super.site/)
-- [포트폴리오](https://roses-portfolio.notion.site/) (노션)
 -->
+
+### 저에 대해 더 궁금하시다면?
+- 📃 이력서: [PDF 이력서](https://drive.google.com/file/d/1ITrBDU6H7qEliDoFqayRXABYpmAULNu7/view?usp=sharing)
+- 📧 이메일: rosefor2ne@gmail.com
+- <img width="15" height="15" alt="logo" src="https://github.com/user-attachments/assets/b70978f1-f54e-4542-b721-3cd25948e8fc" /> 포트폴리오 겸 블로그: [https://www.dlfly.seoul.kr/](https://www.dlfly.seoul.kr/)
+
