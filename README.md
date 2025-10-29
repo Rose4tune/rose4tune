@@ -90,7 +90,7 @@ z_ngenebio_work1,z_ngenebio_work2,prac_book,plus_frontlecture_react30project,lec
 -->
 
 ### 저에 대해 더 궁금하시다면?
-- ☕ 커피는 사랑입니다!: rosefor2ne@gmail.com
 - <img width="15" height="15" alt="logo" src="https://github.com/user-attachments/assets/b70978f1-f54e-4542-b721-3cd25948e8fc" /> 개인 블로그: [https://www.dlfly.seoul.kr/](https://www.dlfly.seoul.kr/)
+- ☕ 커피는 사랑입니다!: rosefor2ne@gmail.com
 
 <i>(새창에서 열고싶다면 Ctrl or CMD 누른 상태에서 Click 해주세요! )</i>
