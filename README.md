@@ -85,12 +85,12 @@ flat-square
 
 <!--
 z_ngenebio_work1,z_ngenebio_work2,prac_book,plus_frontlecture_react30project,lecture_100ScenarioFront,myProjects,my_portfolio,myPortfolio,hanghea_front_1st,
+- 📃 이력서: [PDF 이력서](https://drive.google.com/file/d/1ITrBDU6H7qEliDoFqayRXABYpmAULNu7/view?usp=sharing)
 ---
 -->
 
 ### 저에 대해 더 궁금하시다면?
-- 📃 이력서: [PDF 이력서](https://drive.google.com/file/d/1ITrBDU6H7qEliDoFqayRXABYpmAULNu7/view?usp=sharing)
-- 📧 이메일: rosefor2ne@gmail.com
+- ☕ 커피는 사랑입니다!: rosefor2ne@gmail.com
 - <img width="15" height="15" alt="logo" src="https://github.com/user-attachments/assets/b70978f1-f54e-4542-b721-3cd25948e8fc" /> 포트폴리오 겸 블로그: [https://www.dlfly.seoul.kr/](https://www.dlfly.seoul.kr/)
 
 <i>(새창에서 열고싶다면 Ctrl or CMD 누른 상태에서 Click 해주세요! )</i>
